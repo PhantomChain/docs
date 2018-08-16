@@ -1,10 +1,5 @@
-# Ark Docs
 
-<p align="center">
-    <img src="https://github.com/ArkEcosystem/docs/blob/master/banner.png" />
-</p>
-
-> Official documentation for the Ark Ecosystem powered by VuePress.
+> Official documentation for PHANTOM powered by VuePress.
 
 ## Security
 
@@ -16,5 +11,6 @@ If you discover a security vulnerability within this package, please send an e-m
 - [All Contributors](../../../../contributors)
 
 ## License
+[MIT](LICENSE) © [PHANTOM](https://phantom.org)
 
 [MIT](LICENSE) © [ArkEcosystem](https://ark.io)
