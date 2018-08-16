@@ -1,6 +1,6 @@
-# Phantom Docs
+# PHANTOM Docs
 
-> Official documentation for the Phantom powered by VuePress.
+> Official documentation for the PHANTOM powered by VuePress.
 
 ## Development
 
