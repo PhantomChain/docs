@@ -16,7 +16,7 @@ This User Guide is for the everyday, non-developer PHANTOM consumer.
 
 We first have to download the PhantomClient to get started:
 
-[PhantomClient Download](https://github.com/PhantomCore/desktop-wallet/releases)
+[PhantomClient Download](https://github.com/PhantomChain/desktop-wallet/releases)
 
 ::: warning
 **Note**: The above link is the authoritative source for the latest PhantomClient. As a friendly reminder, don't ever click on links that are not sponsored by or provided by the Official PHANTOM Team
@@ -26,9 +26,8 @@ When you arrive on this page you will see multiple options for the PhantomClient
 
 ![Client-Page](./assets/how-to-use-the-desktop-wallet/Client-Page.png)
 
-___
-
 ## Creating your PHANTOM Wallet
+
 Your PHANTOM Wallet is a unique address that will store your ZINC.
 
 1. Open the PhantomClient.
@@ -49,8 +48,6 @@ Your PHANTOM Wallet is a unique address that will store your ZINC.
 5. Congratulations! You now have your very own PHANTOM Wallet. It's that easy!
 
 ![Wallet-homepage](./assets/how-to-use-the-desktop-wallet/Wallet-homepage.png)
-
-___
 
 ### Identifying your PHANTOM Wallet Address
 
@@ -85,7 +82,6 @@ Your PHANTOM Wallet stores your ZINC for you. In order to interface with PHANTOM
 
 ![Wallet-balance](./assets/how-to-use-the-desktop-wallet/Wallet-balance.png)
 
-___
 
 ## Sending ZINC from your PHANTOM Wallet
 
@@ -112,8 +108,6 @@ Now that your have a balance of ZINC in your wallet, you may want to send it out
 ![Send-zinc-confirm](./assets/how-to-use-the-desktop-wallet/Send-ark-confirm.png)
 
 8. All done! Your ZINC is on its way to its destination address!
-
-___
 
 ## Voting with your PHANTOM Wallet
 
@@ -159,7 +153,6 @@ If your delegate is not contributing to the PHANTOM community in a way he/she ha
 
 4. You will now notice your delegates name is no longer within the "VOTES" section. You have unvoted your delegate.
 
-___
 
 ## Various functions & featues within the PhantomClient/Desktop Application
 
@@ -191,9 +184,8 @@ You may also choose to set a background picture from your personal selection of 
 
 4. Scroll up to the top of the background/theme selections. Your custom photo will be there. Select it, then select "SAVE". Your custom photo is set.
 
-___
-
 ### Renaming your PHANTOM Wallet
+
 Instead of your PHANTOM Wallet Address displaying on the homescreen of the PhantomClient you can choose to rename/relabel your PHANTOM Wallet to what you wish. A couple reasons for wanting to rename your PHANTOM Wallet could be you have multiple wallets and wish to easily distinguish between them, or perhaps you have different wallets for different purposes.
 
 1. Select the wallet you wish to give a new label.
@@ -311,7 +303,6 @@ With the PhantomClient you can timestamp a file on the PHANTOM Blockchain. Phant
 
 *More about hashing and timestamping can be found in the [FAQ](#FAQ) & [Appendix/Useful Links](#appen) sections of this User Guide.*
 
-___
 
 ### Different settings within PhantomClient/Desktop Application
 
