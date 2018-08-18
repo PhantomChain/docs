@@ -31,7 +31,7 @@ This will be a list of the most recent transactions that have been broadcast to 
 -    **Amount:** This will indicate the amount of PHANTOM that was send from the Sender to the Recipient
 -    **Fee:** This indicates the fee paid to send the transaction.  A list of current fees on the PHANTOM network can be found in [**Fees for Transactions**](https://docs.ark.io/basics/understanding-transactions-and-block-propagation.html#fees-for-transactions)
 
-![LATEST BLOCK Overview](./assets/how-to-use-the-ark-explorer/LatestBlockOverview.png)
+![LATEST BLOCK Overview](./assets/phantom-explorer/lastblock.png)
 ### Latest Blocks:
 -    **ID:** This will the show unique identification (ID) for the Block that was forged.    If you want to learn more about blockchain refer to our section on [**What is The Blockchain?**](https://docs.ark.io/blockchain/what-is-the-blockchain.html) and [**When Do You Need A Blockchain?**](https://docs.ark.io/blockchain/when-do-you-need-a-blockchain.html)
 -    **Height:** This section will show how far from the initial (genesis) block, the blockchain has progressed.  For example, if you are looking at a block with the height listed as 1000, this will indicate that this specific block is the 999th since the first (genesis) block.
