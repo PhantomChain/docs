@@ -41,7 +41,7 @@ This will be a list of the most recent transactions that have been broadcast to 
 -    **Amount:** Indicates the total amount of PHANTOM for all transactions inside the block
 -    **Fee:** Shows the total fees associated with all transactions within the block.
 
-![NETWORK INFORMATIION Overview](./assets/how-to-use-the-ark-explorer/NetworkInformation.png)
+![NETWORK INFORMATIION Overview](./assets/phantom-explorer/networkinfo.png)
 
 ### Network Information:
 Across the top of the page you will also see a list of information about the current state of the network you are viewing.
@@ -52,7 +52,7 @@ Across the top of the page you will also see a list of information about the cur
 -    **Network:** This will indicate whether you are viewing the mainnet or testnet. Mainnet is where transactions are conducted and settled in real time. In contrast the testnet is used by developers to test functionality before introducing features or other applications onto the mainnet.  For the average user this is of no consequence and your experience will always be on the mainnet.
 -    **Market Cap:** This refers to the market capitalization of PHANTOM, the total value of all the PHANTOM that exist by multiplying the Total Supply by the current price of your chosen national currency.
 
-![DROPDOWN Overview](./assets/how-to-use-the-ark-explorer/DROPDOWN.png)
+![DROPDOWN Overview](./assets/phantom-explorer/dropdown.png)
 
 ### Top Menu Bar
 **PHANTOM ICON:** This will take you back to the PHANTOM explorer home page
@@ -60,14 +60,14 @@ Across the top of the page you will also see a list of information about the cur
 **Drop Down Menu:** This contains the following Information
 -    **Home:** This will take you back to the explorer home page
 -    **Top Wallets:** This will show you the wallets, descending from high to low, that hold the most PHANTOM.  From there you will be able to see their numerical ranking (in relation to total balance), wallet address, balance and the percentage of total supply they control.  Currently the PHANTOM development team holds the largest percentage of PHANTOM, which is used to pay for projects and developers to improve network functionality and other projects that bring value to the PHANTOM community.
-![Top Wallets](./assets/how-to-use-the-ark-explorer/TOPWALLETS.png)
+![Top Wallets](./assets/phantom-explorer/topwallets.png)
 -    **Delegate Monitor:** This shows the current list of delegates and their votes on the network.  PHANTOM is run by its community who vote for delegates.  Delegates, among other things, vote on their behalf in community related matters and most importantly forge (verify) blocks.  The top 51 delegates perform these functions for the network and rely on community support to maintain their position within the network.  For more information on DPOS/delegates refer to our section on [**What is DPOS and how it relates to other consensus mechanisms**](https://docs.ark.io/basics/what-is-delegated-proof-of-stake.html)
-![Delegate Monitor Overview](./assets/how-to-use-the-ark-explorer/DELEGATEMONITOROVERVIEW.png)
+![Delegate Monitor Overview](./assets/phantom-explorer/delegate.png)
 
 The delegate monitor shows two tabs, **"Active"** and **"Standby"**.
 Active will list the current top 51 active delegates, an overview of blocks recently forged, blocks missed, delegates who are not forging and those delegates waiting to forge the next blocks.
 
-![Delegate Overview](./assets/how-to-use-the-ark-explorer/DELEGATEOVERVIEW.png)
+![Delegate Overview](./assets/phantom-explorer/delegateoverview.png)
 
 If you click on a delegate’s username you will be taken to delegates wallet address page and see the following information.
 -    **Balance:** Total amount of PHANTOM in delegates wallet.
@@ -80,7 +80,7 @@ If you click on a delegate’s username you will be taken to delegates wallet ad
 -    **Votes:** Who this wallet has cast their delegate vote towards .
 -    **Voters:** How many total voters this delegate has pledged to them.
 
-![Header Overview](./assets/how-to-use-the-ark-explorer/HEADERoverview.png)
+![Header Overview](./assets/phantom-explorer/header.png)
 
 The last three menu option are as follows
 
