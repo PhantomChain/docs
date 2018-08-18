@@ -42,7 +42,7 @@ The counterpart to the Guidebook, the Cookbook contains practical code snippets 
 
 [*Exchanges*](/cookbook/exchanges/) is where developers for cryptocurrency exchanges can find information on how to integrate the XPH coin into their platforms. Though we cannot make any guarantees about the codebases of any projects besides the XPH coin, this recipe should serve as a good starting point for integrating Phantom BridgeChain coins as well.
 
-### [Phantom API](/api/)
+### [PHANTOM API](/api/)
 
 [*Public API*](/api/public/) describes the API that's accessible through any Phantom node. API references for Phantom v1 and v2 are included.
 The [*SDK*](/api/sdk/) section includes information on how to use any of the Phantom API wrappers we've written for supercharged development in your language of choice. Currently, the following SDKs are available:
