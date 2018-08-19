@@ -1,15 +1,15 @@
 ---
-title: "How To Secure Your ARK Node"
+title: "How To Secure Your PHANTOM Node"
 ---
 
-# How To Secure Your ARK Node
+# How To Secure Your PHANTOM Node
 
 [[toc]]
 
-When running an ARK node, especially a delegate node, you should have security
+When running an PHANTOM node, especially a delegate node, you should have security
 as first class citizen in your network. This guide will walk you through securing your nodes.
 You could do more, but this is a good start. You will need to have created a user in our
-previous guide [Setup Your ARK Node]() to follow along completely.
+previous guide [Setup Your PHANTOM Node]() to follow along completely.
 
 :warning:
 **It is very important you follow this guide closely, not doing so could mean losing access to your node. If you lose access to your node there is no possible way for us to help you get it back. You will have to start over with a fresh server.**
@@ -98,7 +98,7 @@ exit
 ssh user@yournode -p 55555
 ```
 
-If everything was setup successfully you should be reconnected to your ARK node. Replace `55555` with the port you chose when setting up your `sshd_config`
+If everything was setup successfully you should be reconnected to your PHANTOM node. Replace `55555` with the port you chose when setting up your `sshd_config`
 
 ### Install Fail2Ban
 #### What is Fail2Ban
@@ -255,7 +255,7 @@ sudo apt-get install knockd
 #### Troubleshooting and Testing
 Logs for knockd appear in `syslog` and will be crucial if you need to troubleshot.
 
-Run the following command on your ARK node server.
+Run the following command on your PHANTOM node server.
 ```
 tail -f /var/log/syslog
 ```
@@ -280,7 +280,7 @@ Apr 17 04:02:18 node1 knockd: openSSH: running command: ufw allow 55555/tcp
 
 Running `sudo ufw status` you should now see your SSH port enabled
 ```
-arkoar@node1:~$ sudo ufw status
+phantomoar@node1:~$ sudo ufw status
 Status: active
 
 To                         Action      From
@@ -344,7 +344,7 @@ Windows users can generate their ssh key using [PuTTY Key Generator](https://www
 
 ##### Copy your **PUBLIC KEY** to your Server
 
-Copy the contents of your `id_rsa.pub` file on your local machine to your `~/.ssh/authorized_keys` on your ARK node server.
+Copy the contents of your `id_rsa.pub` file on your local machine to your `~/.ssh/authorized_keys` on your PHANTOM node server.
 
 #### Disable Password Authentication
 ```
@@ -392,8 +392,8 @@ server {
   listen 443;
   server_name node.yoursite.com;
 ssl on;
-  ssl_certificate /etc/nginx/ssl/ark.crt;
-  ssl_certificate_key /etc/nginx/ssl/ark.key;
+  ssl_certificate /etc/nginx/ssl/phantom.crt;
+  ssl_certificate_key /etc/nginx/ssl/phantom.key;
   ssl_verify_client off;
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
   ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
@@ -426,23 +426,23 @@ Scroll down to `Origin Certificates` and click the `Create Certificate` button. 
 
 ![cloudflare origin certificate](./assets/secure/cloudflare_certificate.png)
 
-##### Open Terminal on your ARK Node Server
+##### Open Terminal on your PHANTOM Node Server
 We need to create a new folder and copy our keys to our server.
 
 ```
 mkdir /etc/nginx/ssl
 cd /etc/nginx/ssl
-touch ark.crt ark.key
+touch phantom.crt phantom.key
 ```
 
-Copy the `PRIVATE KEY` to the file `ark.key` and the `CERTIFICATE` to `ark.crt`.
+Copy the `PRIVATE KEY` to the file `phantom.key` and the `CERTIFICATE` to `phantom.crt`.
 
 ##### Start Nginx
 ```
 sudo service nginx start
 ```
 
-If everything started fine you should be able to now access your ARK node API's
+If everything started fine you should be able to now access your PHANTOM node API's
 behind SSL. Giving you the added bonus of cloudflare DDOS protection.
 
 Otherwise, if you get any errors run the following command to troubleshoot nginx.
