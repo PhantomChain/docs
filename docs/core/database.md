@@ -8,7 +8,7 @@ title: "Database"
 
 ## Introduction
 
-In order to operate a node in any ARK network you need some way of storing the blocks, transactions and wallets in a database on your server.
+In order to operate a node in any PHANTOM network you need some way of storing the blocks, transactions and wallets in a database on your server.
 
 The default driver for database communication we provide is [Sequelize](https://github.com/sequelize/sequelize) which supports SQLite, PostgreSQL and MySQL.
 
@@ -27,6 +27,6 @@ return databaseManager.connection()
 
 The first thing we do is to grab an instance of the `DatabaseManager` that is available through the `Container` that provides us with all instances of other plugins.
 
-Next we create an instance of our `SequelizeConnection` which is the concrete implementation of a `ConnectionInterface` provided by `@arkecosystem/core-database` which connects to the database.
+Next we create an instance of our `SequelizeConnection` which is the concrete implementation of a `ConnectionInterface` provided by `@phantomcore/core-database` which connects to the database.
 
 Imagine how you could implement a `CassandraConnection` that connects to an [Apache Cassandra](http://cassandra.apache.org/) instance for a large private blockchain.
