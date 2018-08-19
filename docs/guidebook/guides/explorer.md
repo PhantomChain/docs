@@ -10,7 +10,6 @@ title: "Explorer"
 
 You can access it at [https://explorer.phantom.org](https://explorer.phantom.org).
 
-
 ## Build Setup
 
 ### 1. Clone the repository
