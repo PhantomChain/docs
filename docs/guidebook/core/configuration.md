@@ -6,7 +6,6 @@ title: "Configuration"
 
 In order to operate a node in any PHANTOM network you need to provide configuration to it one way or another.
 
-
 ## Environment Configuration
 
 PHANTOM Core allows you to use an [.env](https://github.com/bevry/envfile) to provide configuration that is environment specific without having to touch the `~/.phantom/config/plugins.js` file. The `.env` file needs to be stored at `~/.phantom/.env`.
