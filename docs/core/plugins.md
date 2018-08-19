@@ -8,7 +8,7 @@ title: "Plugins"
 
 ## Introduction
 
-ARK Core has an extensive and powerful plugin system that allows you to very easily break your application up into isolated pieces of business logic, and reusable utilities.
+PHANTOM Core has an extensive and powerful plugin system that allows you to very easily break your application up into isolated pieces of business logic, and reusable utilities.
 
 ## Developing the Plugin
 
@@ -50,7 +50,7 @@ Core consist of 2 directories, which are `packages` and `plugins`, both of them 
 
 ### Packages
 
-The `packages` directory holds all official packages shipped by ArkEcosystem together with core. These should not be modified or you might end up with git conflicts when you try to pull or update.
+The `packages` directory holds all official packages shipped by PHANTOM together with core. These should not be modified or you might end up with git conflicts when you try to pull or update.
 
 ### Plugins
 
@@ -64,24 +64,24 @@ In order to make sure that your plugin is registered you need to modify the **pl
 
 ```js
 module.exports = {
-  '@arkecosystem/core-event-emitter': {},
-  '@arkecosystem/core-config': {},
-  '@arkecosystem/core-config-json': {},
-  '@arkecosystem/core-logger': {},
-  '@arkecosystem/core-logger-winston': {},
-  '@arkecosystem/core-database': {},
-  '@arkecosystem/core-database-sequelize': {},
-  '@arkecosystem/core-transaction-pool': {},
-  '@arkecosystem/core-transaction-pool-redis': {},
-  '@arkecosystem/core-p2p': {},
-  '@arkecosystem/core-blockchain': {},
-  '@arkecosystem/core-api': {},
-  '@arkecosystem/core-webhooks': {},
-  '@arkecosystem/core-webhooks-api': {},
-  '@arkecosystem/core-graphql': {},
-  '@arkecosystem/core-graphql-api': {},
-  '@arkecosystem/core-forger': {},
-  '@arkecosystem/core-json-rpc': {}
+  '@phantomcore/core-event-emitter': {},
+  '@phantomcore/core-config': {},
+  '@phantomcore/core-config-json': {},
+  '@phantomcore/core-logger': {},
+  '@phantomcore/core-logger-winston': {},
+  '@phantomcore/core-database': {},
+  '@phantomcore/core-database-sequelize': {},
+  '@phantomcore/core-transaction-pool': {},
+  '@phantomcore/core-transaction-pool-redis': {},
+  '@phantomcore/core-p2p': {},
+  '@phantomcore/core-blockchain': {},
+  '@phantomcore/core-api': {},
+  '@phantomcore/core-webhooks': {},
+  '@phantomcore/core-webhooks-api': {},
+  '@phantomcore/core-graphql': {},
+  '@phantomcore/core-graphql-api': {},
+  '@phantomcore/core-forger': {},
+  '@phantomcore/core-json-rpc': {}
 }
 ```
 
