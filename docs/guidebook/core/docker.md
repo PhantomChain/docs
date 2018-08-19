@@ -4,7 +4,6 @@ title: "Docker"
 
 # Docker
 
-
 [[toc]]
 
 Required prerequisites to be installed: *Docker Engine, Docker Compose*

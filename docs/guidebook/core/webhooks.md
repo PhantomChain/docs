@@ -6,6 +6,10 @@ title: "Webhooks"
 
 [[toc]]
 
+## Introduction
+
+With the release of Phantom Core 2.0 a new feature was introduced, called [Webhooks](https://en.wikipedia.org/wiki/Webhook) which allows you to create more flexible and automated systems while also reducing traffic/load on your server.
+
 ## Authorization
 
 Before we start working on the implementation of a webhook handler we will take a look at handling authorization.
