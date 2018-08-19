@@ -8,16 +8,16 @@ title: "Development"
 
 ## Introduction
 
-Getting started with the development of ARK Core is much easier compared to the initial release known as `ark-node`. Everything from the development to the publication of the core is managed by [Lerna](https://github.com/lerna/lerna).
+Getting started with the development of PHANTOM Core is much easier compared to the initial release known as `phantom-node`. Everything from the development to the publication of the core is managed by [Lerna](https://github.com/lerna/lerna).
 
 ## Getting started with Lerna
 
-Before you can get started with working on ARK Core you need to setup lerna as previously mentioned.
+Before you can get started with working on PHANTOM Core you need to setup lerna as previously mentioned.
 
 ```bash
 yarn global add lerna
-git clone https://github.com/ArkEcosystem/ark-core
-cd ark-core
+git clone https://github.com/PhantomCore/core
+cd core
 lerna bootstrap
 ```
 
@@ -25,15 +25,15 @@ Just follow those steps and you are ready to get started. Happy Hacking!
 
 ## Database
 
-ARK Core stores all the blockchain data in a database. You could read more about it, in the [database section](https://docs.ark.io/core/database.html#introduction).
+PHANTOM Core stores all the blockchain data in a database. You could read more about it, in the [database section](https://docs.phantom.org/core/database.html#introduction).
 
-For development, you could use our ready-to-use [Docker Compose](https://docs.docker.com/compose/) configurations, following the instructions at [Docker section](https://docs.ark.io/core/docker.html).
+For development, you could use our ready-to-use [Docker Compose](https://docs.docker.com/compose/) configurations, following the instructions at [Docker section](https://docs.phantom.org/core/docker.html).
 
 ## Starting a node
 
 If you want to start a node which consists of a relay and forger you can use any of the following commands (inside `packages/core`).
 
-- `yarn start` => `~/.ark`
+- `yarn start` => `~/.phantom`
 - `yarn start:mainnet` => `packages/core/lib/config/networks/mainnet`
 - `yarn start:devnet` => `packages/core/lib/config/networks/devnet`
 - `yarn start:testnet` => `packages/core/lib/config/networks/testnet`
@@ -42,7 +42,7 @@ If you want to start a node which consists of a relay and forger you can use any
 
 If you want to start a relay you can use any of the following commands (inside `packages/core`).
 
-- `yarn relay` => `~/.ark`
+- `yarn relay` => `~/.phantom`
 - `yarn relay:mainnet` => `packages/core/lib/config/networks/mainnet`
 - `yarn relay:devnet` => `packages/core/lib/config/networks/devnet`
 - `yarn relay:testnet` => `packages/core/lib/config/networks/testnet`
@@ -51,7 +51,7 @@ If you want to start a relay you can use any of the following commands (inside `
 
 If you want to start a forger you can use any of the following commands (inside `packages/core`).
 
-- `yarn forge` => `~/.ark`
+- `yarn forge` => `~/.phantom`
 - `yarn forge:mainnet` => `packages/core/lib/config/networks/mainnet`
 - `yarn forge:devnet` => `packages/core/lib/config/networks/devnet`
 - `yarn forge:testnet` => `packages/core/lib/config/networks/testnet`
@@ -60,7 +60,7 @@ If you want to start a forger you can use any of the following commands (inside 
 
 If you want to create a snapshot you can use any of the following commands.
 
-- `yarn snapshot` => `~/.ark`
+- `yarn snapshot` => `~/.phantom`
 - `yarn snapshot:mainnet` => `packages/core/lib/config/networks/mainnet`
 - `yarn snapshot:devnet` => `packages/core/lib/config/networks/devnet`
 - `yarn snapshot:testnet` => `packages/core/lib/config/networks/testnet`
