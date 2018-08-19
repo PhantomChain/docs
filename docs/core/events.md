@@ -12,10 +12,10 @@ In order to create efficient integrations on your server, similar to how webhook
 
 ## Emitting Events
 
-Emitting events is pretty straightforward. Just resolve the `event-emitter` from `@arkecosystem/core-container` and call the `emit` method with a name and data to be emitted.
+Emitting events is pretty straightforward. Just resolve the `event-emitter` from `@phantomcore/core-container` and call the `emit` method with a name and data to be emitted.
 
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomcore/core-container')
 const emitter = container.resolvePlugin('event-emitter')
 
 emitter.emit('block.forged', {
@@ -27,15 +27,15 @@ emitter.emit('block.forged', {
 
 ## Listening to Events
 
-Listening to events is as straightforward as emitting them. Just resolve the `event-emitter` from `@arkecosystem/core-container` and call the `on` method with a name and then process the incoming data.
+Listening to events is as straightforward as emitting them. Just resolve the `event-emitter` from `@phantomcore/core-container` and call the `on` method with a name and then process the incoming data.
 
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomcore/core-container')
 const emitter = container.resolvePlugin('event-emitter')
 
 emitter.on('block.forged', block => {
   if (block.generatorPublicKey === 'fake-generator-public-key') {
-    console.log(`You just forged a block for ${block.amount} ARK`)
+    console.log(`You just forged a block for ${block.amount} PHANTOM`)
   }
 })
 ```
