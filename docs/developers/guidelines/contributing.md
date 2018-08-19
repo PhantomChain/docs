@@ -56,6 +56,6 @@ When your pull-request gets merged the issue will be automatically closed and a 
 
 ## Things we DO NOT accept as additions to any applications or packages
 
-The ARK Team distances itself from anything that is related to payouts by delegates or voter calculations.
+The PHANTOM dev Team distances itself from anything that is related to payouts by delegates or voter calculations.
 
 If the feature you would like to add contains anything that adds functionality to calculate or process payouts to voters in way, consider forking or creating an extension if you really need that functionality or think people will greatly benefit from it.
