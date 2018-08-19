@@ -6,9 +6,6 @@ title: "Webhooks"
 
 [[toc]]
 
-## Introduction
-
-With the release of ARK Core 2.0 a new feature was introduced, called [Webhooks](https://en.wikipedia.org/wiki/Webhook) which allows you to create more flexible and automated systems while also reducing traffic/load on your server.
 
 ## Authorization
 
@@ -69,4 +66,4 @@ Let's break down the steps we took here:
 
 ## Closing
 
-This is all you need to know about how to secure and handle webhooks. Head over to the [API docs](https://docs.ark.io/developers/api/webhooks/) for webhooks to get started.
+This is all you need to know about how to secure and handle webhooks. Head over to the [API docs](https://docs.phantom.org/developers/api/webhooks/) for webhooks to get started.
