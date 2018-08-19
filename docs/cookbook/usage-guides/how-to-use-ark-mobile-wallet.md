@@ -14,12 +14,6 @@ Now for iOS devices we are currently waiting for Apple approval.
 
 
 ## Starting the PHANTOM Wallet
-Once Cydia Impactor opens it should show your iOS device, if it doesn't make sure the device is plugged in and the screen is unlocked. Once it loads you will want to click **Device -> Install Package**.
-![Image of Impactor](./assets/how-to-use-the-mobile-wallet/impactor.png)
-
-Find and choose the Phantom Mobile Wallet .ipa file we downloaded earlier. Impactor will prompt you to type in your Apple ID and password so it may install the application. If you have **2 Factor Authentication enabled**, you are going to need to [login here](https://appleid.apple.com/#!&page=signin). Navigate to the Security section so you may create an app-specific password. Once the password has been generated, use it on Impactor to install the wallet on your device. Impactor will now install the application.
-
-## Starting the PHANTOM Wallet
 
 Once you load the application you will be met with this screen:
 
@@ -65,6 +59,7 @@ If you choose to import a wallet and follow the prompts, you will have two optio
 You are able to hit the triple bar in the top left corner, doing so will give you numerous options for you to select. 
 
 Choosing *'Wallets'*, will place you at the main Phantom Wallet balance screen. After you reach the main Phantom Wallet balance screen, you are able to add another wallet, touch the triple bar on the top left corner, or choose an existing wallet to view even closer.
+
 If you want to add another wallet, you would push the blue circle we used earlier to create or import a wallet.
 If you hit the triple bar on the top left corner, you get numerous options where you are able to view and select:
 - Main wallet balance screen
