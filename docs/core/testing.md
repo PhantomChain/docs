@@ -11,7 +11,7 @@ title: "Testing"
 Some use the special `core-container` package to different purposes, such as loading the configuration:
 
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomcore/core-container')
 const logger = container.resolvePlugin('logger')
 const config = container.resolvePlugin('config')
 
@@ -29,7 +29,7 @@ module.exports = class AwesomeManager {
 In those cases, creating a `setup.js` file with all the necessary environment to run the tests is a good practice:
 
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomcore/core-container')
 
 jest.setTimeout(60000)
 
