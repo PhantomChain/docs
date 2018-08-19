@@ -114,12 +114,12 @@ $ yarn test
 
 ## 7. Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@phantom.org. All security vulnerabilities will be promptly addressed.
 
 ## 8. Contributing
 
 * If you find any bugs, submit an [issue](../../issues) or open a [pull-request](../../pulls), helping us catch and fix them.
-* Engage with other users and developers on [ARK Slack](https://phantom.org/slack/).
+* Engage with other users and developers on [PHANTOM Slack](https://phantom.org/slack/).
 
 ## 9. Credits
 
