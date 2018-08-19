@@ -16,9 +16,9 @@ This User Guide is for the everyday, non-developer PHANTOM consumer.
 
 We first have to download the PhantomClient to get started. Start here (*if you already have the PhantomClient downloaded feel free to skip to the next section to get started on the topic you're interested in learning more about*) :
 
-[PhantomClient Download](https://github.com/ArkEcosystem/ark-desktop/releases)
+[PhantomClient Download](https://github.com/PhantomCore/desktop-wallet/releases)
 
-*or* feel free to type in the URL bar <https://ark.io/>, dropdown Wallets and select Desktop Wallet.
+*or* feel free to type in the URL bar <https://phantom.org./>, dropdown Wallets and select Desktop Wallet.
 
 ::: warning
 **Note**: The above link is the authoritative source for the latest PhantomClient. As a friendly reminder, don't ever click on links that are not sponsored by or provided by the Official PHANTOM Team
@@ -91,7 +91,7 @@ ___
 
 Your PHANTOM Wallet stores your ZINC for you. In order to interface with PHANTOM you need to add some to your wallet.
 
-1. First you will need to obtain some ZINC, which is available across many exchanges today and growing regularly. You can find a list of exchanges here: [https://ark.io/exchanges](https://ark.io/exchanges)
+1. First you will need to obtain some ZINC, which is available across many exchanges today and growing regularly. You can find a list of exchanges here: [https://phantom.org/exchanges](https://phantom.org/exchanges)
 
 2. Once you've obtained some ZINC you will be ready to send your ZINC to your PHANTOM Wallet.
 
@@ -151,13 +151,13 @@ Each delegate is unique and brings different skill sets to the PHANTOM Ecosystem
 
 ![Delegates-list](./assets/how-to-use-the-desktop-wallet/Delegates-list.png)
 
-5. For the sake of example we are selecting delegate "arkland". Input your passphrase on the next line and select "NEXT".
+5. For the sake of example we are selecting delegate "genesis_51". Input your passphrase on the next line and select "NEXT".
 
 ![Delegates-passphrase](./assets/how-to-use-the-desktop-wallet/Delegates-passphrase.png)
 
 6. In the next window you will be prompted to send ZINC in order to vote, this is a voting fee required that may change over time. When you're ready to vote for your selected delegate select "SEND NOW".
 
-7. You will now see within the "Vote" tab your delegates rank (within top 51, for this example arkland is # 19), your delegates name, their wallet address, their approval and productivity. You will also see an "UNVOTE" option which will be reviewed in the next section. You are now voting/staking your ZINC for your selected delegate.
+7. You will now see within the "Vote" tab your delegates rank (within top 51, for this example genesis_51 is # 19), your delegates name, their wallet address, their approval and productivity. You will also see an "UNVOTE" option which will be reviewed in the next section. You are now voting/staking your ZINC for your selected delegate.
 
 ![Vote-show](./assets/how-to-use-the-desktop-wallet/Vote-show.png)
 
@@ -286,7 +286,7 @@ You may want to remove a wallet from the PhantomClient if you have multiple wall
 
 ![Remove-button](./assets/how-to-use-the-desktop-wallet/Remove-button.png)
 
-3. A box will appear titled "Remove Account (your-ark-address)". Select "REMOVE ACCOUNT".
+3. A box will appear titled "Remove Account (your-phantom-address)". Select "REMOVE ACCOUNT".
 
 4. You wallet is now removed from that PhantomClient.
 
