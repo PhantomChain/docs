@@ -8,7 +8,7 @@ title: "Roadmap & Updates"
 
 ## What are you guys working on now, whats the next update?
 
-You can check our roadmap for current updates and ongoing projects: https://ark.io/roadmap/
+You can check our roadmap for current updates and ongoing projects: https://phantom.org/roadmap/
 
 ## When will the next “big thing” be released, why are there no dates?
 
