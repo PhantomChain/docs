@@ -178,7 +178,7 @@ ssh phantomk@ipaddress
 
 
 ### Run PHANTOM Commander
-After reconnecting to the server go ahead and run ARK Commander
+After reconnecting to the server go ahead and run PHANTOM Commander
 ```
 ./PHANTOMcommander.sh
 ```
