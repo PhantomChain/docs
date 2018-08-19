@@ -13,7 +13,7 @@ In order to communicate with the P2P API you will need to provide the nethash of
 | Name    | Type   | Description                                               | Required           |
 |---------|:------:|-----------------------------------------------------------|:------------------:|
 | nethash | string | The nethhash of the network you are making the request on | :white_check_mark: |
-| version | string | The version of ArkEcosystem/ark-node.                     | :white_check_mark: |
+| version | string | The version of PhantomCore/phantom-node.                  | :white_check_mark: |
 | port    | int    | The port used for communication.                          | :white_check_mark: |
 
 ## Mainnet
