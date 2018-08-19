@@ -2,9 +2,7 @@
 title: "Mobile Wallet"
 ---
 
-
 # Phantom Mobile Wallet
-
 
 > A Wallet for Everyone
 
@@ -90,6 +88,7 @@ If you discover a security vulnerability within this application, please send an
 
 - If you find any bugs, submit an [issue](https://github.com/Phantomchain/mobile-wallet/issues) or open [pull-request](https://github.com/Phantomchain/mobile-wallet/pulls), helping us catch and fix them.
 - Engage with other users and developers on the [Phantom Slack](https://phantom.org/slack/).
+- [Contribution bounties](https://docs.phantom.org/guidebook/contribution-guidelines/contributing.html).
 - [Help translate](https://github.com/Phantomchain/mobile-wallet/blob/master/TRANSLATING.md).
 
 ## Credits
