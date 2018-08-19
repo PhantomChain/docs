@@ -35,7 +35,7 @@ The signed transfer of value from one account to another
 A Transport happens to data as it flows through the network from peer to peer.
 
 #### What is a "Dark Address"?
-A Dark address is on the Development Network of Ark and holds the DARK currency.
+A Dark address is on the Development Network of PHANTOM and holds the DARK currency.
 
 #### What is a "Reward"?
 A reward is attributed to the block creator for its validation efforts.
