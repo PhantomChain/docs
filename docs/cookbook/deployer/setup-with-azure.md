@@ -45,7 +45,15 @@ Currently, the VM produced is a Standard_A1 size VM. This is a very low-cost res
 
 Click ‘Agree’, and ‘Purchase’ to begin deployment. Should take 5–10 minutes.
 
+<<<<<<< HEAD
 ## 2. Connecting to VM + PHANTOM Deployer
+=======
+<<<<<<< HEAD:docs/cookbook/deployer/setup-with-azure.md
+## 2. Connecting to VM + Ark Deployer
+=======
+## 2. Connecting to VM + PHANTOM Deployer
+>>>>>>> Update setup-with-azure.md:docs/deployer/setup-with-azure.md
+>>>>>>> Update setup-with-azure.md
 
 You are welcome to explore your new VM’s Overview, etc, by clicking on ‘Resource Groups’ and finding your new group, and the VM inside. There are lots of configuration items here.
 
