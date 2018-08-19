@@ -14,9 +14,9 @@ This User Guide is for the everyday, non-developer PHANTOM consumer.
 
 ### First things first...
 
-We first have to download the PhantomClient to get started:
+To download the application, you can visit the link below and select the appropriate release for your computer's platform. PHANTOM Desktop Wallet is available for Windows, Mac and Linux.
 
-[PhantomClient Download](https://github.com/PhantomChain/desktop-wallet/releases)
+[PHANTOM Desktop Wallet releases](https://github.com/PhantomChain/ark-desktop/releases)
 
 ::: warning
 **Note**: The above link is the authoritative source for the latest PhantomClient. As a friendly reminder, don't ever click on links that are not sponsored by or provided by the Official PHANTOM Team
