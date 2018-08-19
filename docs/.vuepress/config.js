@@ -19,7 +19,7 @@ const config = {
   ],
   themeConfig: {
     logo: "https://alpha.phantom.org/wp-content/uploads/2018/08/logo.png",
-    repo: "PhantomChain/docs",
+    repo: "Phantomchain/docs",
     repoLabel: "Contribute!",
     editLinks: true,
     editLinkText: "Help us improve this page!",
