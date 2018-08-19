@@ -11,7 +11,7 @@ title: "Voting & Delegates"
 
 The best places to find delegate information are:
 
-- [Reddit](https://www.reddit.com/r/PhantomCore/)
+- [Reddit](https://www.reddit.com/r/PhantomChain/)
 
 ## Is voting a risk for my wallet?
 
@@ -35,10 +35,9 @@ No. The vote weight will automatically adapt to your wallet balance for every de
 
 No. You need to send the ZINC to your personal PHANTOM address and vote via the official PHANTOM desktop wallet.
 
-## I just put all my ARK on a Ledger Nano S, do I need to re-vote?
+## I just put all my PHANTOM on a Ledger Nano S, do I need to re-vote?
 
 Yes. New address means new vote.
->>>>>>> docs: standardarized nomenclature (#86)
 
 ## Do I need to keep my wallet open after I vote?
 
