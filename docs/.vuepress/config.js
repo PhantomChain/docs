@@ -1,15 +1,15 @@
 module.exports = {
-    title: 'Ark Ecosystem',
-    description: 'All-in-One Blockchain Solutions. Point. Click. Blockchain.',
+    title: 'PHANTOM',
+    description: 'Scalable, Interoperable, Private Blockchain.',
     head: [
         ['link', {
             rel: 'icon',
-            href: 'https://ark.io/images/media-kit/red-corners.png'
+            href: 'https://alpha.phantom.org/wp-content/uploads/2018/08/logo.png'
         }]
     ],
     themeConfig: {
-        logo: 'https://ark.io/images/media-kit/red-no-text.png',
-        repo: 'ArkEcosystem/docs',
+        logo: 'https://alpha.phantom.org/wp-content/uploads/2018/08/logo.png',
+        repo: 'PhantomCore/docs',
         repoLabel: 'Contribute!',
         editLinks: true,
         editLinkText: 'Help us improve this page!',
