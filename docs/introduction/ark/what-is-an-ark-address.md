@@ -1,8 +1,8 @@
 ---
-title: "What Is An Ark Address?"
+title: "What Is An PHANTOM Address?"
 ---
 
-# What Is An Ark Address?
+# What Is An PHANTOM Address?
 
 [[toc]]
 
@@ -16,7 +16,7 @@ A blockchain account is defined by its address that is derived from a public key
 
 It is impossible to compute the private key from the public key. Because of this, public keys can be freely shared, allowing users an easy and convenient method for encrypting content and verifying digital signatures, and private keys can be kept secret, ensuring only the owners of the private keys can decrypt content and create digital signatures [1].
 
-Ark uses the [SECP256k1](https://en.bitcoin.it/wiki/Secp256k1) curve from the [elliptic curve digital signature algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) (ECDSA).
+PHANTOM uses the [SECP256k1](https://en.bitcoin.it/wiki/Secp256k1) curve from the [elliptic curve digital signature algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) (ECDSA).
 
 ECDSA generates the private key and the public key pair from a unique 32-bytes-size seed. As the seeds are not very human readable, we have the option to generate the seed from something more convenient : a passphrase.
 
@@ -26,27 +26,33 @@ The passphrase is a written in simple readable text. It often consists of twelve
 
 ![Diagram 001](./assets/what-is-an-ark-address/arkDiagram04-001.png)
 
-## Ark address
+## PHANTOM address
+>>>>>>> Update what-is-an-ark-address.md:docs/basics/what-is-an-ark-address.md
 
 |passphrase |`simple secret`                                                     |
 |-----------|--------------------------------------------------------------------|
 |seed       |`b6af972cfcff450addadfecccc1d222de0f28c92c349a6bcbba4d4267dd3199c`  |
 |public key |`036f9f2b56926a8c28c3bcef02811b6b3338c4d67b06eb7a9e90bda0fb3eacedee`|
 |private key|`9b449f2ac4525b0116c7a78ce52387aab2ad6d928749cd26e60f2588efc5c01d`  |
-|address    |`AJZkkwhCjDG5AS9gZcNfKzTa3s1qwvD44r`                                |
+|address    |`PJZkkwhCjDG5AS9gZcNfKzTa3s1qwvD44r`                                |
 
 A blockchain is a distributed database where records are stored according to a consensus mechanism (secure protocol) executed by a network of nodes (Peer-To-Peer network). The unitary element used in this process is an account to account transaction containing information such as `senderId`, `recipientId`, `amount` and `fee`. A sender and recipient account needs to be identifiable. This is enabled by using an address and information related to token balance and transaction history are linked to it.
 
-The Ark address is like a bank account where only the owner of the private key can validate and broadcast transactions. It is very important to keep the passphrase safe.
+The PHANTOM address is like a bank account where only the owner of the private key can validate and broadcast transactions. It is very important to keep the passphrase safe.
 
-**From a public key to an Ark address**
+**From a public key to an PHANTOM address**
 
 ![Diagram 002](./assets/what-is-an-ark-address/arkDiagram04-002.png)
 
 A modifier is a byte used to customize the address. It is useful to differentiate networks :
+<<<<<<< HEAD:docs/introduction/ark/what-is-an-ark-address.md
  + On Ark mainnet modifier = `0x17` so Ark address starts with `A`
  + On Ark devnet modifier = `0x1e` so DArk address starts with `D`
  + On KAPU mainnet modifier = `0x2d` so KAPU address starts with `K`
+=======
+ + On PHANTOM mainnet modifier = `0x56` so PHANTOM address starts with `P`
+ + On PHANTOM devnet modifier = `0x1e` so DARK address starts with `D` (We utilize same format as DARK in ARK)
+>>>>>>> Update what-is-an-ark-address.md:docs/basics/what-is-an-ark-address.md
 
 Here is the table giving the address start char according to hexadecimal modifier value :
 
