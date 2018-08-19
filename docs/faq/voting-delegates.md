@@ -13,13 +13,12 @@ title: "Voting & Delegates"
 
 The best places to find delegate information are:
 
-https://www.reddit.com/r/ArkDelegates/
-https://forum.ark.io/category/5/delegates
-https://arkdelegates.io/
+https://www.reddit.com/r/PhantomCore/
+
 
 ## Is voting a risk for my wallet?
 
-No. All you can “lose” is the 1 ARK voting fee. All other ARK tokens will stay in your wallet and you have full control over them. Please do not send tokens to any of the delegates! That will not count as a vote and you might lose your tokens.
+No. All you can “lose” is the 3 ZINC voting fee. All other ZINC coins will stay in your wallet and you have full control over them. Please do not send tokens to any of the delegates! That will not count as a vote and you might lose your tokens.
 
 ## How can I change my vote?
 
@@ -28,19 +27,16 @@ Follow our unvoting guide.
 
 ## Can I vote for multiple delegates?
 
-You can only vote for one delegate from one address. If you want to support multiple delegates you will have to create additional addresses and split up your ARK into multiple addresses.
+You can only vote for one delegate from one address. If you want to support multiple delegates you will have to create additional addresses and split up your ZINC into multiple addresses.
 
-## Do i have to re-vote when I receive additional ARK tokens in my wallet?
+## Do i have to re-vote when I receive additional ZINC coins in my wallet?
 
 No. The vote weight will automatically adapt to your wallet balance for every deposit and withdrawal you make from that address.
 
 ## Can I vote from an exchange?
 
-No. You need to send the ARK to your personal ARK address and vote via the official ARK desktop wallet.
+No. You need to send the ZINC to your personal PHANTOM address and vote via the official PHANTOM desktop wallet.
 
-## I just put all my ARK on a Ledger Nano S, do I need to re-vote?
-
-Yes. New address means new vote.
 
 ## Do I need to keep my wallet open after I vote?
 
