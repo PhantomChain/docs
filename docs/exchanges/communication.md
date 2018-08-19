@@ -8,7 +8,7 @@ title: "Communication"
 
 ## Networks
 
-Supported networks are `mainnet` and `devnet` all calls should start with the network you want to address, for instance, `/mainnet/account/AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv` we call it `{network}` in the API description.
+Supported networks are `mainnet` and `devnet` all calls should start with the network you want to address, for instance, `/mainnet/account/PUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv` we call it `{network}` in the API description.
 
 ## Accounts
 
