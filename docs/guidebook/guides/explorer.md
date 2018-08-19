@@ -125,6 +125,6 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](https://github.com/Phantomchain/explorer/blob/master/LICENSE) © [PHANTOM](https://phantom.org)
-
 [MIT](https://github.com/ArkEcosystem/explorer/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)
+
+[MIT](https://github.com/Phantomchain/explorer/blob/master/LICENSE) © [PHANTOM](https://phantom.org)
