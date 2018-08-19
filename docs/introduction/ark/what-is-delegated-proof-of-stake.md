@@ -11,6 +11,7 @@ A decentralized blockchain network needs a consensus algorithm to replace the ac
 DPoS is the way PHANTOM works behind the scenes to form a trustless public ledger of transactions on the network and to replace the central authority. Utilising this trustless system gives the network a way to agree which rules and methods of verification should be applied to reach a universal consensus of the ledger.
 
 ### DPoS consensus
+
 PHANTOM’s DPoS consensus algorithm is a decentralised governance, utilising 51 main nodes to run the network and validate all transactions. Every 3 seconds, all transactions are placed into a block and added to the blockchain if verified by these nodes. Each node verifies a block every 3 seconds. Each nodes position changes randomly each round, around every 4.5 minutes.
 
 The network rewards every verified block with 2 newly created ZINC-tokens. An efficient Delegate can receive about 1,270 new ZINC-Coins every day. This is a way to incentivise node runners to secure the network while introducing a small inflation rate to supply adoption. In this way, it is similar to bitcoin miners and the bitcoin network.
