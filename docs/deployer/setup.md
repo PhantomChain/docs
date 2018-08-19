@@ -1,13 +1,13 @@
 ---
-title: "ARK Bridgechain Setup Guide"
+title: "PHANTOM Bridgechain Setup Guide"
 ---
 
-# ARK Bridgechain Setup Guide
+# PHANTOM Bridgechain Setup Guide
 
 [[toc]]
 
 ::: tip
-**This guide is to help you get setup with your own ARK bridgechain. It will focus on launching your own ARK clone bridgechain, auto-forging setup, adding your own delegate nodes and making it accessible via the ARK wallet.**
+**This guide is to help you get setup with your own PHANTOM bridgechain. It will focus on launching your own PHANTOM clone bridgechain, auto-forging setup, adding your own delegate nodes and making it accessible via the PHANTOM wallet.**
 :::
 
 ## Setting up your Bridgechain Node
@@ -18,11 +18,11 @@ The nodes are a core part of the network. They are what forge the blocks, valida
 
 ![Image 1](./assets/setup/1.png)
 
-::: tip Download ARK Deployer
+::: tip Download PHANTOM Deployer
 ```bash
 cd ~
-git clone https://github.com/ArkEcosystem/ark-deployer.git
-cd ark-deployer
+git clone https://github.com/PhantomCore/phantom-deployer.git
+cd phantom-deployer
 ```
 :::
 
@@ -37,13 +37,13 @@ sudo apt-get update && sudo apt-get install -y jq
 
 ::: tip Install & Setup Your Bridgechain
 ```bash
-./bridgechain.sh install-node --name MyTest --database ark_mytest --token MYTEST --symbol MT --node-ip 51.141.3.209 --explorer-ip 51.141.3.209 --autoinstall-deps
+./bridgechain.sh install-node --name MyTest --database phantom_mytest --token MYTEST --symbol MT --node-ip 51.141.3.209 --explorer-ip 51.141.3.209 --autoinstall-deps
 ```
 
 **Note: Use your Public IP here**
 :::
 
-There are many more options available when installing the node, which can be found [here](https://github.com/ArkEcosystem/ark-deployer#optional-parameters). You can also use a JSON config file, which you can learn about [here](https://github.com/ArkEcosystem/ark-deployer#json-config). Any changes to fees or the epoch time of the network currently prevent the Desktop Wallet from working with your chain.
+There are many more options available when installing the node, which can be found [here](https://github.com/PhantomCore/phantom-deployer#optional-parameters). You can also use a JSON config file, which you can learn about [here](https://github.com/PhantomCore/phantom-deployer#json-config). Any changes to fees or the epoch time of the network currently prevent the Desktop Wallet from working with your chain.
 
 ![Image 2](./assets/setup/2.png)
 
@@ -85,7 +85,7 @@ You will need to choose your Private IP for the explorer. You can run `ipconfig`
 
 ::: tip Start Explorer (in the foreground)
 ```bash
-cd ~/ark-explorer
+cd ~/explorer
 npm run bridgechain
 ```
 :::
@@ -179,12 +179,12 @@ You will also see your Delegate showing in the Explorer Delegate Monitor.
 
 ##### Setup a forging Node
 
-You will need a new machine ready for us to setup. To make it easier, we will use ARKCommander to setup all dependencies then overwrite with our bridgechain configuration.
+You will need a new machine ready for us to setup. To make it easier, we will use PHANTOMCommander to setup all dependencies then overwrite with our bridgechain configuration.
 
-::: tip Download and run ARKCommander
+::: tip Download and run PhantomCommander
 ```bash
-wget http://ark.io/ARKcommander.sh
-bash ARKcommander.sh
+wget http://phantom.org/PHANTOMcommander.sh
+bash PHANTOMcommander.sh
 ```
 
 **Enter your user password to gain root privileges if/when asked.**
@@ -198,31 +198,31 @@ Your system will then update ready for a node. This can take a while but if you 
 
 Once finished, reboot your machine with `sudo reboot`
 
-::: tip SSH back into your delegate machine and run ARKcommander
+::: tip SSH back into your delegate machine and run PHANTOMcommander
 ```bash
-bash ARKcommander.sh
+bash PHANTOMcommander.sh
 ```
 :::
 
 ![Image 26](./assets/setup/26.png)
 
-Once started, press “1” and Enter to install Ark Node. This ensures we have all the dependencies we need for the node installed. Once finished, input “Y” to setup logrotate and press Enter to continue.
+Once started, press “1” and Enter to install PHANTOM Node. This ensures we have all the dependencies we need for the node installed. Once finished, input “Y” to setup logrotate and press Enter to continue.
 
 ![Image 27](./assets/setup/27.png)
 
-Input an empty secret if asked, and “Y” then Enter to apply config. Press Enter again to go back to the main menu. Then input “0” and press Enter a final time to Exit the ARKCommander.
+Input an empty secret if asked, and “Y” then Enter to apply config. Press Enter again to go back to the main menu. Then input “0” and press Enter a final time to Exit the PHANTOMcommander.
 
-There will now be the MainNet Node setup in ~/ark-node.
+There will now be the MainNet Node setup in ~/phantom-node.
 
-::: tip Remove the current ark-node
+::: tip Remove the current phantom-node
 ```bash
-rm -rf ~/ark-node/
+rm -rf ~/phantom-node/
 ```
 :::
 
 ::: tip Copy Node files over SSH (this can take a while)
 ```bash
-scp -r bridgechain@51.141.3.209:~/ark-bridgechain ~/ark-node
+scp -r bridgechain@51.141.3.209:~/phantom-bridgechain ~/phantom-node
 ```
 
 **Note: You will have to change the username and IP to the auto-forging node you’re copying from. You will also have to change the path you’re copying from if you chose to install the bridgechain somewhere different.**
@@ -230,17 +230,17 @@ scp -r bridgechain@51.141.3.209:~/ark-bridgechain ~/ark-node
 
 ::: tip Navigate to the Node folder
 ```bash
-cd ~/ark-node
+cd ~/phantom-node
 ```
 :::
 
 ::: tip Update the config file in an editor of your choice
 ```bash
-vi ~/ark-node/config.MyTest.json
+vi ~/phantom-node/config.MyTest.json
 ```
 
 - Change `port` to *4101*
-- Change `db.database` to *ark_bridgechain*
+- Change `db.database` to *phantom_bridgechain*
 - Check the `peers.list` already has the IP for your Seed node (see below image)
 - Change `forging.secret` to `["YOUR PASSPHRASE"]`
 :::
@@ -264,7 +264,7 @@ npm install
 
 ::: tip Create Postgres Database for our Bridgechain to use
 ```bash
-createdb ark_bridgechain
+createdb phantom_bridgechain
 ```
 :::
 
@@ -321,9 +321,9 @@ To conclude, we have just set up our first forging delegate node. This means we 
 
 ##### Your Next Steps
 1. Move all pre-mined tokens into a new wallet of which only you know the passphrase for (or use a Ledger hardware wallet inside the Desktop Wallet).
-2. Commit the new config and genesis files, and put them in a forked GitHub Repository. You can omit the new files in the `~/ark-bridgechain/tasks` folder.
+2. Commit the new config and genesis files, and put them in a forked GitHub Repository. You can omit the new files in the `~/phantom-bridgechain/tasks` folder.
 3. Add more relay nodes to the network just as we just have (skipping the delegate step).
-4. Consolidate all relay node IP & ports and add them to the `~/ark-bridgechain/config.MyTest.json` file (making sure to commit and update on all nodes). This means the network will start to grow and will build over time, meaning they will stay synced up.
+4. Consolidate all relay node IP & ports and add them to the `~/phantom-bridgechain/config.MyTest.json` file (making sure to commit and update on all nodes). This means the network will start to grow and will build over time, meaning they will stay synced up.
 5. Move all delegate forging nodes to their own machines.
 
 ## JSON Config File
@@ -336,11 +336,11 @@ We have also provided a Vagrantfile which allows you to deploy your own Bridgech
 
 ** Note: This requires Vagrant version 2+ to be installed from [here](https://www.vagrantup.com/downloads.html).**
 
-::: tip Download ARK Deployer
+::: tip Download Phantom Deployer
 ```bash
 cd ~
-git clone https://github.com/ArkEcosystem/ark-deployer.git
-cd ark-deployer
+git clone https://github.com/PhantomCore/phantom-deployer.git
+cd phantom-deployer
 ```
 :::
 
@@ -357,21 +357,18 @@ vagrant destroy
 :::
 
 ##### Tweaking Bridgechain Options (Advanced)
-Open up `~/ark-deployer/vagrant/config.json` and you will see all the possible options that you can change. These are all used when deploying the bridgechain on Vagrant and can be customised. Refer to the [node options](https://github.com/ArkEcosystem/ark-deployer#optional-parameters) and [explorer options](https://github.com/ArkEcosystem/ark-deployer#optional-parameters-1) before continuing to get an idea of what each do. Once you are happy with your settings, go ahead and start the Vagrant environment as above.
+Open up `~/phantom-deployer/vagrant/config.json` and you will see all the possible options that you can change. These are all used when deploying the bridgechain on Vagrant and can be customised. Refer to the [node options](https://github.com/PhantomCore/phantom-deployer#optional-parameters) and [explorer options](https://github.com/PhantomCore/phantom-deployer#optional-parameters-1) before continuing to get an idea of what each do. Once you are happy with your settings, go ahead and start the Vagrant environment as above.
 
-## Ark’s Next Steps
-
-We will be updating deployer to work with Ark Core v2 once it is in the testing phase. Aside from other improvements to ark-deployer (which will also be updated in this guide if needs be), we will also be building a Push Button deployment interface which will give a friendly user experience, and do all the things discussed in this guide for you, just at the click of a few buttons.
 
 ## FAQ
 
 1. **Why do I need to “Force” my Network in the Desktop Wallet?**
 When your bridgechain node is auto-forging, it uses loopback addresses (127.0.0.x) to connect to itself and act as a forging node. If the Force option isn’t enabled, the Desktop Wallet will try to connect to the loopback addresses as they show as peers when querying the /api/peers endpoint. Forcing a connection means you connect directly with your bridgechain seed node, instead of having to launch a range of relay nodes to serve as peers.
 2. **I lost my Genesis Passphrase. Where can I find it?**
-Take a look in ~/ark-bridgechain/tasks/demo/genesisPassphrase.MyTest.json. You will find it in there (unless you removed it).
+Take a look in ~/phantom-bridgechain/tasks/demo/genesisPassphrase.MyTest.json. You will find it in there (unless you removed it).
 3. **Will Deployer work on XYZ Operating System?**
-We recommend only running the Ark Node on Ubuntu 16.04. It may be possible on other Operating systems, but it is more specifically tested/used on this Operating System.
+We recommend only running the Phantom Node on Ubuntu 16.04. It may be possible on other Operating systems, but it is more specifically tested/used on this Operating System.
 4. **Can I change the fees for my bridgechain?**
-Yes you can which can be found under node options, however this causes issues with the Desktop Wallet (and anything that uses the ark-js package).
+Yes you can which can be found under node options, however this causes issues with the Desktop Wallet (and anything that uses the phantom-js package).
 5. **What is a Seed Node?**
 A Seed Node is used as a master node. Something that is used as a basis for Nodes to connect with, to then become “attached” to the Network.
