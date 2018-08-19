@@ -1,18 +1,18 @@
 ---
-title: "Migrating your Tools from Ark Node to Ark Core"
+title: "Migrating your Tools from PHANTOM Node to PHANTOM Core"
 ---
 
-# Migrating your Tools from Ark Node to Ark Core
+# Migrating your Tools from PHANTOM Node to PHANTOM Core
 
 ## Introduction
 
-This article will guide you through the steps required to migrate your tools and applications from Ark Node to Ark Core so you can be ready in time for the hard-fork in a few months without having to do last minute migrations.
+This article will guide you through the steps required to migrate your tools and applications from PHANTOM Node to PHANTOM Core so you can be ready in time for the hard-fork in a few months without having to do last minute migrations.
 
 ## Posting Transactions
 
-In Ark Node you would post your signed transactions to the P2P API at http://127.0.0.1:4002/peer/transactions and receive a list of transaction IDs.
+In PHANTOM Node you would you post your signed transactions to the P2P API at http://127.0.0.1:4002/peer/transactions and receive a list of transaction IDs.
 
-This endpoint is still available in Ark Core. However, you are now advised to use http://127.0.0.1:4003/api/v2/transactions to post your transactions. It behaves the same way as the P2P API but has no risk of being deprecated in the near future as it is integrated into the new Public API.
+This endpoint is still available in PHANTOM Core but you are now advised to use http://127.0.0.1:4003/api/v2/transactions to post your transactions. It behaves the same way as the P2P API but has no risk of being deprecated in the near future as it is integrated into the new Public API.
 
 **This new endpoint will return you 3 lists of transaction IDs:**
 - Transactions that have been accepted to be processed.
@@ -26,7 +26,7 @@ You can circumvent the transaction throttling that results in excessive transact
 
 ## Paginating the 2.0 API
 
-Ark Core currently supports both the 1.0 API from Ark Node which will be removed in the near future and the new 2.0 API which provides proper pagination of data and indicates how much data is available.
+PHANTOM Core currently supports both the 1.0 API from PHANTOM Node which will be removed in the near future and the new 2.0 API which provides proper pagination of data and indicates how much data is available.
 
 If you interact with the 2.0 API and wish to paginate data you can simply append `?page=4&limit=25` to the URL. The response will contain a `meta` field that will contain the total count of records available, where you currently are and URLs to the next, previous, first and last page of items available.
 
