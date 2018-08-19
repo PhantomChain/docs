@@ -4,6 +4,7 @@ title: "Understanding Transactions And Block Propagation"
 
 # Understanding Transactions And Block Propagation
 
+
 [[toc]]
 
 To understand this concept better lets go over a brief explanation of transaction and blocks inside a general blockchain transaction and afterwards we will go over exactly how these function on the PHANTOM network.
