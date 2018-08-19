@@ -358,7 +358,6 @@ vagrant destroy
 ##### Tweaking Bridgechain Options (Advanced)
 Open up `~/phantom-deployer/vagrant/config.json` and you will see all the possible options that you can change. These are all used when deploying the bridgechain on Vagrant and can be customised. Refer to the [node options](https://github.com/PhantomCore/phantom-deployer#optional-parameters) and [explorer options](https://github.com/PhantomCore/phantom-deployer#optional-parameters-1) before continuing to get an idea of what each do. Once you are happy with your settings, go ahead and start the Vagrant environment as above.
 
-
 ## FAQ
 
 1. **Why do I need to “Force” my Network in the Desktop Wallet?**
