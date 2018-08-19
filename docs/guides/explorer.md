@@ -2,26 +2,19 @@
 title: "Explorer"
 ---
 
-# Explorer
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/ArkEcosystem/ark-explorer/master/ARKExplorer.png" />
-</p>
-
-[![Build Status](https://img.shields.io/travis/ArkEcosystem/ark-explorer/master.svg?style=flat)](https://travis-ci.org/ArkEcosystem/ark-explorer)
-
-# ARK Explorer 3.0
+# PHANTOM Explorer 
 
 > Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
 
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
+You can access it at [https://explorer.phantom.org](https://explorer.phantom.org).
 
 ## Build Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ArkEcosystem/ark-explorer
+git clone https://github.com/PhantomCore/explorer
 ```
 
 ### 2. Install Dependencies
@@ -58,7 +51,6 @@ If you are going to host your explorer instance on GitHub Pages you will need to
 yarn build --base https://username.github.io/repository/
 ```
 
-A running instance of the explorer on GitHub Pages can be found at https://arkecosystem.github.io/.
 
 > This step is not required if you are hosting the explorer on your "root" repository which is usually your username https://username.github.io/.
 
@@ -127,9 +119,7 @@ If you discover a security vulnerability within this package, please send an e-m
 ## 8. Contributing
 
 * If you find any bugs, submit an [issue](../../issues) or open a [pull-request](../../pulls), helping us catch and fix them.
-* Engage with other users and developers on [ARK Slack](https://ark.io/slack/).
-* Join our [gitter](https://gitter.im/ark-developers/Lobby).
-* [Contribute bounties](https://github.com/ArkEcosystem/ARK-Bounty-Program).
+* Engage with other users and developers on [ARK Slack](https://phantom.org/slack/).
 
 ## 9. Credits
 
@@ -139,5 +129,7 @@ If you discover a security vulnerability within this package, please send an e-m
 - [All Contributors](../../contributors)
 
 ## 10. License
+
+[MIT](LICENSE) © [PHANTOM](https://phantom.org)
 
 [MIT](LICENSE) © [ArkEcosystem](https://ark.io)
