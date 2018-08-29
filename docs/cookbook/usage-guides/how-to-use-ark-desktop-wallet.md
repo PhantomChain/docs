@@ -14,11 +14,9 @@ This User Guide is for the everyday, non-developer PHANTOM consumer.
 
 ### First things first...
 
-We first have to download the PhantomClient to get started. Start here (*if you already have the PhantomClient downloaded feel free to skip to the next section to get started on the topic you're interested in learning more about*) :
+We first have to download the PhantomClient to get started:
 
 [PhantomClient Download](https://github.com/PhantomCore/desktop-wallet/releases)
-
-*or* feel free to type in the URL bar <https://phantom.org./>, dropdown Wallets and select Desktop Wallet.
 
 ::: warning
 **Note**: The above link is the authoritative source for the latest PhantomClient. As a friendly reminder, don't ever click on links that are not sponsored by or provided by the Official PHANTOM Team
@@ -27,29 +25,6 @@ We first have to download the PhantomClient to get started. Start here (*if you 
 When you arrive on this page you will see multiple options for the PhantomClient. Select the one that reflects your operating system:
 
 ![Client-Page](./assets/how-to-use-the-desktop-wallet/Client-Page.png)
-
-* **[Creating your PHANTOM Wallet](#creatingphantomwallet)**
-    * [Identifying your PHANTOM Wallet Address](#idwalletaddress)
-* **[Sending ZINC to your PHANTOM Wallet](#sendingzincto)** (*from an exchange*)
-* **[Sending ZINC from your PHANTOM Wallet](#sendingzincfrom)**
-* **[Voting with your PHANTOM Wallet](#voting)**
-* **[Unvoting a delegate](#unvote)**
-* **Various functions & features within the PhantomClient/Desktop Application**
-    * [Appearance](#appear)
-    * [Renaming your PHANTOM Wallet](#rename)
-    * [Adding a second passphrase](#2ndpass)
-    * [Remove wallet from PhantomClient](#removewallet)
-    * [Import Account](#import)
-    * [Export Account](#export)
-    * [Timestamp a File](#timestamp)
-    * Different settings within PhantomClient/Desktop Application
-        * [Currency](#currency)
-            * Price
-        * [Language](#lang)
-    * [Add Contacts](#contacts)
-* **[Frequently Asked Questions](#FAQ)**
-* **[Appendix/Useful Links](#appen)**
-
 
 ___
 

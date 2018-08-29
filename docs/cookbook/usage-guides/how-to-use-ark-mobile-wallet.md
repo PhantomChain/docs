@@ -4,8 +4,6 @@ title: "How To Use The Mobile Wallet?"
 
 # How To Use The Mobile Wallet?
 
-[[toc]]
-
 ## The Preparation
 
 The PHANTOM Mobile Wallet is a great way to access your ZINC coins, it's fast and easy and while being mobile, it can securely store the data using PBKDF2 algorithm and AES-256 encryption protected by a created PIN code. This guide will show you where to get the mobile wallet on Android and iOS devices and help you with installing it! The mobile wallet has no need to download the blockchain, but can vote for a delegate, and send/receive ZINC. Whether you're importing a wallet or generating a new one the wallet will have all the features you need.
@@ -51,15 +49,16 @@ After hitting '*Next*', you will be asked to input 3 of the words in your Secret
 ## Importing a wallet
 
 If you choose to import a wallet and follow the prompts, you will have two options to import your wallet: QR Code or by putting in your secret passphrase or address manually.
-**If you decide to copy and paste your information into the app, make sure your device does not add a space after your passphrase or address. If the space is there, it will create a new wallet and not import your own wallet**.
 
-The application may place you on a screen that shows your transactions, your public address and the amount of ZINC coins in your wallet.
+**If you decide to copy and paste your information into the app, make sure your device does not add a space after your passphrase or address. If the space is there, it will create a new wallet and not import your own wallet**.
 
 ![PHANTOM Mobile Wallet Transactions](./assets/how-to-use-the-mobile-wallet/arkWallet10.png)
 
 ## The PHANTOM Wallet
 
-You are able to hit the triple bar in the top left corner, doing so will give you numerous options for you to select. Choosing *'Wallets'*, will place you at the main PHANTOM Wallet balance screen. After you reach the main PHANTOM Wallet balance screen, you are able to add another wallet, touch the triple bar on the top left corner, or choose an existing wallet to view even closer.
+You are able to hit the triple bar in the top left corner, doing so will give you numerous options for you to select. 
+
+Choosing *'Wallets'*, will place you at the main Phantom Wallet balance screen. After you reach the main Phantom Wallet balance screen, you are able to add another wallet, touch the triple bar on the top left corner, or choose an existing wallet to view even closer.
 If you want to add another wallet, you would push the blue circle we used earlier to create or import a wallet.
 If you hit the triple bar on the top left corner, you get numerous options where you are able to view and select:
 - Main wallet balance screen

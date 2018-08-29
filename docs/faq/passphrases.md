@@ -4,8 +4,6 @@ title: "Passphrases"
 
 # Passphrases
 
-[[toc]]
-
 ## What do I do with the passphrase ?
 
 The passphrase is the master password(key) for your ZINC coins. Every PHANTOM address has its own unique passphrase. With the passphrase you can sign transactions to send your ZINC or vote for a delegate.
