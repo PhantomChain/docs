@@ -34,7 +34,7 @@ module.exports = [
             '/developers/api/webhooks/',
         ]
     }, {
-        title: 'Ark Core',
+        title: 'Phantom Core',
         children: [
             '/core/development',
             '/core/plugins',
@@ -48,7 +48,7 @@ module.exports = [
             '/core/testing',
         ]
     }, {
-        title: 'Ark Node',
+        title: 'Phantom Node',
         children: [
             '/node/setup',
             '/node/secure',
