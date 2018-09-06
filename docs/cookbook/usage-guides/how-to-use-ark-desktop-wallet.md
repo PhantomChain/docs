@@ -74,7 +74,15 @@ Your PHANTOM Wallet stores your ZINC for you. In order to interface with PHANTOM
 
 3. Enter your PHANTOM receiving address and send the ZINC to your PHANTOM Wallet.
 
-4. Your ZINC will be sent on it's way to your PHANTOM Wallet! You will soon be able to see your new ZINC balance in the PHANTOM Desktop Application!
+![Bittrex-withdraw](./assets/how-to-use-the-desktop-wallet/Bittrex-withdraw.png)
+
+4. You will be presented with a 'Confirm XPH Withdrawal' page. Enter your Phantom Address to your wallet (simply click on the address in your PHANTOM Desktop Application, within your wallet) and paste. Then, enter the amount of XPH you'd like to send to your Phantom Wallet. Then select "Withdrawal", and "Confirm" the transaction.
+
+![Bittrex-withdraw-confirm](./assets/how-to-use-the-desktop-wallet/Bittrex-withdraw-confirm.png)
+
+**Note:** Bittrex, like many exchanges, will send you an email that you need to open and select a link in to confirm the transaction. This is a typical security measure most exchanges perform.
+
+5. Your XPH will be sent on it's way to your Phantom Wallet! You will soon be able to see your new XPH balance in the Phantom Desktop Application!
 
 ![Wallet-balance](./assets/how-to-use-the-desktop-wallet/Wallet-balance.png)
 
