@@ -4,6 +4,19 @@ title: "Desktop Wallet"
 
 # Desktop Wallet
 
+[![Build Status](https://travis-ci.org/Phantomchain/phantom-desktop.svg?branch=master)](https://travis-ci.org/Phantomchain/phantom-desktop)
+[![Github Latest Release](https://img.shields.io/github/release/Phantomchain/phantom-desktop.svg)](https://github.com/Phantomchain/phantom-desktop/releases/latest)
+[![Github Downloads](https://img.shields.io/github/downloads/Phantomchain/phantom-desktop/latest/total.svg?logo=github)](https://github.com/Phantomchain/phantom-desktop/releases/latest)
+
+# Pinned: Critical bugs only!
+Since we are working on the next-gen version of the wallet, we won't be reviewing pull requests with new features and bugs (only critical bugs will be reviewed and merged). Our intention is deploying the first beta of the v2 desktop wallet in a few weeks time so we need to be focused on it exclusively.
+
+Please do not submit Pull-Requests (PRs) unless they solve an urgent problem.
+
+## Pinned: Help us with translations
+Collaborate with other translators on [our OneSky project](http://osjc1wl.oneskyapp.com/collaboration/project?id=95031) and help us get wallet translated in other languages.
+
+Please do not submit Pull-Requests (PRs) for translations, but use the link above!
 
 ## Download
 [Latest Release](https://github.com/PhantomCore/desktop-wallet/releases)

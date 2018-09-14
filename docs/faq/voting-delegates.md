@@ -11,8 +11,7 @@ title: "Voting & Delegates"
 
 The best places to find delegate information are:
 
-https://www.reddit.com/r/PhantomCore/
-
+- [Reddit](https://www.reddit.com/r/PhantomCore/)
 
 ## Is voting a risk for my wallet?
 
