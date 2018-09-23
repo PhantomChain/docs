@@ -4,9 +4,9 @@ title: "Introduction"
 
 # Introduction
 
-## What is Phantom?
+## What is PHANTOM?
 
-Phantom's goal is to give everyone the power to easily create, customize and scale their own blockchain networks. By combining innovative network design with accessible & extensible software, Phantom allows for maximum developer productivity. We prioritize builders and doers from every walk of life by building blockchain software that balances power and ease of use.
+PHANTOM's goal is to give everyone the power to easily create, customize and scale their own blockchain networks. By combining innovative network design with accessible & extensible software, PHANTOM allows for maximum developer productivity. We prioritize builders and doers from every walk of life by building blockchain software that balances power and ease of use.
 
 ## Navigating the Docs
 
