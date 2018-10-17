@@ -3,7 +3,9 @@ title: "Explorer"
 ---
 
 
-# PHANTOM Explorer 
+[![Build Status](https://img.shields.io/travis/Phantomchain/explorer/master.svg?style=flat)](https://travis-ci.org/Phantomchain/explorer)
+
+# PHANTOM Explorer 3.0
 
 > Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
 

@@ -109,4 +109,6 @@ brew bundle
 
 ## License
 
+Ark Desktop is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
 PHANTOM Desktop is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.

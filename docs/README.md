@@ -39,6 +39,7 @@ The counterpart to the Guidebook, the Cookbook contains practical code snippets 
 3. [Explorer](/cookbook/usage-guides/how-to-use-ark-explorer)
 
 [*Deployer*](/cookbook/deployer/) is the place to go for code snippets and tutorials related to building your own blockchain. We cover setting up your blockchain and deploying it to major cloud hosting service providers.
+
 [*Exchanges*](/cookbook/exchanges/) is where developers for cryptocurrency exchanges can find information on how to integrate the XPH coin into their platforms. Though we cannot make any guarantees about the codebases of any projects besides the XPH coin, this recipe should serve as a good starting point for integrating Phantom BridgeChain coins as well.
 
 ### [Phantom API](/api/)

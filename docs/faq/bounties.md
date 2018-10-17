@@ -6,5 +6,4 @@ title: "Bounties"
 
 [[toc]]
 
-
 Coming Soon

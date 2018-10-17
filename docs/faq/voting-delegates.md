@@ -35,7 +35,6 @@ No. The vote weight will automatically adapt to your wallet balance for every de
 
 No. You need to send the ZINC to your personal PHANTOM address and vote via the official PHANTOM desktop wallet.
 
-
 ## Do I need to keep my wallet open after I vote?
 
 No. Once you vote it is registered on the blockchain and tied to your specific address. You can open and close the wallet as you please.

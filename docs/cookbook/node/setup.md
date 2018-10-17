@@ -125,6 +125,7 @@ While installing PHANTOM, we should use the PHANTOM user that we created above. 
 ```
 sudo su - phantom
 ```
+
 ### Download PHANTOM Commander
 
 ```
@@ -142,6 +143,7 @@ Now we'll run the file we just downloaded and begin our PHANTOM Node installatio
 ```
 ./PHANTOMcommander.sh
 ```
+
 #### Sudo Password
 PHANTOM Commander is then going to ask you for your `sudo` password. This is
 the password you used to login to the user account with. Enter your password

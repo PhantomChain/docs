@@ -16,7 +16,7 @@ Do not lose it, and do not share it with others, or you could lose access to you
 
 ## I can’t send a transaction because of a wrong passphrase. What should I do?
 
-You can’t do anything without the correct passphrase. Please be aware that every character and space counts. Try to remove spaces at the beginning and end. Try to check for capital letters, there should be none (by default 12 words, separated by space, all lower case letters, no space at the beginning or end). Try to spot incorrectly written words. If you do not have the correct passphrase … your tokens could be lost. Again, if you lose your passphrase, there is nothing the ARK team or anyone else can do to help you.
+You can’t do anything without the correct passphrase. Please be aware that every character and space counts. Try to remove spaces at the beginning and end. Try to check for capital letters, there should be none (by default 12 words, separated by space, all lower case letters, no space at the beginning or end). Try to spot incorrectly written words. If you do not have the correct passphrase … your tokens could be lost. Again, if you lose your passphrase, there is nothing the Ark team or anyone else can do to help you.
 
 ## What kind of words are used to generate 12 word default passphrase?
 

@@ -81,7 +81,6 @@ $ npm run test:e2e
 
 - If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
 
-
 ## Authors
 - Lúcio Rubens <lucio@ark.io>
 - Alex Barnsley <alex@ark.io>

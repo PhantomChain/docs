@@ -6,7 +6,6 @@ title: "Webhooks"
 
 [[toc]]
 
-
 ## Authorization
 
 Before we start working on the implementation of a webhook handler we will take a look at handling authorization.
