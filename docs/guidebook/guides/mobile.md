@@ -2,18 +2,21 @@
 title: "Mobile Wallet"
 ---
 
-# Mobile Wallet
+# Phantom Mobile
 
-
-# PHANTOM Mobile
 > A Wallet for Everyone
 
-PHANTOM’s mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and PHANTOM’s [TypeScript API](https://github.com/PhantomCore/phantom-ts) to interact with the PHANTOM network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
+[![Build Status](https://badgen.now.sh/circleci/github/Phantomchain/mobile-wallet)](https://circleci.com/gh/Phantomchain/mobile-wallet)
+[![Codecov](https://badgen.now.sh/codecov/c/github/phantomchain/mobile-wallet)](https://codecov.io/gh/phantomchain/mobile-wallet)
+[![Latest Version](https://badgen.now.sh/github/release/Phantomchain/mobile-wallet)](https://github.com/Phantomchain/mobile-wallet/releases/latest)
+[![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
+
+PHANTOM’s mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and PHANTOM’s [TypeScript API](https://github.com/Phantomchain/phantom-ts) to interact with the PHANTOM network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
 
 ## Download
 
 - [Google Play](https://play.google.com/store/apps/details?id=io.ark.wallet.mobile)
-- [App Store](https://itunes.apple.com/us/app/mobile-ark/id1324625967?ls=1&mt=8)
+- [App Store](https://itunes.apple.com/us/app/mobile-ark/id1324625967)
 
 ## Features
 
@@ -77,14 +80,25 @@ To run the E2E (end to end) tests:
 $ npm run test:e2e
 ```
 
+## Security
+
+If you discover a security vulnerability within this application, please send an e-mail to <security@phantom.org>. All security vulnerabilities will be promptly addressed.
+
 ## Contributing
 
-- If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
+- If you find any bugs, submit an [issue](https://github.com/Phantomchain/mobile-wallet/issues) or open [pull-request](https://github.com/Phantomchain/mobile-wallet/pulls), helping us catch and fix them.
+- Engage with other users and developers on the [Phantom Slack](https://phantom.org/slack/).
+- [Help translate](https://github.com/Phantomchain/mobile-wallet/blob/master/TRANSLATING.md).
 
-## Authors
-- Lúcio Rubens <lucio@ark.io>
-- Alex Barnsley <alex@ark.io>
+## Credits
+
+- [Lúcio Rubens](https://github.com/luciorubeens)
+- [Alex Barnsley](https://github.com/alexbarnsley)
+- [All Contributors](https://github.com/Phantomchain/mobile-wallet/contributors)
 
 ## License
 
-Phantom Mobile is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+[MIT](https://github.com/ArkEcosystem/mobile-wallet/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)
+
+[MIT](https://github.com/Phantomchain/mobile-wallet/blob/master/LICENSE) © [PHANTOM](https://phantom.org)
+
