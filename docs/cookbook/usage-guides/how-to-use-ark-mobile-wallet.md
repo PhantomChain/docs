@@ -1,8 +1,8 @@
 ---
-title: "How To Use The Mobile Wallet?"
+title: "How to Use the Mobile Wallet"
 ---
 
-# How To Use The Mobile Wallet?
+# How to Use the Mobile Wallet
 
 ## The Preparation
 
@@ -12,6 +12,12 @@ Before we begin, we're going to need to download the mobile wallet. If you have 
 
 Now for iOS devices we are currently waiting for Apple approval.
 
+
+## Starting the PHANTOM Wallet
+Once Cydia Impactor opens it should show your iOS device, if it doesn't make sure the device is plugged in and the screen is unlocked. Once it loads you will want to click **Device -> Install Package**.
+![Image of Impactor](./assets/how-to-use-the-mobile-wallet/impactor.png)
+
+Find and choose the Phantom Mobile Wallet .ipa file we downloaded earlier. Impactor will prompt you to type in your Apple ID and password so it may install the application. If you have **2 Factor Authentication enabled**, you are going to need to [login here](https://appleid.apple.com/#!&page=signin). Navigate to the Security section so you may create an app-specific password. Once the password has been generated, use it on Impactor to install the wallet on your device. Impactor will now install the application.
 
 ## Starting the PHANTOM Wallet
 
@@ -25,7 +31,7 @@ You may skip the introduction or continue by hitting Next on the bottom right ha
 
 When we've either skipped or proceeded, you will be asked to create your profile:
 
-![Create a Profile on PHANTOM Mobile](./assets/how-to-use-the-mobile-wallet/arkWallet4.png)
+![Create a Profile on PHANTOM Mobile Wallet](./assets/how-to-use-the-mobile-wallet/arkWallet4.png)
 
 After you hit the '*Create A Profile*' button, you will be asked to create a 6 digit PIN and then confirm the PIN.
 **You will need to remember this PIN**.

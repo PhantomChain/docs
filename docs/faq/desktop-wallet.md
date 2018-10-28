@@ -6,7 +6,7 @@ title: "Desktop Wallet"
 
 ## Where can I download PHANTOM desktop wallet?
 
-You can download the latest version of the PHANTOM desktop wallet from our official GitHub repository : https://github.com/PhantomCore/desktop-wallet/releases .
+You can download the latest version of the PHANTOM desktop wallet from our official GitHub repository : https://github.com/PhantomChain/desktop-wallet/releases .
 Just choose the wallet download that matches your operating system.
 
 ## Why is there a line through a cloud next to my address?

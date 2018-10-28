@@ -93,7 +93,7 @@ Delegates are individuals who are vying for community votes to become forging de
 
 When registering as a delegate you will choose a delegate name that is forever associated with this account.  Your delegate name cannot match an already registered delegate name and be under 20 characters (only lowercase, numbers and special characters are allowed).  To learn more about Delegated Proof of Stake and how it works refer to our section on [What is DPOS and how it relates to other consensus mechanisms](/introduction/ark/what-is-delegated-proof-of-stake.html)
 
-### Smartbridge Transactions
+### SmartBridge Transactions
 
 **Fee: Varying**
 

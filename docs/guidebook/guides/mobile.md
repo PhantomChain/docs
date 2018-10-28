@@ -2,7 +2,9 @@
 title: "Mobile Wallet"
 ---
 
-# Phantom Mobile
+
+# Phantom Mobile Wallet
+
 
 > A Wallet for Everyone
 
