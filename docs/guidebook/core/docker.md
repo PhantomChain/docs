@@ -39,7 +39,7 @@ docker-compose up -d
 > Run PostgreSQL container, build and run Core container.
 
 ::: tip
-Along with PostgreSQL container, now you have also NodeJS container which mounts your local ark-core git folder inside the container and installs all NPM prerequisites.
+Along with PostgreSQL container, now you have also NodeJS container which mounts your local phantom-core git folder inside the container and installs all NPM prerequisites.
 :::
 
 ```bash
@@ -50,7 +50,7 @@ docker-compose up -d
 *You can now enter your core container and use nodejs in a Docker container (Linux environment).*
 
 ```bash
-docker exec -it core bash
+docker exec -it phantom-$NETWORK-core bash
 ```
 
 *Need to start everything from scratch and make sure there aren't any cached containers, images or volumes left, just use **purge_all.sh** script.*
