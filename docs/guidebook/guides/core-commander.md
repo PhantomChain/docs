@@ -9,9 +9,9 @@ title: "Core Commander"
 ## Installation
 
 ```bash
-git clone https://github.com/Phantom/core-commander
-cd PHANTOMcommander
-bash PHANTOMcommander.sh
+git clone https://github.com/Phantomchain/core-commander
+cd core-commander
+bash commander.sh
 ```
 
 ## Security
