@@ -44,8 +44,6 @@ The counterpart to the Guidebook, the Cookbook contains practical code snippets 
 
 ### [Phantom API](/api/)
 
-This section describes the structure of all Phantom APIs, as well as usage examples. After you've read the Guidebook and Cookbook, this section should be the first place you turn to find out how to interact with the Phantom software.
-
 [*Public API*](/api/public/) describes the API that's accessible through any Phantom node. API references for Phantom v1 and v2 are included.
 The [*SDK*](/api/sdk/) section includes information on how to use any of the Phantom API wrappers we've written for supercharged development in your language of choice. Currently, the following SDKs are available:
   - C++
