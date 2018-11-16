@@ -27,12 +27,6 @@ This variable is used to specify the password `@phantomcore/core-database-sequel
 **PHANTOM_DB_DATABASE**
 This variable is used to specify the database `@phantomcore/core-database-sequelize` will use. The default is `phantom_devnet`.
 
-**PHANTOM_REDIS_HOST**
-This variable is used to specify the redis host any plugins will use. The default is `localhost`.
-
-**PHANTOM_REDIS_PORT**
-This variable is used to specify the redis port any plugins will use. The default is `6379`.
-
 **PHANTOM_P2P_HOST**
 This variable is used to specify the host `@phantomcore/core-p2p` will use. The default is `0.0.0.0`.
 
