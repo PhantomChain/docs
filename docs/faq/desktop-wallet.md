@@ -25,7 +25,7 @@ It means you did not write/copy your passphrase correctly when signing the trans
 
 You can use the offline folders to split-up your funds within a wallet. This allows you to better organize your PHANTOM without paying any fees within the same address. The splitting up of your PHANTOM is local to your computer and not stored on the blockchain.
 
-## When I open PHANTOM desktop wallet I see an empty PHANTOM address which should have ZINC tokens in it.
+## When I open PHANTOM desktop wallet I see an empty PHANTOM address which should have XPH tokens in it.
 
 Most likely you are not connected to the network, make sure the cloud icon in the upper right menu (3rd icon) has a checkmark inside it (meaning connected to network) and does not have line through it(disconnected from PHANTOM network). If it has a line through it, it means either you are not connected to the internet or your firewall maybe blocking your data traffic.
 

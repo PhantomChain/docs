@@ -23,13 +23,13 @@ Let’s look over an PHANTOM network transaction step by step so you can see how
 
 ![Transactions 1](./assets/understanding-transactions-and-block-propagation/Transactions_01.png)
 
-Dustin owned 50 ZINC and yesterday Jim sent Dustin 100 ZINC.  Dustin now has a balance of 150 ZINC in his wallet.
+Dustin owned 50 XPH and yesterday Jim sent Dustin 100 XPH.  Dustin now has a balance of 150 XPH in his wallet.
 
-Today Dustin decided to send Cassandra her first 100 ZINC.   Dustin will now go into his wallet to initiate the transaction by inputting Cassandra's Public Key (address), Amount of ZINC to send (100) and pressing Send.  When he presses send he will have to input his Private Key, which is like a password, and confirms the transaction.
+Today Dustin decided to send Cassandra her first 100 XPH.   Dustin will now go into his wallet to initiate the transaction by inputting Cassandra's Public Key (address), Amount of XPH to send (100) and pressing Send.  When he presses send he will have to input his Private Key, which is like a password, and confirms the transaction.
 
 ![Transactions 3](./assets/understanding-transactions-and-block-propagation/Transactions_03.png)
 
-Inside this transaction is a reference to a prior output (Jim sending the 100 ZINC) in the input (The 100 ZINC being sent to Cassandra) so that the network can verify Dustin has the ZINC in his wallet necessary to complete the transaction.
+Inside this transaction is a reference to a prior output (Jim sending the 100 XPH) in the input (The 100 XPH being sent to Cassandra) so that the network can verify Dustin has the XPH in his wallet necessary to complete the transaction.
 
 ![Transactions 4](./assets/understanding-transactions-and-block-propagation/Transactions_04.png)
 
@@ -37,11 +37,11 @@ Once the transaction is sent from Dustin's wallet it is broadcast to the network
 
 ![Transactions 5](./assets/understanding-transactions-and-block-propagation/Transactions_05.png)
 
-For ease of understanding from now forward in this example, just consider "nodes" and "forging delegates" as verifiers on the ZINC network.  If you are interested in learning more about **nodes** consult our section on [Peers and Nodes, what are they and what is their role in the network?](http://www.phantom.org/) and for delegates, [What is DPOS and how it relates to other consensus mechanisms](/introduction/ark/what-is-delegated-proof-of-stake).
+For ease of understanding from now forward in this example, just consider "nodes" and "forging delegates" as verifiers on the XPH network.  If you are interested in learning more about **nodes** consult our section on [Peers and Nodes, what are they and what is their role in the network?](http://www.phantom.org/) and for delegates, [What is DPOS and how it relates to other consensus mechanisms](/introduction/ark/what-is-delegated-proof-of-stake).
 
 ![Transactions 6](./assets/understanding-transactions-and-block-propagation/Transactions_06.png)
 
-A node on the network will check the inputs/outputs of the transaction and verify that Dustin has the ZINC necessary to send the 100 ZINC plus the transaction fee (more on fees at the end of the section).  once that Node has verified Dustin's transaction as legitimate it signals that determination to the rest of the network.
+A node on the network will check the inputs/outputs of the transaction and verify that Dustin has the XPH necessary to send the 100 XPH plus the transaction fee (more on fees at the end of the section).  once that Node has verified Dustin's transaction as legitimate it signals that determination to the rest of the network.
 
 ![Transactions 7](./assets/understanding-transactions-and-block-propagation/Transactions_07.png)
 
@@ -69,25 +69,25 @@ The PHANTOM network currently charges  the following fees, however they will be 
 
 ### Vote
 
-**Fee: 3 ZINC**
+**Fee: 3 XPH**
 
-To stake your wallet and vote for a delegate will cost you 3 ZINC. If you decided to vote for a different delegate you will need to unvote and vote again for a new delegate, each of these transactions will cost 3 ZINC.   So if spent 3 ZINC to vote for delegate A yesterday and today you decide to vote for delegate B the unvoting of delegate A will cost 3 ZINC along with another 3 ZINC to vote for delegate B.
+To stake your wallet and vote for a delegate will cost you 3 XPH. If you decided to vote for a different delegate you will need to unvote and vote again for a new delegate, each of these transactions will cost 3 XPH.   So if spent 3 XPH to vote for delegate A yesterday and today you decide to vote for delegate B the unvoting of delegate A will cost 3 XPH along with another 3 XPH to vote for delegate B.
 
 ### Transactions
 
-**Fee: 0.2 ZINC**
+**Fee: 0.2 XPH**
 
-This includes all normal transactions on the network such as send ZINC from one wallet to another, on and off exchanges, etc.  For other transactions such as using ZINC Contract Execution Nodes (ZCES) nodes, those fees will be dictated by the ACES node you are connected to.  For more information on what ACES nodes are and how they bridge functionality between ZINC and Ethereum refer to our blog post on them [ZCES Nodes](http://www.blog.ark.io/aces-ark-contract-excution-services-d6924486b8c5)
+This includes all normal transactions on the network such as send XPH from one wallet to another, on and off exchanges, etc.  For other transactions such as using XPH Contract Execution Nodes (ZCES) nodes, those fees will be dictated by the ACES node you are connected to.  For more information on what ACES nodes are and how they bridge functionality between XPH and Ethereum refer to our blog post on them [ZCES Nodes](http://www.blog.ark.io/aces-ark-contract-excution-services-d6924486b8c5)
 
 ### Register 2nd Passphrase
 
-**Fee: 15 ZINC**
+**Fee: 15 XPH**
 
 When you set up your PHANTOM wallet you will be prompted to write down a 12 word mnemonic passphrase.  This is the private key to your wallet, without which you will be unable access or move any of your funds.  PHANTOM allows for users to register for a "second" passphrase which is an additional 12-word mnemonic phrase for enhanced security of your wallet and funds.
 
 ### Delegate Registration
 
-**Fee: 50 ZINC**
+**Fee: 50 XPH**
 
 Delegates are individuals who are vying for community votes to become forging delegates who confirm blocks of transactions on the PHANTOM blockchain.  Anyone is free to run as a delegate and seek votes from the community however only those who maintain the 51 highest vote counts become active forging delegates.
 
@@ -97,6 +97,6 @@ When registering as a delegate you will choose a delegate name that is forever a
 
 **Fee: Varying**
 
-Smartbridge technology is the pillar of innovation underlying the PHANTOM network, allowing for cross blockchain transactions using ZINC as the medium.  Currently every blockchain is like an island city state with no way to transact or interact with each other.  PHANTOM's Smartbridge technology will allow for you to engage every blockchain or even multiple blockchain's using what are called "Encoded Listener Nodes".  These nodes allow you to send ZINC to them and be swapped for the other blockchain's medium of exchange such as Bitcoin or Ethereum and use that networks functionality and reach through these nodes but stay within the PHANTOM ecosystem, making ZINC a de facto hive mind of the blockchain space.  Soon you will never need to leave PHANTOM to operate and transact within ANY other blockchain.
+Smartbridge technology is the pillar of innovation underlying the PHANTOM network, allowing for cross blockchain transactions using XPH as the medium.  Currently every blockchain is like an island city state with no way to transact or interact with each other.  PHANTOM's Smartbridge technology will allow for you to engage every blockchain or even multiple blockchain's using what are called "Encoded Listener Nodes".  These nodes allow you to send XPH to them and be swapped for the other blockchain's medium of exchange such as Bitcoin or Ethereum and use that networks functionality and reach through these nodes but stay within the PHANTOM ecosystem, making XPH a de facto hive mind of the blockchain space.  Soon you will never need to leave PHANTOM to operate and transact within ANY other blockchain.
 
-Encoded Listener Nodes (ECL) operate by containing certain amounts of the coins/tokens that the blockchain it is connected to uses.  Say you wish to pay a supplier 1 ETH for services rendered via the Ethereum smart contract you have created for your business.  If ZINC is valued at 2500 ZINC per 1 Ethereum you can send 2500 ZINC to the ECL you have chosen, who then converts that ZINC to Ethereum and sends that over the Ethereum blockchain to fulfill that smart contract and pay that employer.  If that supplier realizes they overcharged you, they can also refund you .1 Ethereum and through that ECL the 25 ZINC are returned to your wallet.  Encoded Listener Nodes are run independently so the fees are set by the operator of that node.  Very soon in the future ECL operators will run on a network that users can access, review fee structures, size limitations, history, etc. and choose which node best fits their needs.  Market competition between node operators will keep fees rigorously competitive and a rough standard market rate for fees may emerge at a later date.
+Encoded Listener Nodes (ECL) operate by containing certain amounts of the coins/tokens that the blockchain it is connected to uses.  Say you wish to pay a supplier 1 ETH for services rendered via the Ethereum smart contract you have created for your business.  If XPH is valued at 2500 XPH per 1 Ethereum you can send 2500 XPH to the ECL you have chosen, who then converts that XPH to Ethereum and sends that over the Ethereum blockchain to fulfill that smart contract and pay that employer.  If that supplier realizes they overcharged you, they can also refund you .1 Ethereum and through that ECL the 25 XPH are returned to your wallet.  Encoded Listener Nodes are run independently so the fees are set by the operator of that node.  Very soon in the future ECL operators will run on a network that users can access, review fee structures, size limitations, history, etc. and choose which node best fits their needs.  Market competition between node operators will keep fees rigorously competitive and a rough standard market rate for fees may emerge at a later date.

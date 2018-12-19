@@ -45,7 +45,7 @@ brew cask install phantomclient
 * Label any account and add your own contacts.
 * Real-time currency value (updated every 5 min) in USD, EUR, BTC, HKD, JPY, CNY, AUD, GBP, Rubble, ...
 * Autoconnect to a healthy PHANTOM network peer. If the peer is not good anymore, it will automatically find a new one.
-* Send ZINC from / to any account.
+* Send XPH from / to any account.
 * Easily switch to a different network, or private chains.
 * Customized backgrounds and themes for better user experience.
 * Choose between dark or light mode.
@@ -55,7 +55,7 @@ brew cask install phantomclient
 * When new version is available, message is shown in the right upper part.
 * Easy to update - download latest version, start installation program and it will automatically remove previous version and install new one.
 * Second signature supported.
-* (soon) Deposit or withdraw ZINC using altcoins or USD (via exchange) - no registration needed.
+* (soon) Deposit or withdraw XPH using altcoins or USD (via exchange) - no registration needed.
 * (soon) Multisignature accounts.
 * **SAVE YOUR PASSPHRASE(S) - if you lose it, you lose access to that particular PHANTOM address(es). There is no forgot my password option with blockchains and no one can help you retrieve it!**
 

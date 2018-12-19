@@ -6,9 +6,9 @@ title: "Passphrases"
 
 ## What do I do with the passphrase ?
 
-The passphrase is the master password(key) for your ZINC coins. Every PHANTOM address has its own unique passphrase. With the passphrase you can sign transactions to send your ZINC or vote for a delegate.
+The passphrase is the master password(key) for your XPH coins. Every PHANTOM address has its own unique passphrase. With the passphrase you can sign transactions to send your XPH or vote for a delegate.
 
-Do not lose it, and do not share it with others, or you could lose access to your ZINC coins. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
+Do not lose it, and do not share it with others, or you could lose access to your XPH coins. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
 
 ::: warning
 **BACKUP YOUR PASSPHRASE! DO NOT LOSE IT! WRITE IT DOWN, SAVE IT HOWEVER YOU CAN!**
@@ -28,7 +28,7 @@ Yes it is secure. The 12 word passphrases are much more secure than your usual p
 
 ## What is a 2nd passphrase?
 
-The second passphrases improves security by adding another 12 words that will be added to your address, making for 24 words total. Make sure you save this 2nd passphrase, as you will now need both passphrases to sign transactions — note that there is currently a 15 ZINC transaction fee to create a second passphrase.
+The second passphrases improves security by adding another 12 words that will be added to your address, making for 24 words total. Make sure you save this 2nd passphrase, as you will now need both passphrases to sign transactions — note that there is currently a 15 XPH transaction fee to create a second passphrase.
 
 ## I lost / deleted my 2nd passphrase can I still use my PHANTOM account?
 
