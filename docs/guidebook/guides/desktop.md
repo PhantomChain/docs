@@ -19,7 +19,7 @@ Collaborate with other translators on [our OneSky project](http://osjc1wl.onesky
 Please do not submit Pull-Requests (PRs) for translations, but use the link above!
 
 ## Download
-[Latest Release](https://github.com/PhantomCore/desktop-wallet/releases)
+[Latest Release](https://github.com/PhantomChain/desktop-wallet/releases)
 
 ## Installing via Package Managers
 
@@ -75,7 +75,7 @@ sudo n 6.9.2
 Install from source:
 ```bash
 # Clone this repository
-git clone https://github.com/PhantomCore/desktop-wallet
+git clone https://github.com/PhantomChain/desktop-wallet
 # Go into the repository
 cd desktop-wallet
 # Install dependencies

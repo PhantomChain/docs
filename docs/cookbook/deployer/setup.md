@@ -21,7 +21,7 @@ The nodes are a core part of the network. They are what forge the blocks, valida
 ::: tip Download PHANTOM Deployer
 ```bash
 cd ~
-git clone https://github.com/PhantomCore/phantom-deployer.git
+git clone https://github.com/PhantomChain/phantom-deployer.git
 cd phantom-deployer
 ```
 :::
@@ -43,7 +43,7 @@ sudo apt-get update && sudo apt-get install -y jq
 **Note: Use your Public IP here**
 :::
 
-There are many more options available when installing the node, which can be found [here](https://github.com/PhantomCore/phantom-deployer#optional-parameters). You can also use a JSON config file, which you can learn about [here](https://github.com/PhantomCore/phantom-deployer#json-config). Any changes to fees or the epoch time of the network currently prevent the Desktop Wallet from working with your chain.
+There are many more options available when installing the node, which can be found [here](https://github.com/PhantomChain/phantom-deployer#optional-parameters). You can also use a JSON config file, which you can learn about [here](https://github.com/PhantomChain/phantom-deployer#json-config). Any changes to fees or the epoch time of the network currently prevent the Desktop Wallet from working with your chain.
 
 ![Image 2](./assets/setup/2.png)
 
@@ -338,7 +338,7 @@ We have also provided a Vagrantfile which allows you to deploy your own BridgeCh
 ::: tip Download Phantom Deployer
 ```bash
 cd ~
-git clone https://github.com/PhantomCore/phantom-deployer.git
+git clone https://github.com/PhantomChain/phantom-deployer.git
 cd phantom-deployer
 ```
 :::
@@ -356,7 +356,7 @@ vagrant destroy
 :::
 
 ##### Tweaking Bridgechain Options (Advanced)
-Open up `~/phantom-deployer/vagrant/config.json` and you will see all the possible options that you can change. These are all used when deploying the bridgechain on Vagrant and can be customised. Refer to the [node options](https://github.com/PhantomCore/phantom-deployer#optional-parameters) and [explorer options](https://github.com/PhantomCore/phantom-deployer#optional-parameters-1) before continuing to get an idea of what each do. Once you are happy with your settings, go ahead and start the Vagrant environment as above.
+Open up `~/phantom-deployer/vagrant/config.json` and you will see all the possible options that you can change. These are all used when deploying the bridgechain on Vagrant and can be customised. Refer to the [node options](https://github.com/PhantomChain/phantom-deployer#optional-parameters) and [explorer options](https://github.com/PhantomChain/phantom-deployer#optional-parameters-1) before continuing to get an idea of what each do. Once you are happy with your settings, go ahead and start the Vagrant environment as above.
 
 ## FAQ
 

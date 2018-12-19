@@ -16,7 +16,7 @@ Before you can get started with working on PHANTOM Core you need to setup lerna 
 
 ```bash
 yarn global add lerna
-git clone https://github.com/PhantomCore/core
+git clone https://github.com/PhantomChain/core
 cd core
 lerna bootstrap
 ```

@@ -19,11 +19,11 @@ Active [Microsoft Azure](https://azure.microsoft.com/en-us/) account (Trial is O
 - Your own BridgeChain node and PHANTOM Explorer running in < 20 minutes
 - Re-usable and customizable deployment script
 
-**Script available at [PHANTOM Azure on GitHub](https://github.com/PhantomCore/phantom-azure)**
+**Script available at [PHANTOM Azure on GitHub](https://github.com/PhantomChain/phantom-azure)**
 
 ## 1. Virtual Machine Quick Deployment
 
-Navigate to: [https://github.com/PhantomCore/phantom-azure](https://github.com/PhantomCore/phantom-azure)
+Navigate to: [https://github.com/PhantomChain/phantom-azure](https://github.com/PhantomChain/phantom-azure)
 Click on the big blue “Deploy to Azure” button to be taken to Portal.Azure.com. Login with your account (Trial or not, either work).
 
 ![Image 1](./assets/setup-with-azure/1.jpeg)
@@ -76,10 +76,10 @@ SSH into your new VM using the Public DNS Name and login with the credentials us
 ::: tip
 **Starting here, is the default quick-installation method with the chain being named “MyTest”. If you wish to customize it, please see the bottom-most section of this article.**
 
-Run the following command (It’s a one-liner, copy and paste the full contents from here or from the **[PHANTOM Azure Github page](https://github.com/PhantomCore/phantom-azure)**)
+Run the following command (It’s a one-liner, copy and paste the full contents from here or from the **[PHANTOM Azure Github page](https://github.com/PhantomChain/phantom-azure)**)
 
 ```bash
-curl -o- https://raw.githubusercontent.com/PhantomCore/phantom-azure/master/script/phantomdefaultinstall.sh | bash
+curl -o- https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomdefaultinstall.sh | bash
 ```
 :::
 
@@ -90,7 +90,7 @@ Just after the node gets installed, there will be 3 lines of text to record. Cop
 
 ![Image 6](./assets/setup-with-azure/6.jpeg)
 
-This information will be used later on, as you explore PHANTOM past the deployment phase with [PHANTOM Deployer](https://github.com/PhantomCore/phantom-deployer). Copy and paste it right out of the console window for safe keeping.
+This information will be used later on, as you explore PHANTOM past the deployment phase with [PHANTOM Deployer](https://github.com/PhantomChain/phantom-deployer). Copy and paste it right out of the console window for safe keeping.
 
 ## 3. Final result — see explorer in action
 
@@ -104,20 +104,20 @@ You can highlight the URL straight from the SSH window, such as http://13.65.29.
 
 ## 4. Customizing Your Deployment
 
-If you wish to customize your deployment of PHANTOM within the bounds of PHANTOM Deployer, download a copy of the [Azure Shell script](https://raw.githubusercontent.com/PhantomCore/phantom-azure/master/script/phantomdefaultinstall.sh).
+If you wish to customize your deployment of PHANTOM within the bounds of PHANTOM Deployer, download a copy of the [Azure Shell script](https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomdefaultinstall.sh).
 
 ![Image 9](./assets/setup-with-azure/9.png)
 
-Within this file, you’re welcome to edit the list of variables on lines 21–31 and personalize them. These variables all align with an optional parameter of PHANTOM Deployer (See GitHub: [https://github.com/PhantomCore/phantom-deployer#optional-parameters](https://github.com/PhantomCore/phantom-deployer#optional-parameters))
+Within this file, you’re welcome to edit the list of variables on lines 21–31 and personalize them. These variables all align with an optional parameter of PHANTOM Deployer (See GitHub: [https://github.com/PhantomChain/phantom-deployer#optional-parameters](https://github.com/PhantomChain/phantom-deployer#optional-parameters))
 
 You can then run this new version of your script against a new VM, or, you can uninstall the original node/explorer and re-install using the script again. We would recommend just rolling out a new server for ease of use, but that’s your call.
 
 **To quickly make a personalized copy of the script (GitHub account)**
 
-- Go in browser to: [https://raw.githubusercontent.com/PhantomCore/phantom-azure/master/script/phantomdefaultinstall.sh](https://raw.githubusercontent.com/PhantomCore/phantom-azure/master/script/phantomcoredefaultinstall.sh)
+- Go in browser to: [https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomdefaultinstall.sh](https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomcoredefaultinstall.sh)
 - Copy the contents of this file (ALL of it; Just CTRL+A and CTRL+C)
 - Open a new tab to [https://gist.github.com/](https://gist.github.com/)
-- Paste contents of clipboard to this file, and customize lines 21–31 to your hearts content. These variables all align with an optional parameter of PHANTOM Deployer (See GitHub: [https://github.com/PhantomCore/phantom-deployer#optional-parameters](https://github.com/PhantomCore/phantom-deployer#optional-parameters)).
+- Paste contents of clipboard to this file, and customize lines 21–31 to your hearts content. These variables all align with an optional parameter of PHANTOM Deployer (See GitHub: [https://github.com/PhantomChain/phantom-deployer#optional-parameters](https://github.com/PhantomChain/phantom-deployer#optional-parameters)).
 - Create a ‘Public Gist’ with a .sh file name (required)
 
 ![Image 10](./assets/setup-with-azure/10.jpeg)
