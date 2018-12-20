@@ -22,7 +22,7 @@ module.exports = {
     console: {
       constructor: 'Console',
       options: {
-        level: process.env.ARK_LOG_LEVEL || 'debug',
+        level: process.env.PHANTOM_LOG_LEVEL || 'debug',
         format: require('./formatter')(true),
         stderrLevels: ['error', 'warn'],
       },
@@ -31,9 +31,9 @@ module.exports = {
       package: 'winston-daily-rotate-file',
       constructor: 'DailyRotateFile',
       options: {
-        level: process.env.ARK_LOG_LEVEL || 'debug',
+        level: process.env.PHANTOM_LOG_LEVEL || 'debug',
         format: require('./formatter')(false),
-        filename: process.env.ARK_LOG_FILE || `${process.env.ARK_PATH_DATA}/logs/core/${process.env.ARK_NETWORK_NAME}/%DATE%.log`,
+        filename: process.env.PHANTOM_LOG_FILE || `${process.env.PHANTOM_PATH_DATA}/logs/core/${process.env.PHANTOM_NETWORK_NAME}/%DATE%.log`,
         datePattern: 'YYYY-MM-DD',
         zippedArchive: true,
         maxSize: '100m',

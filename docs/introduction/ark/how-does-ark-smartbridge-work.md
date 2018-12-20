@@ -1,5 +1,5 @@
 ---
-title: "How Does Ark SmartBridge Work?"
+title: "How Does Phantom SmartBridge Work?"
 ---
 
 # How Does PHANTOM Private Smartbridge Work?
@@ -23,7 +23,7 @@ It’s quite simple. If you want to trigger an event on a blockchain via a diffe
 
 ![ACES](./assets/how-does-ark-smartbridge-work/ba51bff-aces-marketplace-contract-form.png)
 
-**Example 1:** If you wanted to trigger an ETH smart contract but hold ark, you could just send the instructions through ark SmartBridge, right in the wallet to trigger the event. The code embedded in the ETH chain is always listening for an ark SmartBridge transaction and will collect this info and trigger the function to issue a contract.
+**Example 1:** If you wanted to trigger an ETH smart contract but hold Phantom, you could just send the instructions through Phantom SmartBridge, right in the wallet to trigger the event. The code embedded in the ETH chain is always listening for an Phantom SmartBridge transaction and will collect this info and trigger the function to issue a contract.
 
 **Example 2:** You want to issue a record entry in Factom, but you only hold XPH. So you would go to your PHANTOM wallet, enter the correct info and instructions for the FCT chain via the SmartBridge tab. Then send it. That’s it, now the FCT chain receives the info and acts appropriately.
 

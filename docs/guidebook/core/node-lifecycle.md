@@ -1,40 +1,40 @@
 # Examining the Node Lifecycle
 
-Let's take a look inside Phantom Core to better understand what's happening behind the scenes when we install and start our relays and forgers. From the moment Core Commander pings our node awake to the moment our node is brought offline, we'll look at the behavior that all Ark nodes share and examine differences and commonalities between relays and forgers.
+Let's take a look inside Phantom Core to better understand what's happening behind the scenes when we install and start our relays and forgers. From the moment Core Commander pings our node awake to the moment our node is brought offline, we'll look at the behavior that all phantom nodes share and examine differences and commonalities between relays and forgers.
 
 ## Starting Our Node
 
 Whether you're installing your node using Core Commander or pulling the source code directly from GitHub, at some point all startup processes run through the `core` package. To better understand what this process looks like, let's take a look at some of the scripts available in the `core` package's `package.json`:
 ```json
 "scripts": {
-    "start": "./bin/ark start",
-    "start:mainnet": "./bin/ark start --config ./lib/config/mainnet --network mainnet",
-    "start:devnet": "./bin/ark start --config ./lib/config/devnet --network devnet",
-    "start:testnet": "cross-env ARK_ENV=test ./bin/ark start --config ./lib/config/testnet --network testnet",
-    "start:testnet:live": "./bin/ark start --config ./lib/config/testnet.live --network testnet",
-    "relay": "./bin/ark relay",
-    "relay:mainnet": "./bin/ark relay --config ./lib/config/mainnet --network mainnet",
-    "relay:devnet": "./bin/ark relay --config ./lib/config/devnet --network devnet",
-    "relay:testnet": "cross-env ARK_ENV=test ./bin/ark relay --config ./lib/config/testnet --network testnet",
-    "relay:testnet:live": "./bin/ark relay --config ./lib/config/testnet.live --network testnet",
-    "forger": "./bin/ark forger",
-    "forger:mainnet": "./bin/ark forger --config ./lib/config/mainnet --network mainnet",
-    "forger:devnet": "./bin/ark forger --config ./lib/config/devnet --network devnet",
-    "forger:testnet": "cross-env ARK_ENV=test ./bin/ark forger --config ./lib/config/testnet --network testnet",
-    "forger:testnet:live": "./bin/ark forger --config ./lib/config/testnet.live --network testnet",
-    "snapshot": "./bin/ark snapshot",
-    "snapshot:mainnet": "./bin/ark snapshot --config ./lib/config/mainnet --network mainnet",
-    "snapshot:devnet": "./bin/ark snapshot --config ./lib/config/devnet --network devnet",
-    "snapshot:testnet": "./bin/ark snapshot --config ./lib/config/testnet --network testnet",
-    "snapshot:testnet:live": "./bin/ark snapshot --config ./lib/config/testnet.live --network testnet",
-    "full:testnet": "cross-env ARK_ENV=test ./bin/ark start --config ./lib/config/testnet --network testnet --network-start",
+    "start": "./bin/phantom start",
+    "start:mainnet": "./bin/phantom start --config ./lib/config/mainnet --network mainnet",
+    "start:devnet": "./bin/phantom start --config ./lib/config/devnet --network devnet",
+    "start:testnet": "cross-env PHANTOM_ENV=test ./bin/phantom start --config ./lib/config/testnet --network testnet",
+    "start:testnet:live": "./bin/phantom start --config ./lib/config/testnet.live --network testnet",
+    "relay": "./bin/phantom relay",
+    "relay:mainnet": "./bin/phantom relay --config ./lib/config/mainnet --network mainnet",
+    "relay:devnet": "./bin/phantom relay --config ./lib/config/devnet --network devnet",
+    "relay:testnet": "cross-env PHANTOM_ENV=test ./bin/phantom relay --config ./lib/config/testnet --network testnet",
+    "relay:testnet:live": "./bin/phantom relay --config ./lib/config/testnet.live --network testnet",
+    "forger": "./bin/phantom forger",
+    "forger:mainnet": "./bin/phantom forger --config ./lib/config/mainnet --network mainnet",
+    "forger:devnet": "./bin/phantom forger --config ./lib/config/devnet --network devnet",
+    "forger:testnet": "cross-env PHANTOM_ENV=test ./bin/phantom forger --config ./lib/config/testnet --network testnet",
+    "forger:testnet:live": "./bin/phantom forger --config ./lib/config/testnet.live --network testnet",
+    "snapshot": "./bin/phantom snapshot",
+    "snapshot:mainnet": "./bin/phantom snapshot --config ./lib/config/mainnet --network mainnet",
+    "snapshot:devnet": "./bin/phantom snapshot --config ./lib/config/devnet --network devnet",
+    "snapshot:testnet": "./bin/phantom snapshot --config ./lib/config/testnet --network testnet",
+    "snapshot:testnet:live": "./bin/phantom snapshot --config ./lib/config/testnet.live --network testnet",
+    "full:testnet": "cross-env PHANTOM_ENV=test ./bin/phantom start --config ./lib/config/testnet --network testnet --network-start",
 }
 ```
 There are quite a few scripts here, but a closer look reveals considerable overlap in their functionality. Let's take a look at one of the commands in more detail:
 ```json
-"relay:devnet": "./bin/ark relay --config ./lib/config/devnet --network devnet",
+"relay:devnet": "./bin/phantom relay --config ./lib/config/devnet --network devnet",
 ```
-We can see from the script name (the part before the colon) that this is a script designed to start a relay node on ARK devnet. The actual body of the command (the part after the colon) begins with the segment `./bin/ark relay`. This segment essentially tells our node, or whichever process is running this script, to look inside the `bin` directory and launch the `relay` command located in the `ark` file.
+We can see from the script name (the part before the colon) that this is a script designed to start a relay node on phantom devnet. The actual body of the command (the part after the colon) begins with the segment `./bin/phantom relay`. This segment essentially tells our node, or whichever process is running this script, to look inside the `bin` directory and launch the `relay` command located in the `phantom` file.
 
 The rest of this command specifies a pair of arguments to be passed to the `relay` command:
 
@@ -43,7 +43,7 @@ The rest of this command specifies a pair of arguments to be passed to the `rela
 
 If you look again at the scripts posted above, you'll notice that all of them contain this same basic formula, with only minor differences from script to script. Some scripts start relays, some start forgers, some start both (the `start` commands), some start nodes on testnets, some start nodes on mainnets, and so on. 
 
-Let's look at segments of the `bin/ark` file in greater detail:
+Let's look at segments of the `bin/phantom` file in greater detail:
 ```js
 const app = require('commander')
 
@@ -52,16 +52,16 @@ app.version(require('../package.json').version)
 app
   .command('start')
   .description('start a relay node and the forger')
-  .option('-d, --data <data>', 'data directory', '~/.ark')
-  .option('-c, --config <config>', 'core config', '~/.ark/config')
-  .option('-t, --token <token>', 'token name', 'ark')
+  .option('-d, --data <data>', 'data directory', '~/.phantom')
+  .option('-c, --config <config>', 'core config', '~/.phantom/config')
+  .option('-t, --token <token>', 'token name', 'phantom')
   .option('-n, --network <network>', 'token network')
   .option('-b, --bip38 <bip38>', 'forger bip38')
   .option('-p, --password <password>', 'forger password')
   .option('--network-start', 'force genesis network start', false)
   .action(async (options) => require('../lib/start-relay-and-forger')(options))
 ```
-For the sake of brevity, I've only included the `start` command here. Looking through the `[ark` file](https://github.com/PhantomChain/core/blob/develop/packages/core/bin/ark), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
+For the sake of brevity, I've only included the `start` command here. Looking through the `[phantom` file](https://github.com/PhantomChain/core/blob/develop/packages/core/bin/phantom), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
 
 Breaking down what's happening here:
 
@@ -69,8 +69,8 @@ Breaking down what's happening here:
 - We define `version` is defined to ensure all nodes are on the same page, have the same dependencies, and so on.
 - Next, we begin registering CLI commands into our `app` variable. Our first one is `start`, which starts a single node with both forger and relay capacities.
 - After describing this command's functionality, we specify options that can be passed into the command at runtime, and we define default values to fall back upon should these options not be provided.
-- Recall from our `npm` script that we passed in two values: `config` and `network`. In the case of `config`, this means that the value defined in our `npm` script will override the default, which in the code above is `~/.ark/config`.
-- Because we did not pass in any other arguments, our command will assume the defaults in each case. Notably, this means that `~/.ark/` will be used as our data directory, and `ark` will be used as our token name.
+- Recall from our `npm` script that we passed in two values: `config` and `network`. In the case of `config`, this means that the value defined in our `npm` script will override the default, which in the code above is `~/.phantom/config`.
+- Because we did not pass in any other arguments, our command will assume the defaults in each case. Notably, this means that `~/.phantom/` will be used as our data directory, and `phantom` will be used as our token name.
 - Other configurable options here include `bip38`, primarily intended for forgers to pass in their delegate information, and `network-start`, which is used only when spinning up a network for the first time.
 - Finally, we compile all of the options into a single JavaScript object, load the JS file located at `../lib/start-relay-and-forger`, and run the command inside with our options.
 
@@ -122,9 +122,9 @@ await container.setUp(options, {
     ],
     options: {
       '@phantomchain/core-forger': {
-        bip38: options.bip38 || process.env.ARK_FORGER_BIP38,
+        bip38: options.bip38 || process.env.PHANTOM_FORGER_BIP38,
         address: options.address,
-        password: options.password || process.env.ARK_FORGER_PASSWORD
+        password: options.password || process.env.PHANTOM_FORGER_PASSWORD
       }
     }
   })
@@ -196,12 +196,12 @@ module.exports = class Environment {
 ```
 Without going too much into the implementation details, the `setUp` function here effectively takes care of binding values into our `process.env` object, which is a global object used throughout our Node application. You can read more about the `process.env` object [here](https://nodejs.org/api/process.html#process_process_env), but the SparkNotes is that the `Environment.setUp` method defines the following variables for use throughout our node:
 
-- ARK_PATH_CONFIG: the path to our configuration directory, pulled in from our NPM script and dependent on the network our node is running on
-- ARK_PATH_DATA: the path to our data directory, which defaults to `~/.ark`
-- ARK_NETWORK: a stringified version of the `network.json` file in our ARK_PATH_CONFIG directory
-- ARK_NETWORK_NAME: the `name` property from our `network.json` file
+- PHANTOM_PATH_CONFIG: the path to our configuration directory, pulled in from our NPM script and dependent on the network our node is running on
+- PHANTOM_PATH_DATA: the path to our data directory, which defaults to `~/.phantom`
+- PHANTOM_NETWORK: a stringified version of the `network.json` file in our PHANTOM_PATH_CONFIG directory
+- PHANTOM_NETWORK_NAME: the `name` property from our `network.json` file
 
-Additionally, here is where we load any environment variables defined in our node's `.env` file. This `.env` file, located in your ARK_PATH_DATA directory, is where you can specify many of the optional settings for your node: whether to enable webhooks, GraphQL, and so on. All optional settings are loaded into the environment here, after the essential environment variables listed above.
+Additionally, here is where we load any environment variables defined in our node's `.env` file. This `.env` file, located in your PHANTOM_PATH_DATA directory, is where you can specify many of the optional settings for your node: whether to enable webhooks, GraphQL, and so on. All optional settings are loaded into the environment here, after the essential environment variables listed above.
 
 ## Loading Our Plugins
 
@@ -247,7 +247,7 @@ A deep-dive into the functionality of the PluginRegistrar will be included in an
     const files = ['plugins.js', 'plugins.json']
 
     for (const file of files) {
-      const configPath = path.resolve(expandHomeDir(`${process.env.ARK_PATH_CONFIG}/${file}`))
+      const configPath = path.resolve(expandHomeDir(`${process.env.PHANTOM_PATH_CONFIG}/${file}`))
 
       if (fs.existsSync(configPath)) {
         this.pluginsConfigPath = configPath
@@ -273,38 +273,38 @@ module.exports = {
     transports: {
       console: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug'
+          level: process.env.PHANTOM_LOG_LEVEL || 'debug'
         }
       },
       dailyRotate: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug',
-          filename: process.env.ARK_LOG_FILE || `${process.env.ARK_PATH_DATA}/logs/core/${process.env.ARK_NETWORK_NAME}/%DATE%.log`
+          level: process.env.PHANTOM_LOG_LEVEL || 'debug',
+          filename: process.env.PHANTOM_LOG_FILE || `${process.env.PHANTOM_PATH_DATA}/logs/core/${process.env.PHANTOM_NETWORK_NAME}/%DATE%.log`
         }
       }
     }
   },
   '@phantomchain/core-database-postgres': {
     connection: {
-      host: process.env.ARK_DB_HOST || 'localhost',
-      port: process.env.ARK_DB_PORT || 5432,
-      database: process.env.ARK_DB_DATABASE || `ark_${process.env.ARK_NETWORK_NAME}`,
-      user: process.env.ARK_DB_USERNAME || 'ark',
-      password: process.env.ARK_DB_PASSWORD || 'password'
+      host: process.env.PHANTOM_DB_HOST || 'localhost',
+      port: process.env.PHANTOM_DB_PORT || 5432,
+      database: process.env.PHANTOM_DB_DATABASE || `PHANTOM_${process.env.PHANTOM_NETWORK_NAME}`,
+      user: process.env.PHANTOM_DB_USERNAME || 'phantom',
+      password: process.env.PHANTOM_DB_PASSWORD || 'password'
     }
   },
   // ... more plugins here ...
   '@phantomchain/core-forger': {
-    hosts: [`http://127.0.0.1:${process.env.ARK_P2P_PORT || 4002}`]
+    hosts: [`http://127.0.0.1:${process.env.PHANTOM_P2P_PORT || 4002}`]
   },
   '@phantomchain/core-json-rpc': {
-    enabled: process.env.ARK_JSON_RPC_ENABLED,
-    host: process.env.ARK_JSON_RPC_HOST || '0.0.0.0',
-    port: process.env.ARK_JSON_RPC_PORT || 8080,
+    enabled: process.env.PHANTOM_JSON_RPC_ENABLED,
+    host: process.env.PHANTOM_JSON_RPC_HOST || '0.0.0.0',
+    port: process.env.PHANTOM_JSON_RPC_PORT || 8080,
     allowRemote: false,
     whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
     database: {
-      uri: process.env.ARK_JSON_RPC_DATABASE || `sqlite://${process.env.ARK_PATH_DATA}/database/json-rpc.sqlite`,
+      uri: process.env.PHANTOM_JSON_RPC_DATABASE || `sqlite://${process.env.PHANTOM_PATH_DATA}/database/json-rpc.sqlite`,
       options: {}
     }
   }

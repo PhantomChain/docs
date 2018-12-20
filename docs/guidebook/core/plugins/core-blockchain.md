@@ -36,7 +36,7 @@ The blockchain API is primarily used to fetch the most up-to-date knowledge of t
 
 In general, `core-blockchain` should not be used by third-party plugins to update blockchain state directly. Any changes made to your internal blockchain representation will be reverted once your node connects to peers, as those peers will reject your node's changes and force it to rollback its database to match the network state.
 
-For this reason the primary use of the Blockchain API should be to fetch the most up-to-date information about the current network state. If your custom plugin needs to access knowledge from blockchain history, the `core-database` package provides public methods spanning the full breadth and depth of possible queries. Advanced queries can utilize the `core-elasticsearch` package to harness the combined search power of Ark and ElasticSearch.
+For this reason the primary use of the Blockchain API should be to fetch the most up-to-date information about the current network state. If your custom plugin needs to access knowledge from blockchain history, the `core-database` package provides public methods spanning the full breadth and depth of possible queries. Advanced queries can utilize the `core-elasticsearch` package to harness the combined search power of Phantom and ElasticSearch.
 
 ## Behind the Scenes
 

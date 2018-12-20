@@ -70,7 +70,7 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 - `transactions.create`
     - Creates a transaction object for submission to the blockchain. Combine with `transactions.broadcast` to submit transactions to the network.
     - Required parameters:
-        - `amount` - the amount of ARK to transfer, in arktoshis.
+        - `amount` - the amount of PHANTOM to transfer, in arktoshis.
         - `recipientId` - the address of the receiving account
         - `passphrase` - the passphrase of the signing wallet
 - `transactions.broadcast`
@@ -121,7 +121,7 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 - `transactions.bip38.create`
     - Creates a transaction using a saved BIP38 wallet. As with `transactions.create`, any transactions created using this method must be broadcasted using `transactions.broadcast` to be finalized.
     - Required parameters:
-        - `amount` - the amount of ARK that should be sent, in arktoshi.
+        - `amount` - the amount of PHANTOM that should be sent, in arktoshi.
         - `recipientId` - the address of the recipient account
         - `bip38` - the bip38 password used to create the sender account
         - `userId` - the userID associated with the BIP38 wallet
@@ -129,15 +129,15 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 ## Default Values
 ```js
 {
-    enabled: process.env.ARK_JSON_RPC_ENABLED,
-    host: process.env.ARK_JSON_RPC_HOST || '0.0.0.0',
-    port: process.env.ARK_JSON_RPC_PORT || 8080,
+    enabled: process.env.PHANTOM_JSON_RPC_ENABLED,
+    host: process.env.PHANTOM_JSON_RPC_HOST || '0.0.0.0',
+    port: process.env.PHANTOM_JSON_RPC_PORT || 8080,
     allowRemote: false,
     whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
     database: {
     uri:
-        process.env.ARK_JSON_RPC_DATABASE
-        || `sqlite://${process.env.ARK_PATH_DATA}/database/json-rpc.sqlite`,
+        process.env.PHANTOM_JSON_RPC_DATABASE
+        || `sqlite://${process.env.PHANTOM_PATH_DATA}/database/json-rpc.sqlite`,
     options: {},
     },
 }

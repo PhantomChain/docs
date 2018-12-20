@@ -1,12 +1,12 @@
 # Inside a Transaction Lifecycle: From Client to Blockchain
 
-All valid Ark transactions begin as user-submitted data and end as immutable history on the Ark blockchain. This column outlines the transaction's journey from client to blockchain in general terms. While implementation specifics will depend on the platform used to submit the transaction, Ark's extensive SDK coverage ensures that developers experience a unified development workflow across languages and platforms. 
+All valid Phantom transactions begin as user-submitted data and end as immutable history on the Phantom blockchain. This column outlines the transaction's journey from client to blockchain in general terms. While implementation specifics will depend on the platform used to submit the transaction, Phantom's extensive SDK coverage ensures that developers experience a unified development workflow across languages and platforms. 
 
 ## Serialize
 
-All transactions are serialized on client applications prior to submission to Phantom Core nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the Ark blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. 
+All transactions are serialized on client applications prior to submission to Phantom Core nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the Phantom blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. 
 
-Every `builder` module will have a method similar to the JavaScript SDK's `getStruct`, which will return a formatted transaction for submission to the ARK blockchain. Use this object, or an array of such objects, to invoke the `transactions.store()` method in your Client SDK.
+Every `builder` module will have a method similar to the JavaScript SDK's `getStruct`, which will return a formatted transaction for submission to the Phantom blockchain. Use this object, or an array of such objects, to invoke the `transactions.store()` method in your Client SDK.
 
 No node will accept a transaction without a valid signature from a private key. Make sure you invoke the SDK builder's `sign` method on your transaction object using the sender's private key.
 
@@ -16,7 +16,7 @@ End users most commonly submit transactions to Phantom Core nodes using Client S
 
 ## Receive and Validate at Node
 
-Transactions are received at the POST `transactions` endpoint of the Public API corresponding to your version of ARK (we assume v2 in this chapter). 
+Transactions are received at the POST `transactions` endpoint of the Public API corresponding to your version of Phantom (we assume v2 in this chapter). 
 
 Before interacting with Phantom Core internals in any way, all requests are first validated by the API endpoint schema. Each endpoint schema defines the structure that requests to that endpoint should conform to. All Client SDKs create API requests to conform to this standard, so following the SDK guidelines will typically result in your transaction passing validation. 
 
@@ -76,7 +76,7 @@ The `Block.create` method uses the following algorithm to create a new block:
 6. Cast the data into a Block model using the new transaction and block ID.
 7. Return the casted Block object.
 
-Here, the cryptographic functions used by Ark to generate hashes are identical to those used by Bitcoin. Good resources to learn more about the block creation process can be found in [Bitcoin educational materials](https://github.com/bitcoinbook/bitcoinbook) as well as relevant Ark documentation on serialization.
+Here, the cryptographic functions used by Phantom to generate hashes are identical to those used by Bitcoin. Good resources to learn more about the block creation process can be found in [Bitcoin educational materials](https://github.com/bitcoinbook/bitcoinbook) as well as relevant Phantom documentation on serialization.
 
 ## Fire Block and Transaction Creation Events
 

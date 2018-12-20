@@ -10,10 +10,10 @@ Where possible, these discrepancies are noted below. The `transformers` director
 
 ## Block
 
-Blocks are the core unit of any given blockchain. In ARK, blocks contain a group of transactions and are signed by a delegate to validate their authenticity.
+Blocks are the core unit of any given blockchain. In XPH, blocks contain a group of transactions and are signed by a delegate to validate their authenticity.
 
 - **id**
-- **version** t*he version of ARK active on the network when the block was forged*
+- **version** t*he version of XPH active on the network when the block was forged*
 - **height** *the height of the block*
 - **previous** *the ID of the previous block in the chain*
 - **forged**:
@@ -34,7 +34,7 @@ Blocks are the core unit of any given blockchain. In ARK, blocks contain a group
 
 ## Transaction
 
-Transactions are the heart of any blockchain, cryptocurrency or otherwise. They represent a transfer of value from one network participant to another. In ARK, transactions can be of one of multiple types, specified in [AIP11](https://github.com/PhantomChain/AIPs/blob/master/AIPS/aip-11.md), which can affect the content and data structure of each transaction's payload.
+Transactions are the heart of any blockchain, cryptocurrency or otherwise. They represent a transfer of value from one network participant to another. In XPH, transactions can be of one of multiple types, specified in [AIP11](https://github.com/PhantomChain/AIPs/blob/master/AIPS/aip-11.md), which can affect the content and data structure of each transaction's payload.
 
 - **id**
 - **blockId** *the ID of the block in which this transaction is included*
@@ -53,7 +53,7 @@ Transactions are the heart of any blockchain, cryptocurrency or otherwise. They 
 
 ## Wallet
 
-Wallets are individual accounts on the ARK ledger. Each wallet has a balance that grows and shrinks as the wallet sends and receives transactions on the network. Additionally, each wallet can cast exactly one vote for one delegate to forge on their behalf.
+Wallets are individual accounts on the PHANTOM ledger. Each wallet has a balance that grows and shrinks as the wallet sends and receives transactions on the network. Additionally, each wallet can cast exactly one vote for one delegate to forge on their behalf.
 
 Note in particular that private keys and passphrases are not included on this model, as they are never stored in memory at any point during the operation of Phantom Core nodes.
 
@@ -64,7 +64,7 @@ Note in particular that private keys and passphrases are not included on this mo
 
 ## Delegate
 
-Though delegates are treated as their own data type in the ARK Public API, in their implementation delegates are nothing more than wallets whose owners have registered a delegate username. 
+Though delegates are treated as their own data type in the PHANTOM Public API, in their implementation delegates are nothing more than wallets whose owners have registered a delegate username. 
 
 They share all fields in common with the Wallet data structure, with a few extra fields:
 
@@ -75,7 +75,7 @@ They share all fields in common with the Wallet data structure, with a few extra
 
 ## Peer
 
-Peers are nodes in the Ark network that work together to relay transactions and form consent. Each node keeps a list of current peers, regularly pruning and updating the list as new peers join and leave the network.
+Peers are nodes in the PHANTOM network that work together to relay transactions and form consent. Each node keeps a list of current peers, regularly pruning and updating the list as new peers join and leave the network.
 
 - **ip** *the IP address of the peer*
 - **port** *the port on which the peer has enabled its P2P connection*

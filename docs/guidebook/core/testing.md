@@ -8,7 +8,7 @@ title: "Testing"
 
 ## Code organization
 
-Before all, let's see and understand how the code is organized. When you open the ark repository, you will have a directory structure like this:
+Before all, let's see and understand how the code is organized. When you open the phantom repository, you will have a directory structure like this:
 
 ```
 /docker
@@ -63,7 +63,7 @@ Important thing to note: except for `__support__`, the directory structure **mat
 
 ### Container setup and common initialization in `__support__/setup.js`
 
-In most packages, to test the code you will want to actually launch an Ark node, or at least parts of it. This is why you will often access the `setup.js` file, which is used to launch the parts of the node needed for our tests.
+In most packages, to test the code you will want to actually launch an Phantom node, or at least parts of it. This is why you will often access the `setup.js` file, which is used to launch the parts of the node needed for our tests.
 
 Let's have a look at this file in our `core-blockchain` package :
 
@@ -93,7 +93,7 @@ A couple of things to see here:
 
 - We declare a `setUp` and a `tearDown` method: these will be used in our tests' `beforeAll` and `afterAll` methods
 - We use `@phantomchain/core-test-utils` to help us setting up the container
-- The `containerHelper.setUp` method accepts a configuration object which will be used to launch (or not) the different modules of the Ark node
+- The `containerHelper.setUp` method accepts a configuration object which will be used to launch (or not) the different modules of the Phantom node
 
 Now this can be used in every test that needs it, just like this:
 

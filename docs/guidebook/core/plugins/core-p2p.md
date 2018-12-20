@@ -18,8 +18,8 @@ yarn add @phantomchain/core-p2p
 
 ```js
 module.exports = {
-  host: process.env.ARK_P2P_HOST || '0.0.0.0',
-  port: process.env.ARK_P2P_PORT || 4002,
+  host: process.env.PHANTOM_P2P_HOST || '0.0.0.0',
+  port: process.env.PHANTOM_P2P_PORT || 4002,
   remoteInterface: false,
   dns: [
     // Google

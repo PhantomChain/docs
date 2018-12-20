@@ -45,14 +45,8 @@ The PHANTOM address is like a bank account where only the owner of the private k
 ![Diagram 002](./assets/what-is-an-ark-address/arkDiagram04-002.png)
 
 A modifier is a byte used to customize the address. It is useful to differentiate networks :
-<<<<<<< HEAD:docs/introduction/ark/what-is-an-ark-address.md
- + On Ark mainnet modifier = `0x17` so Ark address starts with `A`
- + On Ark devnet modifier = `0x1e` so DArk address starts with `D`
- + On KAPU mainnet modifier = `0x2d` so KAPU address starts with `K`
-=======
  + On PHANTOM mainnet modifier = `0x56` so PHANTOM address starts with `P`
- + On PHANTOM devnet modifier = `0x1e` so DARK address starts with `D` (We utilize same format as DARK in ARK)
->>>>>>> Update what-is-an-ark-address.md:docs/basics/what-is-an-ark-address.md
+ + On PHANTOM devnet modifier = `0x1e` so DARK address starts with `D` (We utilize same format as DXPH in XPH)
 
 Here is the table giving the address start char according to hexadecimal modifier value :
 
@@ -96,9 +90,9 @@ Here is the table giving the address start char according to hexadecimal modifie
 
 ## Ledger Nano S
 
-The best way to secure Ark address is to use a device that can sign transactions off the network. Ark team developed an application running on [Ledger Nano S](https://www.ledgerwallet.com/products/ledger-nano-s) hardware wallet allowing such a security.
+The best way to secure Phantom address is to use a device that can sign transactions off the network. Phantom team developed an application running on [Ledger Nano S](https://www.ledgerwallet.com/products/ledger-nano-s) hardware wallet allowing such a security.
 
-The Ledger Nano S device does not store tokens. It is a device that generates public and private keys from a master seed. Keys are issued from the seed using the derivation path. For Ark blockchain (and cloned ones) the derivation path is structured like this :
+The Ledger Nano S device does not store tokens. It is a device that generates public and private keys from a master seed. Keys are issued from the seed using the derivation path. For Phantom blockchain (and cloned ones) the derivation path is structured like this :
 
 `44'\111'\<account index>'\0\<address number>`
 

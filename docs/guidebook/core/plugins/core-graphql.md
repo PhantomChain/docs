@@ -19,8 +19,8 @@ yarn add @phantomchain/core-graphql
 ```js
 module.exports = {
   enabled: false,
-  host: process.env.ARK_GRAPHQL_HOST || '0.0.0.0',
-  port: process.env.ARK_GRAPHQL_PORT || 4005,
+  host: process.env.PHANTOM_GRAPHQL_HOST || '0.0.0.0',
+  port: process.env.PHANTOM_GRAPHQL_PORT || 4005,
   path: '/graphql',
 }
 ```

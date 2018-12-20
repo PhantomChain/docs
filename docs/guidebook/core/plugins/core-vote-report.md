@@ -31,7 +31,7 @@ To use the `vote-report` package, add it to your plugins file in your config dir
 ## **Default Settings**
 ```js
 {
-  host: process.env.ARK_VOTE_REPORT_HOST || '0.0.0.0',
-  port: process.env.ARK_VOTE_REPORT_PORT || 4006,
+  host: process.env.PHANTOM_VOTE_REPORT_HOST || '0.0.0.0',
+  port: process.env.PHANTOM_VOTE_REPORT_PORT || 4006,
 }
 ```

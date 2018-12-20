@@ -20,10 +20,10 @@ yarn add @phantomchain/core-error-tracker-bugsnag
 
 ```js
 module.exports = {
-  apiKey: process.env.ARK_ERROR_TRACKER_BUGSNAG_API_KEY,
+  apiKey: process.env.PHANTOM_ERROR_TRACKER_BUGSNAG_API_KEY,
   configuration: {
     metaData: {
-      network: process.env.ARK_NETWORK_NAME,
+      network: process.env.PHANTOM_NETWORK_NAME,
     },
   },
 }

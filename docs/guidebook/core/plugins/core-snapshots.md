@@ -26,11 +26,11 @@ The `core-snapshots` and `core-snapshots-cli` packages facilitate the process of
 
 In order to ensure that snapshots are usable across the network, it is often helpful to establish a common standard of data serialization. If all nodes agree on a single ruleset governing how blockchain data maps into a database representation, it becomes much easier to compare, validate, and verify snapshots created by different nodes. `core-snapshots` offers three such standards, also known as codecs, covering a wide range of use cases:
 
-- The `lite` codec utilizes a MessagePack encoding format with Ark-specific key-value pairs. This encoding format is faster than the `ark` format, but results in larger backup file sizes, as keys are stored alongside their respective values
-- The `ark` codec uses Ark's serialize and deserialize standards in creating the backup. As the Ark serialization protocol does not include key data, this codec results in smaller database backup sizes. However, this density comes at the expense of performance, as Ark serialization (currently) cannot match MessagePack's encoding and decoding speed.
-- The `msgpack` codec uses MessagePack without any Ark-specific standards. As this codec has no specific knowledge of Ark serialization, this option is both the fastest and the most inefficient in terms of snapshot file size.
+- The `lite` codec utilizes a MessagePack encoding format with Phantom-specific key-value pairs. This encoding format is faster than the `phantom` format, but results in larger backup file sizes, as keys are stored alongside their respective values
+- The `phantom` codec uses Phantom's serialize and deserialize standards in creating the backup. As the Phantom serialization protocol does not include key data, this codec results in smaller database backup sizes. However, this density comes at the expense of performance, as Phantom serialization (currently) cannot match MessagePack's encoding and decoding speed.
+- The `msgpack` codec uses MessagePack without any Phantom-specific standards. As this codec has no specific knowledge of Phantom serialization, this option is both the fastest and the most inefficient in terms of snapshot file size.
 
-With all options, the tradeoff to keep in mind is performance vs filesystem impact. If you have a external storage solution for backups and limited computational resources, using `msgpack` will ensure maximum performance across all potential use cases. Alternatively, if your node setup is robust and backup creation speed is not a relevant factor, the `ark` codec  might be the right choice. 
+With all options, the tradeoff to keep in mind is performance vs filesystem impact. If you have a external storage solution for backups and limited computational resources, using `msgpack` will ensure maximum performance across all potential use cases. Alternatively, if your node setup is robust and backup creation speed is not a relevant factor, the `phantom` codec  might be the right choice. 
 
 If you're unsure of which to choose, use the `lite` codec. Generally speaking, it offers the best tradeoff between performance and impact.
 
@@ -40,9 +40,9 @@ The `core-snapshots-cli` is a command-line interface designed to help developers
 
 The following options are available to all commands:
 
-- `-d` / `—data`: specifies which data directory should be used as a destination for snapshots. default is `~/.ark`
-- `-c` / `—config`: specifies where the network configuration file can be found. default is `~/.ark/config`
-- `-t` / `—token`: specifies which token data should be exported. default is `ark`
+- `-d` / `—data`: specifies which data directory should be used as a destination for snapshots. default is `~/.phantom`
+- `-c` / `—config`: specifies where the network configuration file can be found. default is `~/.phantom/config`
+- `-t` / `—token`: specifies which token data should be exported. default is `phantom`
 - `-n` / `—network`: specifies which network should be exported
 - `—skip-compression`: specifies whether the specified action should compress its output using gzip or not. default is `false`
 - `—trace`: specifies whether snapshot details should be logged to console for error tracing. default is `false`
@@ -57,14 +57,14 @@ To create a snapshot, navigate to the `core-snapshots-cli` package and run the f
 ```bash
 yarn create:devnet
 ```
-The command will generate snapshot files in your configured folder. By default this folder will be in `~./ark/snapshots/NETWORK_NAME`. Files names follow the pattern: `{TABLE}.{CODEC}` For example, running `yarn create:devnet` will create the following files in the folder `~./ark/snapshots/devnet/0-331985/`:
+The command will generate snapshot files in your configured folder. By default this folder will be in `~./phantom/snapshots/NETWORK_NAME`. Files names follow the pattern: `{TABLE}.{CODEC}` For example, running `yarn create:devnet` will create the following files in the folder `~./phantom/snapshots/devnet/0-331985/`:
 
 - blocks.lite
 - transactions.lite
 
 The codec used can be specified using the `—codec` flag, for example:
 ```bash
-yarn create:devnet --codec ark
+yarn create:devnet --codec phantom
 ```
 The folder `0-331985` indicates that the snapshot includes data between block 0 and block 331985.
 
@@ -145,7 +145,7 @@ yarn rollback:devnet -b 350000
 ```
 If the `-b` or `--block-height` argument is not set, the command will rollback the chain to the last completed round.
 
-Rollback command also makes a backup of forged transactions, ensuring that no local history is accidentally deleted in a rollback. Transactions are stored next to the snapshot files (in `./ark/snapshots/NETWORK_NAME`). File is named `rollbackTransactionBackup.startBlockHeight.endBlockHeight.json`.
+Rollback command also makes a backup of forged transactions, ensuring that no local history is accidentally deleted in a rollback. Transactions are stored next to the snapshot files (in `./phantom/snapshots/NETWORK_NAME`). File is named `rollbackTransactionBackup.startBlockHeight.endBlockHeight.json`.
 
 For example: `rollbackTransactionBackup.53001.54978.json` contains transactions from block 53001 to block 54978.
 
