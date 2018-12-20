@@ -27,7 +27,7 @@ Next we create an instance of our `SequelizeConnection` which is the concrete im
 
 You can write any database connection that you like. There are only two requirements:
 
-1. Your plugin class must extend `ConnectionInterface` (found [here](https://github.com/ArkEcosystem/core/blob/master/packages/core-database/lib/interface.js)).
+1. Your plugin class must extend `ConnectionInterface` (found [here](https://github.com/PhantomChain/core/blob/master/packages/core-database/lib/interface.js)).
 2. Your exported plugin must include an `alias` key that matches the `alias` of the library you are looking to override: in this case, `databaseManager`.
 
 Imagine how you could implement a `CassandraConnection` that connects to an [Apache Cassandra](http://cassandra.apache.org/) instance for a large private blockchain.

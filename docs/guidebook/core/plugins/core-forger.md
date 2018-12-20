@@ -5,20 +5,20 @@ title: "Forger"
 # Forger
 
 ::: tip
-You can find the source code of this package at [packages/core-forger](https://github.com/ArkEcosystem/core/tree/develop/packages/core-forger).
+You can find the source code of this package at [packages/core-forger](https://github.com/PhantomChain/core/tree/develop/packages/core-forger).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-forger
+yarn add @phantomchain/core-forger
 ```
 
 ## Alias 
 `forger`
 
 ## Implementation 
-[core-forger](https://github.com/ArkEcosystem/core/tree/develop/packages/core-forger)
+[core-forger](https://github.com/PhantomChain/core/tree/develop/packages/core-forger)
 
 ## Notable Dependencies
 
@@ -26,7 +26,7 @@ yarn add @arkecosystem/core-forger
 
 ## Summary 
 
-`core-forger` offers a top-level wrapper around the forging process. While not directly responsible for the block creation logic (that can be found in the Delegate model), `core-forger` coordinates the environment in which forging occurs and updates other Ark Core packages on its own forging status.
+`core-forger` offers a top-level wrapper around the forging process. While not directly responsible for the block creation logic (that can be found in the Delegate model), `core-forger` coordinates the environment in which forging occurs and updates other Phantom Core packages on its own forging status.
 
 ## Usage
 
@@ -36,17 +36,17 @@ The `core-forger` package is enabled by default in full nodes and forging nodes,
 yarn full:mainnet
 ```
 
-Swap out the node type and network as necessary by using the scripts in `core`'s [package.json](https://github.com/ArkEcosystem/core/blob/develop/packages/core/package.json) file.
+Swap out the node type and network as necessary by using the scripts in `core`'s [package.json](https://github.com/PhantomChain/core/blob/develop/packages/core/package.json) file.
 
 ## Forging and the Network
 
-`core-forger` needs to have a host to connect to. As the forger holds no information about the blockchain state, it must make REST calls to an Ark Core node's P2P API to determine when to forge. 
+`core-forger` needs to have a host to connect to. As the forger holds no information about the blockchain state, it must make REST calls to an Phantom Core node's P2P API to determine when to forge. 
 
-The `core-forger` package generalizes its peer connection in the [client](https://github.com/ArkEcosystem/core/blob/develop/packages/core-forger/lib/client.js) class, which handles communication between the forging process and the rest of the node. The client establishes peers based on the `hosts` config.
+The `core-forger` package generalizes its peer connection in the [client](https://github.com/PhantomChain/core/blob/develop/packages/core-forger/lib/client.js) class, which handles communication between the forging process and the rest of the node. The client establishes peers based on the `hosts` config.
 
 By default, your `hosts` config includes a link to the default P2P API port. This assumes that you are running a full node, or a node with both relay and forging capabilities.
 
-If you are running a forging node without relay capacities, you will not have an internal P2P API available to you. In this case, you must connect to an Ark Core node with a P2P interface. 
+If you are running a forging node without relay capacities, you will not have an internal P2P API available to you. In this case, you must connect to an Phantom Core node with a P2P interface. 
 
 ## Behind the Scenes
 

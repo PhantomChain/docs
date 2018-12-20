@@ -45,15 +45,7 @@ Currently, the VM produced is a Standard_A1 size VM. This is a very low-cost res
 
 Click ‘Agree’, and ‘Purchase’ to begin deployment. Should take 5–10 minutes.
 
-<<<<<<< HEAD
 ## 2. Connecting to VM + PHANTOM Deployer
-=======
-<<<<<<< HEAD:docs/cookbook/deployer/setup-with-azure.md
-## 2. Connecting to VM + Ark Deployer
-=======
-## 2. Connecting to VM + PHANTOM Deployer
->>>>>>> Update setup-with-azure.md:docs/deployer/setup-with-azure.md
->>>>>>> Update setup-with-azure.md
 
 You are welcome to explore your new VM’s Overview, etc, by clicking on ‘Resource Groups’ and finding your new group, and the VM inside. There are lots of configuration items here.
 
@@ -114,7 +106,7 @@ You can then run this new version of your script against a new VM, or, you can u
 
 **To quickly make a personalized copy of the script (GitHub account)**
 
-- Go in browser to: [https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomdefaultinstall.sh](https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomcoredefaultinstall.sh)
+- Go in browser to: [https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/phantomdefaultinstall.sh](https://raw.githubusercontent.com/PhantomChain/phantom-azure/master/script/PhantomChain/defaultinstall.sh)
 - Copy the contents of this file (ALL of it; Just CTRL+A and CTRL+C)
 - Open a new tab to [https://gist.github.com/](https://gist.github.com/)
 - Paste contents of clipboard to this file, and customize lines 21–31 to your hearts content. These variables all align with an optional parameter of PHANTOM Deployer (See GitHub: [https://github.com/PhantomChain/phantom-deployer#optional-parameters](https://github.com/PhantomChain/phantom-deployer#optional-parameters)).

@@ -4,7 +4,7 @@ title: "Cookbook"
 
 # Introduction
 
-This is the cookbook for all Ark Ecosystem tutorials, code snippets, etc. 
+This is the cookbook for all PHANTOM tutorials, code snippets, etc. 
 
 
 Use the sidebar to navigate this section, or follow the links below:
@@ -14,4 +14,4 @@ Use the sidebar to navigate this section, or follow the links below:
 * [Deployer](/cookbook/deployer/)
 * [Exchanges](/cookbook/exchanges/)
 
-[open an issue](https://github.com/ArkEcosystem/docs).
+[open an issue](https://github.com/PhantomChain/docs).

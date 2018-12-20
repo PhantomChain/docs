@@ -6,13 +6,13 @@ title: "Java"
 
 ```java
 import com.google.gson.internal.LinkedTreeMap;
-import org.arkecosystem.client.Connection;
-import org.arkecosystem.client.api.two.Two;
-import org.arkecosystem.crypto.configuration.Network;
-import org.arkecosystem.crypto.networks.Devnet;
-import org.arkecosystem.crypto.networks.Mainnet;
-import org.arkecosystem.crypto.transactions.Transaction;
-import org.arkecosystem.crypto.transactions.builder.Transfer;
+import org.phantom.client.Connection;
+import org.phantom.client.api.two.Two;
+import org.phantom.crypto.configuration.Network;
+import org.phantom.crypto.networks.Devnet;
+import org.phantom.crypto.networks.Mainnet;
+import org.phantom.crypto.transactions.Transaction;
+import org.phantom.crypto.transactions.builder.Transfer;
 
 import java.io.IOException;
 import java.util.ArrayList;

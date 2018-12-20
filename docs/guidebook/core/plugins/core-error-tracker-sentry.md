@@ -5,13 +5,13 @@ title: "Error Tracker - Sentry"
 # Error Tracker - Sentry
 
 ::: tip
-You can find the source code of this package at [packages/core-error-tracker-sentry](https://github.com/ArkEcosystem/core/tree/develop/packages/core-error-tracker-sentry).
+You can find the source code of this package at [packages/core-error-tracker-sentry](https://github.com/PhantomChain/core/tree/develop/packages/core-error-tracker-sentry).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-error-tracker-sentry
+yarn add @phantomchain/core-error-tracker-sentry
 ```
 
 ## Configuration

@@ -7,7 +7,7 @@ title: "Transaction Pool"
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-transaction-pool
+yarn add @phantomchain/core-transaction-pool
 ```
 
 ## Alias
@@ -16,11 +16,11 @@ yarn add @arkecosystem/core-transaction-pool
 
 ## Interface
 
-[core-transaction-pool](https://github.com/ArkEcosystem/core/tree/develop/packages/core-transaction-pool)
+[core-transaction-pool](https://github.com/PhantomChain/core/tree/develop/packages/core-transaction-pool)
 
 ## Implementation
 
-[core-transaction-pool-mem](https://github.com/ArkEcosystem/core/tree/develop/packages/core-transaction-pool-mem)
+[core-transaction-pool-mem](https://github.com/PhantomChain/core/tree/develop/packages/core-transaction-pool-mem)
 
 ## Notable Dependencies
 
@@ -28,13 +28,13 @@ yarn add @arkecosystem/core-transaction-pool
 
 ## Summary
 
-The transaction pool package is responsible for verifying, validating and sorting valid transactions within the Ark Core node prior to their inclusion in a block and the blockchain history. 
+The transaction pool package is responsible for verifying, validating and sorting valid transactions within the Phantom Core node prior to their inclusion in a block and the blockchain history. 
 
 Within the lifecycle of a transaction as it goes from request to blockchain entry, `core-transaction-pool` represents the intermediate step: after a transaction is submitted to the network, before it is included on the blockchain.
 
 ## Usage
 
-As `core-transaction-pool` is primarily an internal tool, all Ark Core nodes that utilize this package (all nodes except dedicated forgers) don't need to do anything to set up their pools. The pool will load and begin working by default upon node startup.
+As `core-transaction-pool` is primarily an internal tool, all Phantom Core nodes that utilize this package (all nodes except dedicated forgers) don't need to do anything to set up their pools. The pool will load and begin working by default upon node startup.
 
 If you are a forging delegate running a full node, customizing the transaction pool limit is one way to affect the economics behind running your node. Increasing the pool limit can increase your node's capacity to process transactions during times of increased blockchain activity. 
 

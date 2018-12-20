@@ -5,13 +5,13 @@ title: "P2P API"
 # P2P API
 
 ::: tip
-You can find the source code of this package at [packages/core-p2p](https://github.com/ArkEcosystem/core/tree/develop/packages/core-p2p).
+You can find the source code of this package at [packages/core-p2p](https://github.com/PhantomChain/core/tree/develop/packages/core-p2p).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-p2p
+yarn add @phantomchain/core-p2p
 ```
 
 ## Configuration

@@ -11,14 +11,14 @@ title: "Java"
 ### Gradle
 
 ```bash
-compile group: 'org.arkecosystem.client', name: 'client', version: '0.1.2'
+compile group: 'org.phantom.client', name: 'client', version: '0.1.2'
 ```
 
 ### Maven
 
 ```xml
 <dependency>
-  <groupId>org.arkecosystem</groupId>
+  <groupId>org.phantom</groupId>
   <artifactId>client</artifactId>
   <version>0.1.2</version>
 </dependency>
@@ -30,8 +30,8 @@ compile group: 'org.arkecosystem.client', name: 'client', version: '0.1.2'
 
 ```java
 import com.google.gson.internal.LinkedTreeMap;
-import org.arkecosystem.client.Connection;
-import org.arkecosystem.client.ConnectionManager;
+import org.phantom.client.Connection;
+import org.phantom.client.ConnectionManager;
 
 import java.util.HashMap;
 import java.io.IOException;
@@ -56,8 +56,8 @@ public class Main {
 
 ```java
 import com.google.gson.internal.LinkedTreeMap;
-import org.arkecosystem.client.Connection;
-import org.arkecosystem.client.api.two.Two;
+import org.phantom.client.Connection;
+import org.phantom.client.api.two.Two;
 
 import java.util.HashMap;
 import java.io.IOException;

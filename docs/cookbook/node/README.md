@@ -1,7 +1,7 @@
 ---
-title: Ark Node
+title: PHANTOM Node
 ---
 
-# Ark Node Recipes
+# PHANTOM Node Recipes
 
-This section of the Ark Ecosystem Cookbook is dedicated to helping you setup and secure your own node on the Ark blockchain.
+This section of the PHANTOM Cookbook is dedicated to helping you setup and secure your own node on the PHANTOM blockchain.

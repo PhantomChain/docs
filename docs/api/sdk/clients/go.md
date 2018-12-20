@@ -16,12 +16,12 @@ The package can be installed by using the following commands in your terminal :
 
 If you are using the v1 API
 ```bash
-$ go get github.com/ArkEcosystem/go-client/client/one
+$ go get github.com/PhantomChain/go-client/client/one
 ```
 
 If you are using the v2 API
 ```
-go get github.com/ArkEcosystem/go-client/client/two
+go get github.com/PhantomChain/go-client/client/two
 ```
 
 ## Usage
@@ -34,9 +34,9 @@ package main
 import (
 	"context"
 	// For V1
-	"github.com/ArkEcosystem/go-client/client/one"
+	"github.com/PhantomChain/go-client/client/one"
 	// For V2
-	"github.com/ArkEcosystem/go-client/client/two"
+	"github.com/PhantomChain/go-client/client/two"
 	"github.com/davecgh/go-spew/spew"
 	"net/url"
 )

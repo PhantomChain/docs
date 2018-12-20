@@ -12,11 +12,11 @@ Elixir can be installed by following [this guide](https://elixir-lang.org/instal
 
 ## Installation
 
-The package can be installed by adding `arkecosystem_client` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `phantom_client` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  {:arkecosystem_client, "~> 0.1.0"}
+  {:Phantom_client, "~> 0.1.0"}
 end
 ```
 
@@ -32,7 +32,7 @@ $ mix deps.get
 First step is to initialize the Client, the nethash and version values might be different :
 
 ```elixir
-iex > client = ArkEcosystem.Client.new(%{
+iex > client = Phantom.Client.new(%{
 ... >             host: "http://my.node.ip:myport/api",
 ... >             nethash: "578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23",
 ... >             version: "1.1.1"
@@ -42,143 +42,143 @@ iex > client = ArkEcosystem.Client.new(%{
 ### Accounts - V1
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Accounts.account(client, "DQCZQzibtABoggT9ygSzFNQ3A7PJyxttPP")
+iex> Phantom.Client.API.One.Accounts.account(client, "DQCZQzibtABoggT9ygSzFNQ3A7PJyxttPP")
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/accounts.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/accounts.ex#L13)
 
 ### Blocks V1 and V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Blocks.block(client, "887102556000070987")
+iex> Phantom.Client.API.One.Blocks.block(client, "887102556000070987")
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/blocks.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/blocks.ex#L13)
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Blocks.list(client)
+iex> Phantom.Client.API.Two.Blocks.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/blocks.ex#L9)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/blocks.ex#L9)
 
 ### Delegates V1 and V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Delegates.count(client)
+iex> Phantom.Client.API.One.Delegates.count(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/delegates.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/delegates.ex#L13)
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Delegates.list(client)
+iex> Phantom.Client.API.Two.Delegates.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/delegates.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/delegates.ex#L8)
 
 ### Loader - V1
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Loader.autoconfigure(client)
+iex> Phantom.Client.API.One.Loader.autoconfigure(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/loader.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/loader.ex#L13)
 
 ### Node - V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Node.status(client)
+iex> Phantom.Client.API.Two.Node.status(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/node.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/node.ex#L8)
 
 ### Peers - V1 and V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Peers.peer(client, "167.114.29.35", 4002)
+iex> Phantom.Client.API.One.Peers.peer(client, "167.114.29.35", 4002)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/peers.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/peers.ex#L13)
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Peers.list(client)
+iex> Phantom.Client.API.Two.Peers.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/peers.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/peers.ex#L8)
 
 ### Signatures - V1
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Signatures.fee(client)
+iex> Phantom.Client.API.One.Signatures.fee(client)
 ... > {:ok, 500000000}
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/signatures.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/signatures.ex#L13)
 
 ### Transactions - V1 and V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.One.Transactions.transaction(client, "4a5f96b24091b747fb7fd34952ef465d9b8ec5f73d1b234405bf2718d2a87d56")
+iex> Phantom.Client.API.One.Transactions.transaction(client, "4a5f96b24091b747fb7fd34952ef465d9b8ec5f73d1b234405bf2718d2a87d56")
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/one/transactions.ex#L13)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/one/transactions.ex#L13)
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Transactions.list(client)
+iex> Phantom.Client.API.Two.Transactions.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/transactions.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/transactions.ex#L8)
 
 ### Votes - V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Votes.list(client)
+iex> Phantom.Client.API.Two.Votes.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/votes.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/votes.ex#L8)
 
 ### Wallets - V2
 
 ```elixir
-iex> ArkEcosystem.Client.API.Two.Wallets.list(client)
+iex> Phantom.Client.API.Two.Wallets.list(client)
 ... > {:ok,
 ... > ...
 ... > }
 ```
 
-[More details](https://github.com/ArkEcosystem/elixir-client/blob/master/lib/arkecosystem/client/api/two/wallets.ex#L8)
+[More details](https://github.com/PhantomChain/elixir-client/blob/master/lib/PhantomChain/client/api/two/wallets.ex#L8)

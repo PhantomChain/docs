@@ -2,7 +2,7 @@ module.exports = [
   ["/", "Back to Table of Contents"],
   ["/guidebook/", "Guidebook Home"],
   {
-    title: "Ark Core",
+    title: "Phantom Core",
     collapsable: false,
     children: [
       "/guidebook/core/",
@@ -20,7 +20,7 @@ module.exports = [
     ]
   },
   {
-    title: "Ark Core - Plugins",
+    title: "Phantom Core - Plugins",
     collapsable: false,
     children: [
       "/guidebook/core/plugins/",

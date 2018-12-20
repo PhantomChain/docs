@@ -5,13 +5,13 @@ title: "Elasticsearch"
 # Elasticsearch
 
 ::: tip
-You can find the source code of this package at [packages/core-elasticsearch](https://github.com/ArkEcosystem/core/tree/develop/packages/core-elasticsearch).
+You can find the source code of this package at [packages/core-elasticsearch](https://github.com/PhantomChain/core/tree/develop/packages/core-elasticsearch).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-elasticsearch
+yarn add @phantomchain/core-elasticsearch
 ```
 
 ## Configuration

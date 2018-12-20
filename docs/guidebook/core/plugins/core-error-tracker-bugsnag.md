@@ -5,13 +5,13 @@ title: "Error Tracker - Bugsnag"
 # Error Tracker - Bugsnag
 
 ::: tip
-You can find the source code of this package at [packages/core-error-tracker-bugsnag](https://github.com/ArkEcosystem/core/tree/develop/packages/core-error-tracker-bugsnag).
+You can find the source code of this package at [packages/core-error-tracker-bugsnag](https://github.com/PhantomChain/core/tree/develop/packages/core-error-tracker-bugsnag).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-error-tracker-bugsnag
+yarn add @phantomchain/core-error-tracker-bugsnag
 ```
 
 ## Configuration

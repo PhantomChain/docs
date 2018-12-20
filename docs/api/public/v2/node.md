@@ -18,15 +18,15 @@ GET /api/node/configuration
 {
     "data": {
         "nethash": "578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23",
-        "token": "DARK",
-        "symbol": "DѦ",
-        "explorer": "https://dexplorer.ark.io",
+        "token": "DXPH",
+        "symbol": "Dⓟ",
+        "explorer": "https://dexplorer.phantom.org",
         "version": 30,
         "ports": {
-          "@arkecosystem/core-p2p": 4000,
-          "@arkecosystem/core-api": 4003,
-          "@arkecosystem/core-graphql": 4005,
-          "@arkecosystem/core-json-rpc": 8080
+          "@phantomchain/core-p2p": 4000,
+          "@phantomchain/core-api": 4003,
+          "@phantomchain/core-graphql": 4005,
+          "@phantomchain/core-json-rpc": 8080
         },
         "feeStatistics": [
           {

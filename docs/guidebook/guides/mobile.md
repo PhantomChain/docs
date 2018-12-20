@@ -99,7 +99,7 @@ If you discover a security vulnerability within this application, please send an
 
 ## License
 
-[MIT](https://github.com/ArkEcosystem/mobile-wallet/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](https://github.com/PhantomChain/mobile-wallet/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)
 
 [MIT](https://github.com/Phantomchain/mobile-wallet/blob/master/LICENSE) © [PHANTOM](https://phantom.org)
 

@@ -4,21 +4,21 @@ All valid Ark transactions begin as user-submitted data and end as immutable his
 
 ## Serialize
 
-All transactions are serialized on client applications prior to submission to Ark Core nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the Ark blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. 
+All transactions are serialized on client applications prior to submission to Phantom Core nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the Ark blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. 
 
 Every `builder` module will have a method similar to the JavaScript SDK's `getStruct`, which will return a formatted transaction for submission to the ARK blockchain. Use this object, or an array of such objects, to invoke the `transactions.store()` method in your Client SDK.
 
 No node will accept a transaction without a valid signature from a private key. Make sure you invoke the SDK builder's `sign` method on your transaction object using the sender's private key.
 
-## Submit to Ark Core Node
+## Submit to Phantom Core Node
 
-End users most commonly submit transactions to Ark Core nodes using Client SDK's `transactions/store` function. This function will send a POST request withtransaction data to the Ark Core node specified as the connection URL parameter when creating a Client instance.
+End users most commonly submit transactions to Phantom Core nodes using Client SDK's `transactions/store` function. This function will send a POST request withtransaction data to the Phantom Core node specified as the connection URL parameter when creating a Client instance.
 
 ## Receive and Validate at Node
 
 Transactions are received at the POST `transactions` endpoint of the Public API corresponding to your version of ARK (we assume v2 in this chapter). 
 
-Before interacting with Ark Core internals in any way, all requests are first validated by the API endpoint schema. Each endpoint schema defines the structure that requests to that endpoint should conform to. All Client SDKs create API requests to conform to this standard, so following the SDK guidelines will typically result in your transaction passing validation. 
+Before interacting with Phantom Core internals in any way, all requests are first validated by the API endpoint schema. Each endpoint schema defines the structure that requests to that endpoint should conform to. All Client SDKs create API requests to conform to this standard, so following the SDK guidelines will typically result in your transaction passing validation. 
 
 Notably, no blockchain-level validation occurs at this earliest stage in the transaction lifecycle. Request validation simply ensures that your POST request can be understood by the network, not that the data it contains represents a valid transaction. This task falls to the next class to handle transaction requests: the TransactionGuard.
 
@@ -41,14 +41,14 @@ Internally, the guard processes transactions in its `validate` method by separat
 - transactions with low fees for broadcast/pool inclusion
 - transactions that don't conform to their transaction type
 
-At this point, Ark Core has a list of which incoming transactions to add to the transaction pool. The guard now checks the pool to see whether it's at capacity. If so, the guard compares the incoming transactions against the pooled transactions and removes the transactions with the lowest fees.
+At this point, Phantom Core has a list of which incoming transactions to add to the transaction pool. The guard now checks the pool to see whether it's at capacity. If so, the guard compares the incoming transactions against the pooled transactions and removes the transactions with the lowest fees.
 
 ## Add to Transaction Pool
 
 The transaction pool is an in-memory data store that holds transactions prior to forging. All transactions are saved in this pool alongside the following metadata:
 
 - the insertion sequence, or when the transaction was added relative to the others in the pool
-- the pingCount, or the count of how many times this Ark Core node has received this transaction from its peers
+- the pingCount, or the count of how many times this Phantom Core node has received this transaction from its peers
 
 Before a transaction is added to the pool, a "pool charge" is made against the sending account. This transaction is not applied in full until the transaction is included in a block, and is reverted should the transaction drop out of the pool for any reason. The point of the "pool charge" is to preemptively apply the transaction's effects to the account in question so that that value cannot be spent by another transaction. This minimizes the possibility of a double spend, as transactions that spend the same value twice will be rejected by the transaction pool.
 

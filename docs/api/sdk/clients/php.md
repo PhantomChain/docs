@@ -11,7 +11,7 @@ title: "PHP"
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require arkecosystem/client php-http/guzzle6-adapter
+composer require phantom/client php-http/guzzle6-adapter
 ```
 
 ## Basics
@@ -21,10 +21,10 @@ composer require arkecosystem/client php-http/guzzle6-adapter
 
 require_once('vendor/autoload.php');
 
-use ArkEcosystem\Client\Connection;
+use Phantom\Client\Connection;
 
 $connection = new Connection([
-    'host' => 'http://my.ark.node:port/api', // NO TRAILING SLASH!
+    'host' => 'http://my.phantom.node:port/api', // NO TRAILING SLASH!
     'version' => 1
 ]);
 
@@ -42,18 +42,18 @@ if ($response['success']) {
 
 require_once('vendor/autoload.php');
 
-use ArkEcosystem\Client\Connection;
-use ArkEcosystem\Client\ConnectionManager;
+use Phantom\Client\Connection;
+use Phantom\Client\ConnectionManager;
 
 $manager = new ConnectionManager();
 
 $manager->connect([
-    'host' => 'http://my-main.ark.node:port/api', // NO TRAILING SLASH!
+    'host' => 'http://my-main.phantom.node:port/api', // NO TRAILING SLASH!
     'version' => 1
 ], 'main');
 
 $manager->connect([
-    'host' => 'http://my-backup.ark.node:port/api', // NO TRAILING SLASH!
+    'host' => 'http://my-backup.phantom.node:port/api', // NO TRAILING SLASH!
     'version' => 1
 ], 'backup');
 

@@ -1,27 +1,27 @@
 ---
-title: "How To Vote/Un-Vote In the ARK Desktop Wallet"
+title: "How To Vote/Un-Vote In the PHANTOM Desktop Wallet"
 ---
 
-# How To Vote/Un-Vote In the ARK Desktop Wallet
+# How To Vote/Un-Vote In the PHANTOM Desktop Wallet
 
 [[toc]]
 
-You can use your ARK to vote or un-vote a delegate. In this guide we’ll show you how to vote for a delegate, or un-vote a delegate if you want to change your vote.
+You can use your XPH to vote or un-vote a delegate. In this guide we’ll show you how to vote for a delegate, or un-vote a delegate if you want to change your vote.
 
 Some basic voting info :
 
--   **1 ARK ADDRESS CAN VOTE FOR ONLY 1 DELEGATE AT A TIME** : if you wish to vote for more than 1 delegate you can create multiple wallets, split your ARK among those wallets and vote for a different delegate with each wallet. For example, if you have 1000 ARK you can vote for one delegate with all of your ARK in one wallet, or you can divide your ARK into two wallets of 500 ARK each and vote for 2 different delegates. You can create as many wallets as you want and divide your ARK among them in any proportion you choose.
--   **1 ARK EQUALS A VOTING WEIGHT OF 1 ARK** : the more ARK you hold, the more voting weight you posses. If you split your ARK into multiple wallets your voting power splits proportionally among those wallets. For example, if you have 1,000 ARK your voting power is equal to 1,000 ARK. if you split your ARK into 2 wallets, each will have a voting power of 500 ARK.
--   **EACH VOTE OR UN-VOTE COSTS ARK.** : each transaction in the ARK network costs a certain amount of ARK. With the implementation of dynamic fees this cost will become adjustable. You can choose how much you want to spend for each specific transaction, for voting and for un-voting.
+-   **1 XPH ADDRESS CAN VOTE FOR ONLY 1 DELEGATE AT A TIME** : if you wish to vote for more than 1 delegate you can create multiple wallets, split your XPH among those wallets and vote for a different delegate with each wallet. For example, if you have 1000 XPH you can vote for one delegate with all of your XPH in one wallet, or you can divide your XPH into two wallets of 500 XPH each and vote for 2 different delegates. You can create as many wallets as you want and divide your XPH among them in any proportion you choose.
+-   **1 XPH EQUALS A VOTING WEIGHT OF 1 XPH** : the more XPH you hold, the more voting weight you posses. If you split your XPH into multiple wallets your voting power splits proportionally among those wallets. For example, if you have 1,000 XPH your voting power is equal to 1,000 XPH. if you split your XPH into 2 wallets, each will have a voting power of 500 XPH.
+-   **EACH VOTE OR UN-VOTE COSTS XPH.** : each transaction in the XPH network costs a certain amount of XPH. With the implementation of dynamic fees this cost will become adjustable. You can choose how much you want to spend for each specific transaction, for voting and for un-voting.
 
-### Don’t know who to vote for or support with your ARK?
+### Don’t know who to vote for or support with your XPH?
 
 > **Read the Delegate Proposals on our forum. From the current list of delegates, vote according to your preferences :** [**DELEGATE PROPOSALS**](https://forum.ark.io/category/5/delegates).
-> **You can also see the list of currently active delegates on our [**DELEGATE MONITOR**](https://explorer.ark.io/delegateMonitor)**.
+> **You can also see the list of currently active delegates on our [**DELEGATE MONITOR**](https://explorer.phantom.org/delegateMonitor)**.
 
 ### VOTING
 
-Open the ARK Desktop Wallet and select the wallet you wish to vote from. The wallet can be chosen from the menu on the right.
+Open the PHANTOM Desktop Wallet and select the wallet you wish to vote from. The wallet can be chosen from the menu on the right.
 
 ![Click on a wallet you wish to vote from](./assets/how-to-vote-in-the-ark-desktop-wallet/clickonawallet.jpg)
 
@@ -59,7 +59,7 @@ To see the number of confirmations for your transaction hover over the clock on 
 
 ### UN-VOTING
 
-Open the ARK Desktop Wallet and select the wallet you wish to un-vote from. Again, the wallet can be chosen from the menu on the right.
+Open the PHANTOM Desktop Wallet and select the wallet you wish to un-vote from. Again, the wallet can be chosen from the menu on the right.
 
 ![Click on a wallet you wish to vote from](./assets/how-to-vote-in-the-ark-desktop-wallet/clickonawallet.jpg)
 

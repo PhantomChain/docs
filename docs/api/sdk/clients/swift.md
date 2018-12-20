@@ -17,10 +17,10 @@ title: "Swift"
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a simple dependency manager that provide you with a binary framework.
-If you are using Carthage, you can integrate the Ark Swift Client in your project by specifying it in your `Cartfile`:
+If you are using Carthage, you can integrate the Phantom Swift Client in your project by specifying it in your `Cartfile`:
 
 ```
-github "ArkEcosystem/swift-client" ~> 0.1.0
+github "Phantom/swift-client" ~> 0.1.0
 ```
 
 Afterwards, run `Carthage update` to build the framework.
@@ -29,10 +29,10 @@ You can then drag the generated `.framework` file into your project.
 ### CocoaPods
 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Swift (and Objective-C) Cocoa Projects.
-You can use it to integrate the Ark Swift Client in your project, by adding it to your `Podfile` as follows:
+You can use it to integrate the Phantom Swift Client in your project, by adding it to your `Podfile` as follows:
 
 ```
-pod 'SwiftClient', :git => 'https://github.com/ArkEcosystem/swift-client.git', :tag => '0.1.0'
+pod 'SwiftClient', :git => 'https://github.com/PhantomChain/swift-client.git', :tag => '0.1.0'
 ```
 
 Afterwards, install it by running `pod install`.
@@ -41,7 +41,7 @@ You are then able to use it in your project by using `import SwiftClient`.
 ## Usage
 
 The Swift Client is meant to be used for creating request to an API endpoint.
-For cryptography related functionality, such as generating addresses or creating transactions, please see the [Swift Crypto](https://github.com/ArkEcosystem/swift-crypto) repository.
+For cryptography related functionality, such as generating addresses or creating transactions, please see the [Swift Crypto](https://github.com/PhantomChain/swift-crypto) repository.
 
 ### Connection
 
@@ -97,5 +97,5 @@ blocks.all { (response) in
 By default, the requests are performed with [Alamofire](https://github.com/Alamofire/Alamofire) and the response is given to the callback function as `[String: Any]`.
 The functions that are responsible for this can be found in `Utils.swift`.
 You can easily override this default functionality by defining your own `handleApiGet` and `handleApiPost` functions and passing them to the endpoint object (e.g. `Two.Blocks`.
-An example of how this is done can be found by looking at the tests, for example those of [Blocks](https://github.com/ArkEcosystem/swift-client/blob/master/Client/ClientTests/Api/Two/BlocksTwoTest.swift), as a mocked api handler is used for them.
+An example of how this is done can be found by looking at the tests, for example those of [Blocks](https://github.com/PhantomChain/swift-client/blob/master/Client/ClientTests/Api/Two/BlocksTwoTest.swift), as a mocked api handler is used for them.
 

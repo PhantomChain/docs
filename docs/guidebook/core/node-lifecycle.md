@@ -1,6 +1,6 @@
 # Examining the Node Lifecycle
 
-Let's take a look inside Ark Core to better understand what's happening behind the scenes when we install and start our relays and forgers. From the moment Core Commander pings our node awake to the moment our node is brought offline, we'll look at the behavior that all Ark nodes share and examine differences and commonalities between relays and forgers.
+Let's take a look inside Phantom Core to better understand what's happening behind the scenes when we install and start our relays and forgers. From the moment Core Commander pings our node awake to the moment our node is brought offline, we'll look at the behavior that all Ark nodes share and examine differences and commonalities between relays and forgers.
 
 ## Starting Our Node
 
@@ -61,7 +61,7 @@ app
   .option('--network-start', 'force genesis network start', false)
   .action(async (options) => require('../lib/start-relay-and-forger')(options))
 ```
-For the sake of brevity, I've only included the `start` command here. Looking through the `[ark` file](https://github.com/ArkEcosystem/core/blob/develop/packages/core/bin/ark), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
+For the sake of brevity, I've only included the `start` command here. Looking through the `[ark` file](https://github.com/PhantomChain/core/blob/develop/packages/core/bin/ark), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
 
 Breaking down what's happening here:
 
@@ -82,7 +82,7 @@ Let's take a look:
 ```js
 'use strict'
 
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomchain/core-container')
 
 /**
   * Start a node.
@@ -92,13 +92,13 @@ const container = require('@arkecosystem/core-container')
 module.exports = async (options) => {
   await container.setUp(options, {
     options: {
-      '@arkecosystem/core-p2p': {
+      '@phantomchain/core-p2p': {
         networkStart: options.networkStart
       },
-      '@arkecosystem/core-blockchain': {
+      '@phantomchain/core-blockchain': {
         networkStart: options.networkStart
       },
-      '@arkecosystem/core-forger': {
+      '@phantomchain/core-forger': {
         bip38: options.bip38,
         address: options.address,
         password: options.password
@@ -107,21 +107,21 @@ module.exports = async (options) => {
   })
 }
 ```
-We can see that this code only requires one external dependency: a `container` object, pulled in from the `core-container` package of Ark Core. In the exported function, we take the options given to us by the `start` command in the previous section and pass them as the first argument into `container.setUp()`. The second argument to `setUp` defines values that are particular to type of node we want to run. As this particular file is used to start a full node with both forging and relay capacities, our setup here is fairly straightforward as we want to use the full range of functions provided by Ark Core. We tell our `p2p` and `blockchain` packages whether this is the first time our network is being started based on the `network-start` option mentioned earlier, and we pass our delegate authentication information to `forger` so it can forge our blocks properly.
+We can see that this code only requires one external dependency: a `container` object, pulled in from the `core-container` package of Phantom Core. In the exported function, we take the options given to us by the `start` command in the previous section and pass them as the first argument into `container.setUp()`. The second argument to `setUp` defines values that are particular to type of node we want to run. As this particular file is used to start a full node with both forging and relay capacities, our setup here is fairly straightforward as we want to use the full range of functions provided by Phantom Core. We tell our `p2p` and `blockchain` packages whether this is the first time our network is being started based on the `network-start` option mentioned earlier, and we pass our delegate authentication information to `forger` so it can forge our blocks properly.
 
 To understand how this setup differs between forgers and relays, let's look at the `setUp` commands in the `start-forger` and `start-relay` files:
 ```js
 // forger only
 await container.setUp(options, {
     include: [
-      '@arkecosystem/core-event-emitter',
-      '@arkecosystem/core-config',
-      '@arkecosystem/core-logger',
-      '@arkecosystem/core-logger-winston',
-      '@arkecosystem/core-forger'
+      '@phantomchain/core-event-emitter',
+      '@phantomchain/core-config',
+      '@phantomchain/core-logger',
+      '@phantomchain/core-logger-winston',
+      '@phantomchain/core-forger'
     ],
     options: {
-      '@arkecosystem/core-forger': {
+      '@phantomchain/core-forger': {
         bip38: options.bip38 || process.env.ARK_FORGER_BIP38,
         address: options.address,
         password: options.password || process.env.ARK_FORGER_PASSWORD
@@ -131,9 +131,9 @@ await container.setUp(options, {
 
 // relay only 
 await container.setUp(options, {
-    exclude: ['@arkecosystem/core-forger'],
+    exclude: ['@phantomchain/core-forger'],
     options: {
-      '@arkecosystem/core-blockchain': {
+      '@phantomchain/core-blockchain': {
         networkStart: options.networkStart
       }
     }
@@ -149,7 +149,7 @@ An immediate takeaway from this review is that, while functionality might differ
 
 We'll dive more into the mechanics of `core-container` in a future Guidebook chapter, but for now, suffice it to say that the `container` contains our plugins. It creates the proper environment for our plugins to run in, determines which plugins should be loaded, and loads them. 
 
-To illustrate this, let's look inside our container package. You can find the source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/container.js), or follow along below:
+To illustrate this, let's look inside our container package. You can find the source code [here](https://github.com/PhantomChain/core/blob/develop/packages/core-container/lib/container.js), or follow along below:
 ```js
 // inside the Container class in container.js
 
@@ -207,7 +207,7 @@ Additionally, here is where we load any environment variables defined in our nod
 
 With the proper environment now setup, we can begin fleshing out our node's central capacities using plugins. We can see from our `Container.setUp` method that plugins are initialized using the `PluginRegistrar` and setup using the Registrar's `setUp` method.
 
-Using the snippets below or the source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/registrars/plugin.js), let's look at the constructor and `setUp` methods for `PluginRegistrar`:
+Using the snippets below or the source code [here](https://github.com/PhantomChain/core/blob/develop/packages/core-container/lib/registrars/plugin.js), let's look at the constructor and `setUp` methods for `PluginRegistrar`:
 ```js
 module.exports = class PluginRegistrars {
   /**
@@ -264,12 +264,12 @@ This method effectively checks for the presence of a `plugins` file in our confi
 
 In the `PluginRegistrar.setUp` method, we loop through this plugins property and register each plugin into our container according to the settings set up in the preceding steps. 
 
-This is the step in our node's lifecycle where all of the node's most essential functions are loaded: from the Public API to the P2P API to the blockchain itself, all plugins are booted up upon their inclusion in the container through the plugin registrar. To get a sense of the order in which these plugins are loaded, we can look at the file that's returned by the `__loadPlugins` method. You can view the full source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core/lib/config/devnet/plugins.js), but here's a snippet:
+This is the step in our node's lifecycle where all of the node's most essential functions are loaded: from the Public API to the P2P API to the blockchain itself, all plugins are booted up upon their inclusion in the container through the plugin registrar. To get a sense of the order in which these plugins are loaded, we can look at the file that's returned by the `__loadPlugins` method. You can view the full source code [here](https://github.com/PhantomChain/core/blob/develop/packages/core/lib/config/devnet/plugins.js), but here's a snippet:
 ```js
 module.exports = {
-  '@arkecosystem/core-event-emitter': {},
-  '@arkecosystem/core-config': {},
-  '@arkecosystem/core-logger-winston': {
+  '@phantomchain/core-event-emitter': {},
+  '@phantomchain/core-config': {},
+  '@phantomchain/core-logger-winston': {
     transports: {
       console: {
         options: {
@@ -284,7 +284,7 @@ module.exports = {
       }
     }
   },
-  '@arkecosystem/core-database-postgres': {
+  '@phantomchain/core-database-postgres': {
     connection: {
       host: process.env.ARK_DB_HOST || 'localhost',
       port: process.env.ARK_DB_PORT || 5432,
@@ -294,10 +294,10 @@ module.exports = {
     }
   },
   // ... more plugins here ...
-  '@arkecosystem/core-forger': {
+  '@phantomchain/core-forger': {
     hosts: [`http://127.0.0.1:${process.env.ARK_P2P_PORT || 4002}`]
   },
-  '@arkecosystem/core-json-rpc': {
+  '@phantomchain/core-json-rpc': {
     enabled: process.env.ARK_JSON_RPC_ENABLED,
     host: process.env.ARK_JSON_RPC_HOST || '0.0.0.0',
     port: process.env.ARK_JSON_RPC_PORT || 8080,
@@ -320,7 +320,7 @@ Typically, you should try to add your plugin to the bottom of this file, with on
 
 While the steps outlined above are enough to get our node up and running, there's one process we haven't looked at yet: the shutdown process. Typically you'll want your nodes to run forever so they can relay or forge as necessary. However, whether in preparation for an upgrade or to troubleshoot technical problems, sometimes you've got to shut everything down. 
 
-Fortunately, `core-container` registers a handler in its constructor that's designed to handle shutdowns in such a way as to not corrupt any data. Let's take a look at [this handler](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/container.js#L117):
+Fortunately, `core-container` registers a handler in its constructor that's designed to handle shutdowns in such a way as to not corrupt any data. Let's take a look at [this handler](https://github.com/PhantomChain/core/blob/develop/packages/core-container/lib/container.js#L117):
 ```js
 /**
 * Handle any exit signals.
@@ -338,7 +338,7 @@ const handleExit = async () => {
 
     const logger = this.resolvePlugin('logger')
     logger.info('EXIT handled, trying to shut down gracefully')
-    logger.info('Stopping Ark Core')
+    logger.info('Stopping Phantom Core')
 
     try {
       const database = this.resolvePlugin('database')

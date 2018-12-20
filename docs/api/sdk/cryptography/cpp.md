@@ -15,7 +15,7 @@ If you are using CMake head over to [https://www.cmake.org/download/](https://ww
 #### Make
 
 ```sh
-git clone https://github.com/ArkEcosystem/cpp-crypto
+git clone https://github.com/PhantomChain/cpp-crypto
 cd cpp-crypto
 // init & update micro-ecc submodule
 git submodule init
@@ -27,7 +27,7 @@ cmake --build .
 #### Tests
 
 ```sh
-./bin/Ark-Cpp-Crypto-tests
+./bin/Phantom-Cpp-Crypto-tests
 ```
 
 ### Arduino
@@ -46,7 +46,7 @@ Using the Arduino IDE's built in Library Manager, install the following Librarie
 Include the following header in your Arduino Sketch:
 
 ```cpp
-#include <arkCrypto.h>
+#include <phantomCrypto.h>
 ```
 
 ### PlatformIO
@@ -103,7 +103,7 @@ pio run -e esp32 -t upload
 ```cpp
 const auto text = "Computer science is no more about computers than astronomy is about telescopes.";
 const auto passphrase = "bullet parade snow bacon mutual deposit brass floor staff list concert ask";
-Ark::Crypto::Utils::Message message;
+Phantom::Crypto::Utils::Message message;
 message.sign(text, passphrase);
 ```
 
@@ -114,7 +114,7 @@ const auto text = "Computer science is no more about computers than astronomy is
 PublicKey publicKey = PublicKey::fromHex("0275776018638e5c40f1b922901e96cac2caa734585ef302b4a2801ee9a338a456");
 std::vector<uint8_t> signature = HexToBytes("3044022021704f2adb2e4a10a3ddc1d7d64552b8061c05f6d12a168c69091c75581d611402200edf37689d2786fc690af9f0f6fa1f629c95695039f648a6d455484302402e93");
 
-Ark::Crypto::Utils::Message message(
+Phantom::Crypto::Utils::Message message(
     text,
     publicKey,
     signature

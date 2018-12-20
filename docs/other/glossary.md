@@ -34,8 +34,8 @@ The signed transfer of value from one account to another
 #### What is a "Transport"?
 A Transport happens to data as it flows through the network from peer to peer.
 
-#### What is a "Dark Address"?
-A Dark address is on the Development Network of PHANTOM and holds the DARK currency.
+#### What is a "DXPH Address"?
+A DXPH address is on the Development Network of PHANTOM and holds the DXPH currency.
 
 #### What is a "Reward"?
 A reward is attributed to the block creator for its validation efforts.

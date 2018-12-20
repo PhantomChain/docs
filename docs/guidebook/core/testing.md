@@ -71,16 +71,16 @@ Let's have a look at this file in our `core-blockchain` package :
 <<<<<<< HEAD
 const container = require('@phantomcore/core-container')
 =======
-const  container  =  require('@arkecosystem/core-container')
-const  containerHelper  =  require('@arkecosystem/core-test-utils/lib/helpers/container')
+const  container  =  require('@phantomchain/core-container')
+const  containerHelper  =  require('@phantomchain/core-test-utils/lib/helpers/container')
 >>>>>>> docs: update testing doc (#52)
 
 jest.setTimeout(60000)
 
 exports.setUp  =  async () => {
   await  containerHelper.setUp({
-    exit: '@arkecosystem/core-p2p',
-    exclude: ['@arkecosystem/core-blockchain']
+    exit: '@phantomchain/core-p2p',
+    exclude: ['@phantomchain/core-blockchain']
   })
 
   return  container
@@ -92,7 +92,7 @@ exports.tearDown  =  async () =>  container.tearDown()
 A couple of things to see here:
 
 - We declare a `setUp` and a `tearDown` method: these will be used in our tests' `beforeAll` and `afterAll` methods
-- We use `@arkecosystem/core-test-utils` to help us setting up the container
+- We use `@phantomchain/core-test-utils` to help us setting up the container
 - The `containerHelper.setUp` method accepts a configuration object which will be used to launch (or not) the different modules of the Ark node
 
 Now this can be used in every test that needs it, just like this:

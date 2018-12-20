@@ -22,10 +22,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 - [Brian Faust](https://github.com/faustbrian)
 - [Alex Barnsley](https://github.com/alexbarnsley)
-- [All Contributors](https://github.com/ArkEcosystem/core-commander/contributors)
+- [All Contributors](https://github.com/PhantomChain/core-commander/contributors)
 
 ## License
 
 [MIT](https://github.com/Phantomchain/core-commander/blob/master/LICENSE) © [PHANTOM](https://phantom.org)
 
-[MIT](https://github.com/ArkEcosystem/core-commander/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](https://github.com/PhantomChain/core-commander/blob/master/LICENSE) © [ArkEcosystem](https://ark.io)

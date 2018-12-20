@@ -10,7 +10,7 @@ title: "JSON-RPC"
 
 ## Installation
 
-If you would like to use the JSON-RPC server, head over to your `~/.phantom/config/plugins.js` and look for `@phantomcore/json-rpc` which is installed by default. _Just change it to the following and start your ARK Core._
+If you would like to use the JSON-RPC server, head over to your `~/.phantom/config/plugins.js` and look for `@phantomcore/json-rpc` which is installed by default. _Just change it to the following and start your Phantom Core._
 
 ```js
 '@phantomcore/core-json-rpc': {

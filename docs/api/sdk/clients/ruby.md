@@ -22,7 +22,7 @@ Unix & Linux: [rbenv](https://github.com/rbenv/rbenv) and [rvm](http://rvm.io/)
 Add this line to your application's Gemfile and then execute `bundle`
 
 ```bash
-gem 'arkecosystem-client'
+gem 'phantom-client'
 ```
 
 ## Usage
@@ -30,12 +30,12 @@ gem 'arkecosystem-client'
 
 ## Basic
 ```ruby
-require 'arkecosystem/client'
+require 'phantom/client'
 
 // V1
-connection = ArkEcosystem::Client::Connection.new(host: 'http://my.ark.node:port/api/', version: 1)
+connection = Phantom::Client::Connection.new(host: 'http://my.phantom.node:port/api/', version: 1)
 // V2
-connection = ArkEcosystem::Client::Connection.new(host: 'http://my.ark.node:port/api/', version: 2)
+connection = Phantom::Client::Connection.new(host: 'http://my.phantom.node:port/api/', version: 2)
 ... 
 
 ```
@@ -43,17 +43,17 @@ connection = ArkEcosystem::Client::Connection.new(host: 'http://my.ark.node:port
 ## Connections
 
 ```ruby
-require 'arkecosystem/client'
+require 'phantom/client'
 
-manager = ArkEcosystem::Client::ConnectionManager.new()
+manager = Phantom::Client::ConnectionManager.new()
 
-manager.connect(ArkEcosystem::Client::Connection.new({
-  host: "http://my.ark.node:port/api/",
+manager.connect(Phantom::Client::Connection.new({
+  host: "http://my.phantom.node:port/api/",
   version: 1
 }), 'main')
 
-manager.connect(ArkEcosystem::Client::Connection.new({
-  host: "http://my.ark.node:port/api/",
+manager.connect(Phantom::Client::Connection.new({
+  host: "http://my.phantom.node:port/api/",
   version: 1
 }), 'backup')
 

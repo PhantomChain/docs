@@ -7,7 +7,7 @@ title: "Vote Report"
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-vote-report
+yarn add @phantomchain/core-vote-report
 ```
 
 ## **Alias**
@@ -16,7 +16,7 @@ yarn add @arkecosystem/core-vote-report
 
 ## **Implementation**
 
-[vote-report](https://github.com/ArkEcosystem/core/tree/develop/packages/core-vote-report)
+[vote-report](https://github.com/PhantomChain/core/tree/develop/packages/core-vote-report)
 
 ## **Summary**
 

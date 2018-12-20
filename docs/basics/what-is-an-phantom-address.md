@@ -45,7 +45,7 @@ The PHANTOM address is like a bank account where only the owner of the private k
 
 A modifier is a byte used to customize the address. It is useful to differentiate networks :
  + On PHANTOM mainnet modifier = `0x56` so PHANTOM address starts with `P`
- + On PHANTOM devnet modifier = `0x1e` so DARK address starts with `D` (We utilize same format as DARK in ARK)
+ + On PHANTOM devnet modifier = `0x1e` so DXPH address starts with `D` (We utilize same format as DXPH in XPH)
 
 Here is the table giving the address start char according to hexadecimal modifier value :
 

@@ -9,13 +9,13 @@ If you are looking to just broadcast transactions you should take a look at [Cre
 # JSON-RPC
 
 ::: tip
-You can find the source code of this package at [packages/core-json-rpc](https://github.com/ArkEcosystem/core/tree/develop/packages/core-json-rpc).
+You can find the source code of this package at [packages/core-json-rpc](https://github.com/PhantomChain/core/tree/develop/packages/core-json-rpc).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-json-rpc
+yarn add @phantomchain/core-json-rpc
 ```
 
 ## Configuration

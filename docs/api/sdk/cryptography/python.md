@@ -18,14 +18,14 @@ For further informations on how to install Python on your operating system :
 ## Installation
 
 ```bash
-$ pip install arkecosystem-crypto
+$ pip install phantomchain-crypto
 ```
 
 ## Development setup
 
 If you want to contribute to the code of this package execute the following commands
 
-1) Fork the [package](https://github.com/ArkEcosystem/python-crypto)
+1) Fork the [package](https://github.com/PhantomChain/python-crypto)
 
 2) Clone your forked repository
 

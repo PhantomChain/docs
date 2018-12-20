@@ -5,13 +5,13 @@ title: "Logger - Winston"
 # Loggger - Winston
 
 ::: tip
-You can find the source code of this package at [packages/core-logger-winston](https://github.com/ArkEcosystem/core/tree/develop/packages/core-logger-winston).
+You can find the source code of this package at [packages/core-logger-winston](https://github.com/PhantomChain/core/tree/develop/packages/core-logger-winston).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-logger-winston
+yarn add @phantomchain/core-logger-winston
 ```
 
 ## Configuration

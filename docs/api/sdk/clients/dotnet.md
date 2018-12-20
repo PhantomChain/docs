@@ -11,19 +11,19 @@ title: ".NET"
 ### Package Manager
 
 ```bash
-Install-Package ArkEcosystem.Client -Version 0.1.0
+Install-Package Phantom.Client -Version 0.1.0
 ```
 
 ### .NET CLI
 
 ```bash
-dotnet add package ArkEcosystem.Client --version 0.1.0
+dotnet add package Phantom.Client --version 0.1.0
 ```
 
 ### Paket CLI
 
 ```bash
-paket add ArkEcosystem.Client --version 0.1.0
+paket add Phantom.Client --version 0.1.0
 ```
 
 ## Usage
@@ -31,10 +31,10 @@ paket add ArkEcosystem.Client --version 0.1.0
 ## Connections
 
 ```csharp
-using ArkEcosystem.Client;
+using Phantom.Client;
 
-ConnectionManager.Connect(new Connection<One>("http://my-main.ark.node:port/api/"))
-ConnectionManager.Connect(new Connection<One>("http://my-backup.ark.node:port/api/", "backup"))
+ConnectionManager.Connect(new Connection<One>("http://my-main.phantom.node:port/api/"))
+ConnectionManager.Connect(new Connection<One>("http://my-backup.phantom.node:port/api/", "backup"))
 
 var response = null;
 
@@ -54,11 +54,11 @@ if ((bool) response["success"]) {
 ### Initialization
 
 ```csharp
-using ArkEcosystem.Client;
+using Phantom.Client;
 // For V1
-using ArkEcosystem.Client.API.One;
+using Phantom.Client.API.One;
 // For V2
-using ArkEcosystem.Client.API.Two;
+using Phantom.Client.API.Two;
 
 static void Main(string[] args)
 {
@@ -101,7 +101,7 @@ Console.WriteLine(response);
 var response = connection.Api.Blocks.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Block]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Block]]
 ```
 
 ### Delegates V1 and V2
@@ -122,7 +122,7 @@ Console.WriteLine(response);
 var response = connection.Api.Delegates.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Delegates]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Delegates]]
 ```
 
 ### Loader - V1
@@ -145,7 +145,7 @@ Console.WriteLine(response);
 var response = connection.Api.Node.Configuration();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[ArkEcosystem.Client.API.Two.Models.NodeConfiguration]
+... > Phantom.Client.API.Two.Response`1[Phantom.Client.API.Two.Models.NodeConfiguration]
 ```
 
 ### Peers - V1 and V2
@@ -166,7 +166,7 @@ Console.WriteLine(response);
 var response = connection.Api.Peers.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Peer]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Peer]]
 ```
 
 ### Signatures - V1 
@@ -200,7 +200,7 @@ Console.WriteLine(response);
 var response = connection.Api.Transactions.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Transaction]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Transaction]]
 ```
 
 ### Votes - V2
@@ -210,7 +210,7 @@ Console.WriteLine(response);
 var response = connection.Api.Votes.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Transaction]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Transaction]]
 ```
 
 ### Wallets - V2
@@ -220,5 +220,5 @@ Console.WriteLine(response);
 var response = connection.Api.Wallets.All();
 Console.WriteLine(response);
 
-... > ArkEcosystem.Client.API.Two.Response`1[System.Collections.Generic.List`1[ArkEcosystem.Client.API.Two.Models.Wallet]]
+... > Phantom.Client.API.Two.Response`1[System.Collections.Generic.List`1[Phantom.Client.API.Two.Models.Wallet]]
 ```

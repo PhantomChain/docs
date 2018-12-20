@@ -26,7 +26,7 @@ GET /api/delegates
 {
     "delegates": [
         {
-            "username": "dark_jmc",
+            "username": "dxph_jmc",
             "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
             "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
             "vote": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586"
@@ -40,7 +40,7 @@ GET /api/delegates
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates \
+curl -X GET https://explorer.phantom.org:8443/api/delegates \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -79,7 +79,7 @@ GET /api/delegates/voters
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/voters?publicKey=032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515 \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/voters?publicKey=032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515 \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -105,7 +105,7 @@ GET /api/delegates/get
 {
     "delegates": [
         {
-            "username": "dark_jmc",
+            "username": "dxph_jmc",
             "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
             "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
             "vote": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586"
@@ -125,7 +125,7 @@ GET /api/delegates/get
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/get?username=arkx \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/get?username=xphx \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -156,7 +156,7 @@ GET /api/delegates/fee
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/fee \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/fee \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -183,7 +183,7 @@ GET /api/delegates/count
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/count \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/count \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -218,7 +218,7 @@ GET /api/delegates/forging/getForgedByAccount
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/forging/getForgedByAccount?generatorPublicKey=032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515 \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/forging/getForgedByAccount?generatorPublicKey=032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515 \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -246,7 +246,7 @@ GET /api/delegates/search
     "success": true,
     "delegates": [
         {
-            "username": "arkx",
+            "username": "xphx",
             "address": "AdVSe37niA3uFUPgCgMUH2tMsHF4LpLoiX",
             "publicKey": "032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515",
             "vote": "140774167152283",
@@ -261,7 +261,7 @@ GET /api/delegates/search
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/search?q=arkx \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/search?q=xphx \
   -H "API-Version: 1"
 ```
 </request-example>
@@ -291,7 +291,7 @@ GET /api/delegates/getNextForgers
 
 <request-example>
 ```bash
-curl -X GET https://explorer.ark.io:8443/api/delegates/getNextForgers \
+curl -X GET https://explorer.phantom.org:8443/api/delegates/getNextForgers \
   -H "API-Version: 1"
 ```
 </request-example>

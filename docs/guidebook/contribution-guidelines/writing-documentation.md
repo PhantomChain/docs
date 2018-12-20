@@ -1,5 +1,5 @@
 # Writing Documentation for Ark
-![ark-docs-banner](https://github.com/ArkEcosystem/docs/blob/master/banner.png?raw=true)
+![ark-docs-banner](https://github.com/PhantomChain/docs/blob/master/banner.png?raw=true)
 
 **On this page you will find all the details necessary to writing compliant documentation for Ark.**
 
@@ -25,7 +25,7 @@ Here is a list of officially recognized terms and the proper way to use each of 
    - **BridgeChain**: *"I launched a cool BridgeChain with Ark Deployer on Azure"*
    - **SmartBridge**: *"It's time to read data from the SmartBridge field of the freshly gathered transaction"*
  - PROJECTS
-   - **Ark Core**: *"Ark Core is dubbed v2"*
+   - **Phantom Core**: *"Phantom Core is dubbed v2"*
    - **Ark Node**: *"The Ark blockchain software Ark Node is being deprecated"*
    - **Ark Explorer**: *"View your Ark address' transaction history with help of the Ark Explorer"*
    - **Ark Mobile Wallet**: *"Ark Mobile is available for both Android and iOS"*
@@ -39,12 +39,12 @@ The specific terms above SHOULD be capitalized to prevent reader confusion.
 
 For certain cases (docs, website, forum), it is acceptable to use the actual URL subdomain.domain.tld format if it's intuitive:
 
- - *"Find all relevant information on the [docs.ark.io](https://docs.ark.io)"*
+ - *"Find all relevant information on the [docs.phantom.org](https://docs.phantom.org)"*
  - *"Blog, Forums, Roadmap and more can be found at the [ark.io](https://ark.io) website"*
  - *"I love the community over at the [forum.ark.io](https://forum.ark.io)"*
 
 :::danger
-When talking about Ark's native currency, you MUST refer to it as ARK - it is commonly used as the currency ticker on exchanges and within Ark Ecosystem projects like the Ark Desktop Wallet and Ark Explorer. The currency symbol for ARK is "Ѧ". It can be represented with the decimal Unicode 1126 or "\&#1126;" in HTML.
+When talking about Ark's native currency, you MUST refer to it as ARK - it is commonly used as the currency ticker on exchanges and within Ark Ecosystem projects like the Ark Desktop Wallet and Ark Explorer. The currency symbol for ARK is "ⓟ". It can be represented with the decimal Unicode 1126 or "\&#1126;" in HTML.
 :::
 Generic terms like "address", "wallet", "transaction", "delegate", "vote", "blockchain", "currency" SHOULD NOT be capitalized, alongside the three above terms which mainly refer to concepts and not necessarily rigid implementations.
 
@@ -91,17 +91,17 @@ Here you can find an example list of references.
 
 Please use this template for every document which has any reference at all:
 
-> - **Ark Core**: [https://github.com/arkecosystem/core](https://github.com/arkecosystem/core)
-> - **Ark Node**: [https://github.com/arkecosystem/ark-node](https://github.com/arkecosystem/ark-node)
-> - **Ark Explorer**: [https://github.com/arkecosystem/explorer](https://github.com/arkecosystem/explorer)
-> - **Ark Mobile Wallet**: [https://github.com/arkecosystem/mobile-wallet](https://github.com/arkecosystem/mobile-wallet)
-> - **Ark Desktop Wallet**: [https://github.com/arkecosystem/desktop-wallet](https://github.com/arkecosystem/desktop-wallet)
-> - **AIPs, Ark Improvement Proposals**: [https://github.com/arkecosystem/aips](https://github.com/arkecosystem/aips)
-> - **Ark (LANG) Client**: [https://github.com/arkecosystem/php-client](https://github.com/arkecosystem/php-client) There are many implementations, all named with the same convention. Replace the programming language for a different implementation
-> - **Ark (LANG) Crypto**: [https://github.com/arkecosystem/php-crypto](https://github.com/arkecosystem/php-crypto) Same as clients, every client implementation has a related crypto implementation
-> - **Ark Deployer**: [https://github.com/arkecosystem/ark-deployer](https://github.com/arkecosystem/deployer)
+> - **Phantom Core**: [https://github.com/PhantomChain/core](https://github.com/PhantomChain/core)
+> - **Ark Node**: [https://github.com/PhantomChain/ark-node](https://github.com/PhantomChain/ark-node)
+> - **Ark Explorer**: [https://github.com/PhantomChain/explorer](https://github.com/PhantomChain/explorer)
+> - **Ark Mobile Wallet**: [https://github.com/PhantomChain/mobile-wallet](https://github.com/PhantomChain/mobile-wallet)
+> - **Ark Desktop Wallet**: [https://github.com/PhantomChain/desktop-wallet](https://github.com/PhantomChain/desktop-wallet)
+> - **AIPs, Ark Improvement Proposals**: [https://github.com/PhantomChain/aips](https://github.com/PhantomChain/aips)
+> - **Ark (LANG) Client**: [https://github.com/PhantomChain/php-client](https://github.com/PhantomChain/php-client) There are many implementations, all named with the same convention. Replace the programming language for a different implementation
+> - **Ark (LANG) Crypto**: [https://github.com/PhantomChain/php-crypto](https://github.com/PhantomChain/php-crypto) Same as clients, every client implementation has a related crypto implementation
+> - **Ark Deployer**: [https://github.com/PhantomChain/ark-deployer](https://github.com/PhantomChain/deployer)
 > - **Ark website**: [https://ark.io](https://ark.io)
-> - **Ark documentation**: [https://docs.ark.io](https://docs.ark.io)
+> - **Ark documentation**: [https://docs.phantom.org](https://docs.phantom.org)
 > - **Ark forum**: [https://forum.ark.io](https://forum.ark.io)
 > - **Ark mediakit**: [https://ark.io/mediakit](https://ark.io/mediakit)
 > - **Ark blog**: [https://blog.ark.io](https://blog.ark.io)

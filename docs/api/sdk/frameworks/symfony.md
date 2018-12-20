@@ -11,10 +11,10 @@ title: "Symfony"
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-$ composer require arkecosystem/bundle php-http/guzzle6-adapter
+$ composer require phantomchain/bundle php-http/guzzle6-adapter
 ```
 
-Go to `config/packages/ark.yml` and fill out your configuration similar to this.
+Go to `config/packages/phantom.yml` and fill out your configuration similar to this.
 
 ```php
 <?php
@@ -22,16 +22,16 @@ Go to `config/packages/ark.yml` and fill out your configuration similar to this.
 return [
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     // ...
-    ArkEcosystem\ArkBundle\ArkBundle::class => ['all' => true],
+    PhantomChain\PhantomBundle\PhantomBundle::class => ['all' => true],
 ];
 ```
 
 ## Configuration
 
-Go to `config/packages/ark.yml` and fill out your configuration similar to this.
+Go to `config/packages/phantom.yml` and fill out your configuration similar to this.
 
 ```yml
-ark:
+phantom:
   protocol: 'http'
   ip: 'your-node-ip'
   port: 4001
@@ -58,7 +58,7 @@ class CoolStuffController extends Controller
      */
     public function index()
     {
-        $peers = $this->container->get('ark.client')->api('Peer')->peers();
+        $peers = $this->container->get('phantom.client')->api('Peer')->peers();
 
         return new Response($peers['peers']);
     }
@@ -67,4 +67,4 @@ class CoolStuffController extends Controller
 
 ## Documentation
 
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the Ark php-client package](https://github.com/ArkEcosystem/php-client).
+There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the Ark php-client package](https://github.com/PhantomChain/php-client).

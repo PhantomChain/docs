@@ -8,7 +8,7 @@ title: "API Reference"
 All HTTP requests have to be send with the `Content-Type: application/json` header. If the header is not present it will result in malformed responses or request rejections.
 :::
 
-This is an API reference to the various Ark Ecosystem codebases.
+This is an API reference to the various PHANTOM codebases.
 
 Use the sidebar to navigate this section, or follow the links below:
 
@@ -18,4 +18,4 @@ Use the sidebar to navigate this section, or follow the links below:
 * [P2P](/api/p2p/)
 * [Webhooks](/api/webhooks/)
 
-[docs GitHub repository](https://github.com/ArkEcosystem/docs)
+[docs GitHub repository](https://github.com/PhantomChain/docs)

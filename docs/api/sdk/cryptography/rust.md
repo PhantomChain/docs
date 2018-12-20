@@ -11,9 +11,9 @@ title: "Rust"
 Add the following to your `Cargo.toml`:
 ```ini
 [dependencies]
-arkecosystem-crypto = "0.1.0"
+phantomchain-crypto = "0.1.0"
 # or
-arkecosystem-crypto = {git = "https://github.com/ArkEcosystem/rust-crypto", branch = "master" }
+phantomchain-crypto = {git = "https://github.com/PhantomChain/rust-crypto", branch = "master" }
 ```
 
 ## Transactions
@@ -21,7 +21,7 @@ arkecosystem-crypto = {git = "https://github.com/ArkEcosystem/rust-crypto", bran
 ### Sign
 
 ```rust
-use arkecosystem_crypto::transactions::builder;
+use phantomchain_crypto::transactions::builder;
 
 let transaction = builder::build_transfer(
     "this is a top secret passphrase",
@@ -38,7 +38,7 @@ println!("{:?}", transaction.to_json().unwrap());
 ### Serialize (AIP11)
 
 ```rust
-use arkecosystem_crypto::transactions;
+use phantomchain_crypto::transactions;
 
 println!("{:?}", transactions::serialize(&transaction));
 ```
@@ -46,7 +46,7 @@ println!("{:?}", transactions::serialize(&transaction));
 ### Deserialize (AIP11)
 
 ```rust
-use arkecosystem_crypto::transactions;
+use phantomchain_crypto::transactions;
 
 let transaction = transactions::deserialize(&serialized_transaction);
 
@@ -58,7 +58,7 @@ println!("{:?}", transaction.id);
 ### Sign
 
 ```rust
-use arkecosystem_crypto::utils::Message;
+use phantomchain_crypto::utils::Message;
 
 let message = Message::sign("Hello World", "this is a top secret passphrase");
 
@@ -68,7 +68,7 @@ println!("{:?}", message);
 ### Verify
 
 ```rust
-use arkecosystem_crypto::utils::Message;
+use phantomchain_crypto::utils::Message;
 
 let message = Message::new(
     "034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192",
@@ -85,27 +85,27 @@ println!("Valid: {:?}", message.verify());
 
 #### Get an address from a passphrase
 ```rust
-use arkecosystem_crypto::identities::address;
+use phantomchain_crypto::identities::address;
 address::from_passphrase("this is a top secret passphrase", None);
 ```
 
 #### Get an address from a public key struct
 ```rust
-use arkecosystem_crypto::identities::{address, public_key};
+use phantomchain_crypto::identities::{address, public_key};
 let public_key = public_key::from_hex("034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192").unwrap();
 address::from_public_key(&public_key, None);
 ```
 
 #### Get an address from a private key struct
 ```rust
-use arkecosystem_crypto::identities::{address, private_key};
+use phantomchain_crypto::identities::{address, private_key};
 let private_key = private_key::from_hex("d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d45822a5712").unwrap();
 address::from_private_key(&private_key, None);
 ```
 
 #### Validate an address
 ```rust
-use arkecosystem_crypto::identities::address;
+use phantomchain_crypto::identities::address;
 address::validate("D61mfSggzbvQgTUe6JhYKH2doHaqJ3Dyib", None);
 ```
 
@@ -113,13 +113,13 @@ address::validate("D61mfSggzbvQgTUe6JhYKH2doHaqJ3Dyib", None);
 
 #### Get a private key struct from a passphrase
 ```rust
-use arkecosystem_crypto::identities::private_key;
+use phantomchain_crypto::identities::private_key;
 private_key::from_passphrase("this is a top secret passphrase").unwrap();
 ```
 
 #### Get a private key struct from hex
 ```rust
-use arkecosystem_crypto::identities::private_key;
+use phantomchain_crypto::identities::private_key;
 private_key::from_hex("d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d45822a5712").unwrap();
 ```
 
@@ -127,13 +127,13 @@ private_key::from_hex("d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d458
 
 #### Get a public key struct from a passphrase
 ```rust
-use arkecosystem_crypto::identities::public_key;
+use phantomchain_crypto::identities::public_key;
 public_key::from_passphrase("this is a top secret passphrase").unwrap();
 ```
 
 #### Get a public key struct from hex
 ```rust
-use arkecosystem_crypto::identities::public_key;
+use phantomchain_crypto::identities::public_key;
 public_key::from_hex("034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192").unwrap();
 ```
 
@@ -141,6 +141,6 @@ public_key::from_hex("034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7
 
 #### Get a WIF from a passphrase
 ```rust
-use arkecosystem_crypto::identities::wif;
+use phantomchain_crypto::identities::wif;
 wif::from_passphrase("this is a top secret passphrase").unwrap();
 ```

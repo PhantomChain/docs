@@ -2,12 +2,12 @@
 title: Sending Transactions with the Core Tester CLI
 ---
 
-# How to Send Transactions using the Ark Core Tester CLI
+# How to Send Transactions using the Phantom Core Tester CLI
 
 ## Prerequisites
-Ensure you have a working copy of the most recent [GitHub repo for Ark Core](https://github.com/arkecosystem/core). If you're using Ark Core Commander, it will be installed at `~/ark-core`.
+Ensure you have a working copy of the most recent [GitHub repo for Phantom Core](https://github.com/PhantomChain/core). If you're using Phantom Core Commander, it will be installed at `~/phantom-core`.
 
-The commands shown in the next examples are all run in the `~/ark-core/packages/core-tester-cli/` folder.
+The commands shown in the next examples are all run in the `~/phantom-core/packages/core-tester-cli/` folder.
 
 ### Basics
 The executable to use for sending transactions is located at `./bin/tester`. You can add it to PATH by running `PATH=$PATH:$(pwd)/bin`. If you choose to omit this last step, please use `./bin/tester` instead of `tester` for the following examples.
@@ -44,7 +44,7 @@ Some parameters are common to all transaction types:
 :::
 
 The basic premise is the following:
- 1. Fill in a command with the passphrase to a wallet with enough DARK
+ 1. Fill in a command with the passphrase to a wallet with enough DXPH
  2. A transfer will be issued to a randomly generated address
  3. After a moment the type-specific transaction will be issued other randomly generated addresses
 
@@ -83,7 +83,7 @@ the output should be similar to
 
 In my case, 3 transfers were made: one from my original wallet, and two to the randomly picked recipient (sending to itself). 
 
-[More details](https://dexplorer.ark.io/wallets/D97JHmrxQ4Q4SzKRKq89pGDwJ4JaokPcmk).
+[More details](https://dexplorer.phantom.org/wallets/D97JHmrxQ4Q4SzKRKq89pGDwJ4JaokPcmk).
 
 ### Delegate Registration
 
@@ -116,7 +116,7 @@ Which actually sent a transaction to a random address which registered itself as
 
 The new delegate's credentials are saved in `./test-wallets`.
 
-You can view the delegate this transaction registered on the [dexplorer.ark.io](https://dexplorer.ark.io/wallets/DEPu5PezAvSZ5DhMHTNjBFq7n5KfaLSQVE).
+You can view the delegate this transaction registered on the [dexplorer.phantom.org](https://dexplorer.phantom.org/wallets/DEPu5PezAvSZ5DhMHTNjBFq7n5KfaLSQVE).
 
 ### Vote
 
@@ -148,7 +148,7 @@ An errorless yield looks like
 
 Again, this will first send a transfer to a random address and save it to the `./test-wallets` file; then that address will issue a vote for the delegate with the specified public key.
 
-Here's [a link to the specific voting transaction in question](https://dexplorer.ark.io/transaction/48b423b8afd31b7e0bfaa92d2c5430f6e892463679fcc6cf33a5783fd16258f0), on the dexplorer.
+Here's [a link to the specific voting transaction in question](https://dexplorer.phantom.org/transaction/48b423b8afd31b7e0bfaa92d2c5430f6e892463679fcc6cf33a5783fd16258f0), on the dexplorer.
 
 ### Second Signature Registration
 
@@ -175,7 +175,7 @@ And the associated output
 [INFO]: Waiting 20 seconds to apply second-signature transactions
 ```
 
-[For your convenience](https://dexplorer.ark.io/wallets/DHS2SvNtdzyvcPccQKV8h17azuREW8pUHB), a link to the new address which has a second signature registration transaction.
+[For your convenience](https://dexplorer.phantom.org/wallets/DHS2SvNtdzyvcPccQKV8h17azuREW8pUHB), a link to the new address which has a second signature registration transaction.
 
 ### Multisignature Registration
 
@@ -219,7 +219,7 @@ Finally, we receive as a response
 [INFO]: Waiting 20 seconds to apply transactions
 ```
 
-From which we can easily track the flow by looking at [the created address' transactions](https://dexplorer.ark.io/wallets/DGdddVsyBmKz7SyzMsZBm1MHepkqZ3JjKy).
+From which we can easily track the flow by looking at [the created address' transactions](https://dexplorer.phantom.org/wallets/DGdddVsyBmKz7SyzMsZBm1MHepkqZ3JjKy).
 
 ## Dynamic Fees
 
@@ -246,7 +246,7 @@ will produce output showing 2 transactions with different fees
 1 ==> 663867b8452388002b3e47118ca67d94e17ba9f82399c057b910c6358c371a43, D9mwARuRihGV8hNyEFvrsTttBKnrmewfHM (fee: 39493)
 ```
 
-the 0th transaction can be viewed on the [dexplorer.ark.io](https://dexplorer.ark.io/transaction/9ac41285c42573913e4a78a81b251e8c1d99515b4864db038a78ae58ccdd354b).
+the 0th transaction can be viewed on the [dexplorer.phantom.org](https://dexplorer.phantom.org/transaction/9ac41285c42573913e4a78a81b251e8c1d99515b4864db038a78ae58ccdd354b).
 
 ### Other types
 
@@ -282,9 +282,9 @@ For the output
 [ERROR]: Delegate count incorrect. '120' but should be '121'
 ```
 
-Now, despite the error, the new registered delegate can still be found [there](https://dexplorer.ark.io/wallets/D7qKmPXo21PvwVKjbEQ85N7vPqods6anXD); with a registration fee of 100 000 000 arktoshi (1 ARK only). This is due to the blockchain having to spin more than 2.5 blocks, or 20 seconds, before reaching this low delegate dynamic fee threshold, while the Ark Core Tester CLI only waits a strict 20 seconds before determining whether the transaction was successful or not. 
+Now, despite the error, the new registered delegate can still be found [there](https://dexplorer.phantom.org/wallets/D7qKmPXo21PvwVKjbEQ85N7vPqods6anXD); with a registration fee of 100 000 000 xphtoshi (1 XPH only). This is due to the blockchain having to spin more than 2.5 blocks, or 20 seconds, before reaching this low delegate dynamic fee threshold, while the Phantom Core Tester CLI only waits a strict 20 seconds before determining whether the transaction was successful or not. 
 
 ## Conclusion
 
-You should now be able to properly manage your test transactions with the help of the tester cli utility! If you have any questions or signals to present, please do so either on [Slack](https://arkecosystem.slack.com) with a message or [GitHub](https://github.com/ArkEcosystem/docs) with an issue.
+You should now be able to properly manage your test transactions with the help of the tester cli utility! If you have any questions or signals to present, please do so either on [Slack](https://phantom.slack.com) with a message or [GitHub](https://github.com/PhantomChain/docs) with an issue.
 

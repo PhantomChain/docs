@@ -16,7 +16,7 @@ This User Guide is for the everyday, non-developer PHANTOM consumer.
 
 To download the application, you can visit the link below and select the appropriate release for your computer's platform. PHANTOM Desktop Wallet is available for Windows, Mac and Linux.
 
-[PHANTOM Desktop Wallet releases](https://github.com/PhantomChain/ark-desktop/releases)
+[PHANTOM Desktop Wallet releases](https://github.com/PhantomChain/phantom-desktop/releases)
 
 ::: warning
 **Note**: The above link is the authoritative source for the latest PhantomClient. As a friendly reminder, don't ever click on links that are not sponsored by or provided by the Official PHANTOM Team

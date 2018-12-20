@@ -15,7 +15,7 @@ If you are using CMake head over to [https://www.cmake.org/download/](https://ww
 #### Make
 
 ```sh
-git clone https://github.com/ArkEcosystem/cpp-client
+git clone https://github.com/PhantomChain/cpp-client
 cd cpp-client
 // init & update micro-ecc submodule
 git submodule init
@@ -27,7 +27,7 @@ cmake --build .
 #### Tests
 
 ```sh
-./bin/Ark-Cpp-Crypto-tests
+./bin/Phantom-Cpp-Crypto-tests
 ```
 
 ### Arduino
@@ -80,7 +80,7 @@ pio run -e esp32 -t upload
 
 The Cpp Client is meant to be used for creating request to an API endpoint.
 For cryptography related functionality, such as generating addresses or creating transactions,
-please see the [Cpp Crypto](https://github.com/ArkEcosystem/cpp-crypto) repository.
+please see the [Cpp Crypto](https://github.com/PhantomChain/cpp-crypto) repository.
 
 ### Connection
 
@@ -91,7 +91,7 @@ An example `Connection` that connects to a v2 API of a node, would be created as
 
 ```cpp
 // Create a connection
-Ark::Client::Connection<Ark::Client::API::Two> connection("167.114.29.54", 4003);
+Phantom::Client::Connection<Phantom::Client::API::Two> connection("167.114.29.54", 4003);
 ```
 
 ### Making an API Request

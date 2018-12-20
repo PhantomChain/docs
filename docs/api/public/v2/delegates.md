@@ -35,7 +35,7 @@ GET /api/delegates
     },
     "data": [
         {
-            "username": "dark_jmc",
+            "username": "dxph_jmc",
             "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
             "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
             "votes": 0,

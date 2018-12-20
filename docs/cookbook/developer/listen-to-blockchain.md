@@ -1,18 +1,18 @@
 # How to Listen to Your Blockchain
 
-In this recipe, we'll build an Ark Core plugin to listen to our blockchain and trigger an action whenever a given delegate forges a block. You'll learn how to integrate custom functionality into your Ark Core node by writing plugins to react to network events as they occur. 
+In this recipe, we'll build an Phantom Core plugin to listen to our blockchain and trigger an action whenever a given delegate forges a block. You'll learn how to integrate custom functionality into your Phantom Core node by writing plugins to react to network events as they occur. 
 
 # Decide Your Approach
 
 Generally speaking, there are two primary contexts in which you might want to listen to your blockchain: either from a node or from an external application. Listening to the blockchain on a node is useful in combination with a local wallet in order to trigger actions as soon as possible after an event occurs.  External applications might want to listen to the blockchain in order to synchronize their database with the network's current state.
 
-Listening to your blockchain within Ark Core (that is, on a particular node) can be done in a custom plugin. In this approach, the recommended strategy involves subscribing to events created by the `core-event-emitter` module.  
+Listening to your blockchain within Phantom Core (that is, on a particular node) can be done in a custom plugin. In this approach, the recommended strategy involves subscribing to events created by the `core-event-emitter` module.  
 
-By contrast, listening to your blockchain from an external application is best done by subscribing to a webhook. Under this model, Ark Core nodes ping your application with relevant information whenever a subscribed event is triggered.
+By contrast, listening to your blockchain from an external application is best done by subscribing to a webhook. Under this model, Phantom Core nodes ping your application with relevant information whenever a subscribed event is triggered.
 
-This recipe will cover the first approach — listening with a custom plugin installed in Ark Core. Implementing webhooks can differ substantively depending on the languages and frameworks you use. A detailed webhook recipe is in the works with examples across SDKS. For now, if you're looking to get started with webhooks in your application, the [Webhooks](https://docs.ark.io/guidebook/core/webhooks.html) chapter of the Guidebook is an excellent place to start.
+This recipe will cover the first approach — listening with a custom plugin installed in Phantom Core. Implementing webhooks can differ substantively depending on the languages and frameworks you use. A detailed webhook recipe is in the works with examples across SDKS. For now, if you're looking to get started with webhooks in your application, the [Webhooks](https://docs.phantom.org/guidebook/core/webhooks.html) chapter of the Guidebook is an excellent place to start.
 
-This example assumes you have a working testnet running, and we'll need to create a custom plugin. If you haven't already, following the [dev environment](https://docs.ark.io/cookbook/developer/setup-dev-environment.html) and [plugin](https://docs.ark.io/cookbook/developer/write-a-plugin.html) recipes should prove helpful in getting you started with a working testnet environment.
+This example assumes you have a working testnet running, and we'll need to create a custom plugin. If you haven't already, following the [dev environment](https://docs.phantom.org/cookbook/developer/setup-dev-environment.html) and [plugin](https://docs.phantom.org/cookbook/developer/write-a-plugin.html) recipes should prove helpful in getting you started with a working testnet environment.
 
 ## Setup the Problem
 
@@ -62,7 +62,7 @@ We'll need some of this information to match against our forged blocks; let's st
 
 At this point, researching the Events API can help us see which events might broadcast the information we're looking and, by extension, which events are most worth listening to.
 
-Looking at the list of [available events](https://docs.ark.io/guidebook/core/events.html#available-events), the most suitable candidate for listening to blocks is `block.applied`. 
+Looking at the list of [available events](https://docs.phantom.org/guidebook/core/events.html#available-events), the most suitable candidate for listening to blocks is `block.applied`. 
 
 ::: tip
 
@@ -76,7 +76,7 @@ if (block.forger === delegateWeAreListeningTo) {
     console.log('Our delegate forged!')
 }
 ```
-Looking at the [data model for Blocks](https://docs.ark.io/guidebook/core/data-models.html#block), we can see that each block holds a copy of `generatorPublicKey` — in other words, the public key of the delegate who generated this block. That means, with the delegate information we got from the API and the block information we're receiving from our `block.applied` event, we should have everything we need to turn our pseudocode into working code.
+Looking at the [data model for Blocks](https://docs.phantom.org/guidebook/core/data-models.html#block), we can see that each block holds a copy of `generatorPublicKey` — in other words, the public key of the delegate who generated this block. That means, with the delegate information we got from the API and the block information we're receiving from our `block.applied` event, we should have everything we need to turn our pseudocode into working code.
 ```js
 // the public key from /api/delegates JSON response
 const delegateKey = '02c1151ab35e371a333e73f72e9971cfc16782e421186cfff9325d3c3b9cf91751' 
@@ -94,9 +94,9 @@ Now that we've got a workable solution, let's connect it to our testnet.
 The first think we'll do is scaffold out a custom plugin called `core-delegate-listener`. From our top-level Core directory:
 ```bash
 cd plugins/
-git submodule add -f https://github.com/ArkEcosystem/core-plugin-skeleton
+git submodule add -f https://github.com/PhantomChain/core-plugin-skeleton
 ```
-Once the submodule has installed, rename the `core-plugin-skeleton` directory to `core-delegate-listener`. Make sure to rename your plugin to `@arkecosystem/core-delegate-listener` in your plugin's new `package.json`, and to add the necessary configuration to your `plugins.js` file.
+Once the submodule has installed, rename the `core-plugin-skeleton` directory to `core-delegate-listener`. Make sure to rename your plugin to `@phantomchain/core-delegate-listener` in your plugin's new `package.json`, and to add the necessary configuration to your `plugins.js` file.
 
 Next, let's get our solution into code. We'll create a file in our plugin's `lib` folder called `delegate-listener.js` and drop our solution inside.
 ```js
@@ -124,12 +124,12 @@ function listenToDelegate (block) {
 ```
 Next, we'll require our `event-emitter` into a listener object. We'll do so by loading our container, then resolving our plugin out of it:
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomchain/core-container')
 const emitter = container.resolvePlugin('event-emitter')
 ```
 Now, because we'll want to attach our listener when our node boots up and detach our listener when our node shuts down, we'll want to export functions that we can use in our plugin's `register` and `deregister` hooks. Let's add two functions to our `module.exports`:
 ```js
-const container = require('@arkecosystem/core-container')
+const container = require('@phantomchain/core-container')
 const emitter = container.resolvePlugin('event-emitter')
 
 module.exports = {

@@ -2,4 +2,4 @@
 title: Pay
 ---
 
-Integration reference for Ark Pay, a package which lets you accept and manage ARK payments.
+Integration reference for Phantom Pay, a package which lets you accept and manage XPH payments.

@@ -4,7 +4,7 @@ title: "Core Commander"
 
 # Core Commander
 
-**A shell script to easily setup, configure and maintain an ARK Core.**
+**A shell script to easily setup, configure and maintain an Phantom Core.**
 
 ## Installation
 

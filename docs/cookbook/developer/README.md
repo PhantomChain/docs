@@ -2,4 +2,4 @@
 title: Developer
 ---
 
-Developer guides for integration with Ark Core.
+Developer guides for integration with Phantom Core.

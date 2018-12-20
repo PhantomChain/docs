@@ -7,7 +7,7 @@ title: "Snapshots"
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-snapshots
+yarn add @phantomchain/core-snapshots
 ```
 
 ## Alias
@@ -22,7 +22,7 @@ yarn add @arkecosystem/core-snapshots
 
 ## Summary
 
-The `core-snapshots` and `core-snapshots-cli` packages facilitate the process of creating, verifying, and applying blockchain backups. This suite of packages can be used to create regular database backups in a serialization format understood by all Ark Core nodes.
+The `core-snapshots` and `core-snapshots-cli` packages facilitate the process of creating, verifying, and applying blockchain backups. This suite of packages can be used to create regular database backups in a serialization format understood by all Phantom Core nodes.
 
 In order to ensure that snapshots are usable across the network, it is often helpful to establish a common standard of data serialization. If all nodes agree on a single ruleset governing how blockchain data maps into a database representation, it becomes much easier to compare, validate, and verify snapshots created by different nodes. `core-snapshots` offers three such standards, also known as codecs, covering a wide range of use cases:
 
@@ -36,7 +36,7 @@ If you're unsure of which to choose, use the `lite` codec. Generally speaking, i
 
 ## Usage
 
-The `core-snapshots-cli` is a command-line interface designed to help developers automate their backup creation workflow. While the commands themselves can be found in `core-snapshots-cli` [package.json](https://github.com/ArkEcosystem/core/blob/develop/packages/core-snapshots-cli/package.json) file, the source code behind these commands can be found in the `bin/snapshot` [file](https://github.com/ArkEcosystem/core/blob/develop/packages/core-snapshots-cli/bin/snapshot).
+The `core-snapshots-cli` is a command-line interface designed to help developers automate their backup creation workflow. While the commands themselves can be found in `core-snapshots-cli` [package.json](https://github.com/PhantomChain/core/blob/develop/packages/core-snapshots-cli/package.json) file, the source code behind these commands can be found in the `bin/snapshot` [file](https://github.com/PhantomChain/core/blob/develop/packages/core-snapshots-cli/bin/snapshot).
 
 The following options are available to all commands:
 
@@ -89,7 +89,7 @@ Note that all appends create new backup folders and leave the original snapshot 
 
 ## **Importing a snapshot**
 
-The `import` command allows you to restore your Ark Core node with data from a backup you previously created.
+The `import` command allows you to restore your Phantom Core node with data from a backup you previously created.
 
 Importing new snapshots **should not be done while your node is still running**, as running a blockchain node without blockchain data can lead to unexpected behavior.
 
@@ -125,7 +125,7 @@ The following options can be added to the `import` command at runtime:
 
 Verifying a snapshot with the `verify` command involves running checks on a snapshot to ensure all signatures are cryptographically valid and that block hashes follow each other in a logical progression to create a valid blockchain.
 
-Please note that the `verify` command does not interact with the database in any way. It is therefore safe, and a good idea, to verify all snapshots prior to importing them into your Ark Core node.
+Please note that the `verify` command does not interact with the database in any way. It is therefore safe, and a good idea, to verify all snapshots prior to importing them into your Phantom Core node.
 ```bash
 yarn verify:devnet --blocks 0-331985
 ```
@@ -137,7 +137,7 @@ Note that database verification is run by default whenever a node boots up. Alth
 
 ## **Rollback Your Chain**
 
-The `rollback` command can be used to roll your blockchain database back to a specific height. This can be useful to manually alter your blockchain structure in case the rollback features included in Ark Core are not specific enough for your use case. 
+The `rollback` command can be used to roll your blockchain database back to a specific height. This can be useful to manually alter your blockchain structure in case the rollback features included in Phantom Core are not specific enough for your use case. 
 
 The following command will rollback the chain to block height of 350000:
 ```bash

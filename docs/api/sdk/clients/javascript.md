@@ -18,7 +18,7 @@ Yarn can be downloaded [here](https://yarnpkg.com/lang/en/docs/install/#windows-
 ## Installation
 
 ```bash
-$ yarn add @arkecosystem/client
+$ yarn add @phantomchain/client
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ $ yarn add @arkecosystem/client
 First step is to initialize the Client
 
 ```js
-const Client = require('@arkecosystem/client')
+const Client = require('@phantomchain/client')
 
 const client = new Client('http://my.node.ip:port');
 // For V1
@@ -114,7 +114,7 @@ init().then(json => {
 ...
 async function init() {
   try {
-    const response = await client.resource('delegates').search({"q": "ark", "limit": 1});
+    const response = await client.resource('delegates').search({"q": "phantom", "limit": 1});
     return response.data;
   } catch (e) {
     console.log(e);

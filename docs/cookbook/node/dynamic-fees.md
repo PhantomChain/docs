@@ -4,7 +4,7 @@ This recipe outlines how to setup a delegate to accept dynamic fees. We'll outli
 
 ## Find Your Config Directory
 
-First things first, you need to find your config directory. If you installed Ark Core using Commander, you can typically find this folder at `~/.ark/config/`.
+First things first, you need to find your config directory. If you installed Phantom Core using Commander, you can typically find this folder at `~/.phantom/config/`.
 
 The file we'll access from this folder is `network.json`. If you see it, you're in the right place.
 
@@ -12,11 +12,11 @@ The file we'll access from this folder is `network.json`. If you see it, you're 
 
 Your node needs to signal to the network that it accepts dynamic fees. For this, open up your `network.json` file:
 ```bash
-nano ~/.ark/config/network.json
+nano ~/.phantom/config/network.json
 ```
 There are two separate settings here worth configuring: the `dynamicFees` constants, which can be found under the `constants` key, and the dynamic fees themselves.
 
-You can use dynamic fee constants to alter how the dynamic fee formula is applied in your Ark Core node. The `fees` config key in your constants section should look like this:
+You can use dynamic fee constants to alter how the dynamic fee formula is applied in your Phantom Core node. The `fees` config key in your constants section should look like this:
 ```json
 {
     "fees": {
@@ -62,16 +62,16 @@ The `dynamic` keys in `fees` tells us whether or not dynamic fees should be enab
 
 ## Change Your Transaction Pool Size
 
-It is also possible to alter the economic tradeoff of dynamic fees by altering the max size of your transaction pool. The behavior specified in the `ARK_MAX_TRANSACTIONS_IN_POOL` environment variable takes effect once the pool hits the specified number of transactions.
+It is also possible to alter the economic tradeoff of dynamic fees by altering the max size of your transaction pool. The behavior specified in the `PHANTOM_MAX_TRANSACTIONS_IN_POOL` environment variable takes effect once the pool hits the specified number of transactions.
 
-Once that happens, your node checks the fee of each incoming transaction and only includes them in its pool of forgable transactions if the incoming fee is greater than the smallest fee currently in the pool and evicts the smallest fee transaction from the pool in order to obey the cap defined by `ARK_MAX_TRANSACTIONS_IN_POOL`.
+Once that happens, your node checks the fee of each incoming transaction and only includes them in its pool of forgable transactions if the incoming fee is greater than the smallest fee currently in the pool and evicts the smallest fee transaction from the pool in order to obey the cap defined by `PHANTOM_MAX_TRANSACTIONS_IN_POOL`.
 
 Note that, as fee transactions are only executed upon block creation, removing a transaction from the pool in this manner does not result in a charge to the "losing" transaction.
 
 By default, the max transaction pool size is set to 100000. To change this value, edit your `.env` file:
 ```env
-ARK_MAX_TRANSACTIONS_IN_POOL=1234567
+PHANTOM_MAX_TRANSACTIONS_IN_POOL=1234567
 ```
 ## Restart Your Node
 
-With a node restart, your dynamic fees should be working as intended. Feel free to test this using the utilities in `core-tester-cli` following the process in the [tester cli](https://docs.ark.io/cookbook/developer/tester-cli-transaction.html) recipe.
+With a node restart, your dynamic fees should be working as intended. Feel free to test this using the utilities in `core-tester-cli` following the process in the [tester cli](https://docs.phantom.org/cookbook/developer/tester-cli-transaction.html) recipe.

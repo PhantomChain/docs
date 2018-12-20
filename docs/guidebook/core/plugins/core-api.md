@@ -5,13 +5,13 @@ title: "Public API"
 # Public API
 
 ::: tip
-You can find the source code of this package at [packages/core-api](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/).
+You can find the source code of this package at [packages/core-api](https://github.com/PhantomChain/core/tree/develop/packages/core-api/).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-api
+yarn add @phantomchain/core-api
 ```
 
 ## Configuration

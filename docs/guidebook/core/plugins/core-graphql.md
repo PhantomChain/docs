@@ -5,13 +5,13 @@ title: "GrahpQL"
 # GraphQL
 
 ::: tip
-You can find the source code of this package at [packages/core-graphql](https://github.com/ArkEcosystem/core/tree/develop/packages/core-graphql).
+You can find the source code of this package at [packages/core-graphql](https://github.com/PhantomChain/core/tree/develop/packages/core-graphql).
 :::
 
 ## Installation
 
 ```bash
-yarn add @arkecosystem/core-graphql
+yarn add @phantomchain/core-graphql
 ```
 
 ## Configuration

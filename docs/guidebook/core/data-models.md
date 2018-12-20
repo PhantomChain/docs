@@ -1,12 +1,12 @@
 # Data Models
 
-These are the data models you will encounter throughout Ark Core and their representation in data as returned in the `core-api`. 
+These are the data models you will encounter throughout Phantom Core and their representation in data as returned in the `core-api`. 
 
 Keep in mind that this data structure is kept consistent as much as possible for the sake of backwards and forwards compatibility. As such, these data hierarchies are not necessarily the same as the object's internal representation. 
 
 This is something to keep in mind when accessing these models through the Event API, for example, as the correct way to access information might be different than following the structure listed here. 
 
-Where possible, these discrepancies are noted below. The `transformers` directories in the `core-api` module help to paint a more complete picture; they can be found in their respective [v1](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/lib/versions/1/transformers) and [v2](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/lib/versions/2/transformers) repositories.
+Where possible, these discrepancies are noted below. The `transformers` directories in the `core-api` module help to paint a more complete picture; they can be found in their respective [v1](https://github.com/PhantomChain/core/tree/develop/packages/core-api/lib/versions/1/transformers) and [v2](https://github.com/PhantomChain/core/tree/develop/packages/core-api/lib/versions/2/transformers) repositories.
 
 ## Block
 
@@ -34,7 +34,7 @@ Blocks are the core unit of any given blockchain. In ARK, blocks contain a group
 
 ## Transaction
 
-Transactions are the heart of any blockchain, cryptocurrency or otherwise. They represent a transfer of value from one network participant to another. In ARK, transactions can be of one of multiple types, specified in [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), which can affect the content and data structure of each transaction's payload.
+Transactions are the heart of any blockchain, cryptocurrency or otherwise. They represent a transfer of value from one network participant to another. In ARK, transactions can be of one of multiple types, specified in [AIP11](https://github.com/PhantomChain/AIPs/blob/master/AIPS/aip-11.md), which can affect the content and data structure of each transaction's payload.
 
 - **id**
 - **blockId** *the ID of the block in which this transaction is included*
@@ -55,7 +55,7 @@ Transactions are the heart of any blockchain, cryptocurrency or otherwise. They 
 
 Wallets are individual accounts on the ARK ledger. Each wallet has a balance that grows and shrinks as the wallet sends and receives transactions on the network. Additionally, each wallet can cast exactly one vote for one delegate to forge on their behalf.
 
-Note in particular that private keys and passphrases are not included on this model, as they are never stored in memory at any point during the operation of Ark Core nodes.
+Note in particular that private keys and passphrases are not included on this model, as they are never stored in memory at any point during the operation of Phantom Core nodes.
 
 - **address** *the wallet's address, derived from private key*
 - **publicKey** *the wallet's public key, derived from private key*

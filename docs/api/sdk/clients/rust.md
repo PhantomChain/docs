@@ -16,7 +16,7 @@ Add the following to your Cargo.toml:
 
 ```rust
 [dependencies]
-arkecosystem-client = {git = "https://github.com/ArkEcosystem/rust-client", branch = "master" }
+phantom-client = {git = "https://github.com/PhantomChain/rust-client", branch = "master" }
 ```
 
 ## Usage
@@ -24,20 +24,20 @@ arkecosystem-client = {git = "https://github.com/ArkEcosystem/rust-client", bran
 ### Initialization
 
 ```rust
-extern crate arkecosystem_client;
+extern crate phantom_client;
 
 // Both V1 & V2
-use arkecosystem_client::connection::Connection;
+use phantom_client::connection::Connection;
 // For V1
-use arkecosystem_client::api::one::One;
+use phantom_client::api::one::One;
 // For V2
-use arkecosystem_client::api::two::Two;
+use phantom_client::api::two::Two;
 
 fn main() {
     // For v1
-    let v1 = Connection::<One>::new("http://my.ark.node:port/api/");
+    let v1 = Connection::<One>::new("http://my.phantom.node:port/api/");
     // For v2
-    let v2 = Connection::<Two>::new("http://my.ark.node:port/api/");
+    let v2 = Connection::<Two>::new("http://my.phantom.node:port/api/");
     // Parameters are passed as a Vec of string tuples (key, value).
     let params = Vec::<(String, String)>::new();
     // ...

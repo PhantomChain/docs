@@ -8,9 +8,9 @@ title: "Guidelines"
 
 ## Introduction
 
-**The following is a guide for implementing a new Ark Client SDK. It covers the required functionalities as well as guidelines for how clients should typically look and behave.**
+**The following is a guide for implementing a new Phantom Client SDK. It covers the required functionalities as well as guidelines for how clients should typically look and behave.**
 
-These guidelines are to be strictly followed if you are implementing or modifying an API client for the Ark Ecosystem.
+These guidelines are to be strictly followed if you are implementing or modifying an API client for the PHANTOM.
 
 Following these guidelines is required to provide a streamlined experience across different languages in order to make it easier for new developers to get started with developing a new package or modify an existing one without lowering the quality of the already existing implementation.
 
@@ -53,11 +53,11 @@ Following these guidelines is required to provide a streamlined experience acros
 
 - Do not assume what the developer is going to do with the output. **If your programming language of choice allows you to return the raw response without any mapping, do so. If you work with a programming language like `Go` that is strict and requires you to provide a struct you should fully reflect the original API response in your struct.**
 - Do not incorporate any cryptography functionality. **An example of this would be to have a  `createTransaction` method that sends a signed transaction to the API and the method itself would create the signed transaction instead of expecting it as an argument.**
-- Do not integrate the P2P API as it is out of scope. **In `ark-node` it is require to send your transactions to the P2P API because there is no Public API endpoint for doing this. With the introduction of `ark-core` and the revamped Public API there is no longer the need to use the P2P API.**
+- Do not integrate the P2P API as it is out of scope. **In `phantom-node` it is require to send your transactions to the P2P API because there is no Public API endpoint for doing this. With the introduction of `phantom-core` and the revamped Public API there is no longer the need to use the P2P API.**
 
 ## Terminology & Phrasing
 
-- If you need to use the `Ark` name, keep these 2 use-cases in mind. The first one is `ARK` which is used in financial contexts like `10 ARK`. The second is `Ark` which used for everything else that is not talking about `ARK`, the financial unit.
+- If you need to use the `Phantom` name, keep these 2 use-cases in mind. The first one is `XPH` which is used in financial contexts like `10 XPH`. The second is `Phantom` which used for everything else that is not talking about `XPH`, the financial unit.
 
 - If you need to namespace something with a numerical value in it, write out the numerical value. _An example would be `App\Versions\One` instead of `App\V1`._
 
@@ -72,11 +72,11 @@ If you for example work with an OOP language you will be able to isolate functio
 There are already a few implementations of cryptography packages available, so take a look at them and decide which approach is the right one for your language.
 
 ### Object Oriented Programming
-- [https://github.com/ArkEcosystem/dotnet-client](https://github.com/ArkEcosystem/dotnet-client)
-- [https://github.com/ArkEcosystem/php-client](https://github.com/ArkEcosystem/php-client)
-- [https://github.com/ArkEcosystem/python-client](https://github.com/ArkEcosystem/python-client)
-- [https://github.com/ArkEcosystem/ruby-client](https://github.com/ArkEcosystem/ruby-client)
+- [https://github.com/PhantomChain/dotnet-client](https://github.com/PhantomChain/dotnet-client)
+- [https://github.com/PhantomChain/php-client](https://github.com/PhantomChain/php-client)
+- [https://github.com/PhantomChain/python-client](https://github.com/PhantomChain/python-client)
+- [https://github.com/PhantomChain/ruby-client](https://github.com/PhantomChain/ruby-client)
 
 ### Functional Programming
-- [https://github.com/ArkEcosystem/elixir-client](https://github.com/ArkEcosystem/elixir-client)
-- [https://github.com/ArkEcosystem/go-client](https://github.com/ArkEcosystem/go-client)
+- [https://github.com/PhantomChain/elixir-client](https://github.com/PhantomChain/elixir-client)
+- [https://github.com/PhantomChain/go-client](https://github.com/PhantomChain/go-client)

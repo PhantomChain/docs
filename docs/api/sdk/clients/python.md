@@ -22,7 +22,7 @@ For further informations on how to install Python on your operating system :
 ## Installation
 
 ```bash
-$ pip install arkecosystem-client
+$ pip install phantom-client
 ```
 
 ## Usage
@@ -30,9 +30,9 @@ $ pip install arkecosystem-client
 ### Accounts - V1
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.accounts.balance(address='AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv'))
 
@@ -42,9 +42,9 @@ print(client.accounts.balance(address='AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv'))
 ### Blocks - V1 and V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.blocks.all(limit=10))
 
@@ -52,9 +52,9 @@ print(client.blocks.all(limit=10))
 ```
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.blocks.all(page=5, limit=10))
 
@@ -64,9 +64,9 @@ print(client.blocks.all(page=5, limit=10))
 ### Delegates - V1 and V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.delegates.all(limit=51))
 
@@ -74,9 +74,9 @@ print(client.delegates.all(limit=51))
 ```
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.delegates.all(page=5, limit=20))
 
@@ -86,9 +86,9 @@ print(client.delegates.all(page=5, limit=20))
 ### Loader - V1
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.loader.sync_status())
 
@@ -98,9 +98,9 @@ print(client.loader.sync_status())
 ### Node - V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.node.syncing())
 
@@ -110,9 +110,9 @@ print(client.node.syncing())
 ### Peers - V1 and V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.peers.all(limit=10))
 
@@ -120,9 +120,9 @@ print(client.peers.all(limit=10))
 ```
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.peers.all())
 
@@ -132,9 +132,9 @@ print(client.peers.all())
 ### Signatures - V1
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.signatures.fee())
 
@@ -144,9 +144,9 @@ print(client.signatures.fee())
 ### Transactions - V1 and V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4002/api', api_version='v1')
+client = PhantomClient('http://127.0.0.1:4002/api', api_version='v1')
 
 print(client.transactions.all(limit=10))
 
@@ -154,9 +154,9 @@ print(client.transactions.all(limit=10))
 ```
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.transactions.all(limit=5))
 
@@ -166,9 +166,9 @@ print(client.transactions.all(limit=5))
 ### Votes - V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.votes.all(limit=5))
 
@@ -178,9 +178,9 @@ print(client.votes.all(limit=5))
 ### Wallets - V2
 
 ```python
-from client import ArkClient
+from client import PhantomClient
 
-client = ArkClient('http://127.0.0.1:4003/api')
+client = PhantomClient('http://127.0.0.1:4003/api')
 
 print(client.wallets.all(limit=5))
 

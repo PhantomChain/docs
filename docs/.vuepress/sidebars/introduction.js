@@ -1,6 +1,6 @@
 module.exports = [
   ['/', 'Back to Table of Contents'],
-  ["/introduction/", "From Blockchain to Ark"],
+  ["/introduction/", "From Blockchain to Phantom"],
   {
     title: "Blockchain",
     collapsable: false,
@@ -15,10 +15,10 @@ module.exports = [
     ]
   },
   {
-    title: "Ark",
+    title: "Phantom",
     collapsable: false,
     children:  [
-      ["/introduction/ark/", "Intro to Ark"],
+      ["/introduction/ark/", "Intro to Phantom"],
       "/introduction/ark/understanding-transactions-and-block-propagation",
       "/introduction/ark/what-is-an-ark-address",
       "/introduction/ark/interoperability-and-ark",

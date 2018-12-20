@@ -9,13 +9,13 @@ title: "JavaScript"
 ## Installation
 
 ```bash
-yarn add @arkecosystem/crypto
+yarn add @phantomchain/crypto
 ```
 
-To perform cryptographic functions with the Ark JavaScript Crypto library, you must first require it:
+To perform cryptographic functions with the Phantom JavaScript Crypto library, you must first require it:
 
 ```js
-const { crypto } = require('@arkecosystem/crypto')
+const { crypto } = require('@phantomchain/crypto')
 ```
 
 Throughout this document, the keys object used is:
@@ -43,7 +43,7 @@ const transaction = {
 For serializing and deserializing, we must require the Transaction model:
 
 ```js
-const { Transaction } = require('@arkecosystem/crypto').models
+const { Transaction } = require('@phantomchain/crypto').models
 ```
 
 ### Sign
@@ -88,7 +88,7 @@ crypto.verifyHash(signed.hash, signed.signature, '034151a3ec46b5670a682b0a63394f
 To use identities in your project, first require the module
 
 ```js
-const { identities } = require('@arkecosystem/crypto')
+const { identities } = require('@phantomchain/crypto')
 ```
 
 ### Address

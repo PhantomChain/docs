@@ -3,9 +3,9 @@ title: "Relay Node"
 ---
 
 # Running a Relay Node
-Ark offers an easy to setup solution for running a relay node for v2 with [Core Commander](https://github.com/ArkEcosystem/core-commander).
+Phantom offers an easy to setup solution for running a relay node for v2 with [Core Commander](https://github.com/PhantomChain/core-commander).
 
-The experience is similar to the old solution for v1: Ark Commander.
+The experience is similar to the old solution for v1: Phantom Commander.
 
 Core Commander only supports Ubuntu (16.04, 18.04).
 
@@ -33,7 +33,7 @@ sudo usermod -aG sudo username
 3. Login to the new user account and clone Core Commander
 ```sh
 sudo su - username
-git clone https://github.com/ArkEcosystem/core-commander
+git clone https://github.com/PhantomChain/core-commander
 ```
 
 4. Execute commander.sh with bash
@@ -61,11 +61,11 @@ username@host:~$ bash core-commander/commander.sh
 9. You will be told that your system is up to date
 ![system is up to date](./assets/relay/commander-after-install-first-boot-09.png)
 
-10. Choose `I`, `ENTER` to Install Ark Core on the main menu
-![main menu press I to install Ark Core](./assets/relay/install-main-menu-10.png)
+10. Choose `I`, `ENTER` to Install Phantom Core on the main menu
+![main menu press I to install Phantom Core](./assets/relay/install-main-menu-10.png)
 
-11. Let Core Commander clone and build Ark Core
-![build and clone Ark Core](./assets/relay/install-progress-11.png)
+11. Let Core Commander clone and build Phantom Core
+![build and clone Phantom Core](./assets/relay/install-progress-11.png)
 
 12. Choose your network version
 ![select network version (mainnet)](./assets/relay/configure-network-12.png)
@@ -90,6 +90,6 @@ Now that the relay is setup you can head over to the [JSON-RPC installation guid
 
 ## Notes
 
-Please read the documentation pages for all of our [Ark Client and Crypto libraries](/api/sdk/) (offerred in many programming languages).
+Please read the documentation pages for all of our [Phantom Client and Crypto libraries](/api/sdk/) (offerred in many programming languages).
 
 Also, read the [API documentation](/api/public/v2/).

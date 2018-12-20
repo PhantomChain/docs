@@ -9,7 +9,7 @@ title: "Go"
 ## Installation
 
 ```bash
-go get github.com/ArkEcosystem/go-crypto/crypto
+go get github.com/PhantomChain/go-crypto/crypto
 ```
 
 ### Include
@@ -18,7 +18,7 @@ go get github.com/ArkEcosystem/go-crypto/crypto
 package main
 
 import (
-    ark_crypto "github.com/ArkEcosystem/go-crypto/crypto"
+    phantom_crypto "github.com/PhantomChain/go-crypto/crypto"
     "github.com/davecgh/go-spew/spew"
 )
 ```
@@ -28,7 +28,7 @@ import (
 ### Sign
 
 ```go
-transaction := ark_crypto.BuildTransfer("address", uint64(amount), "Hello World", "top secret", "second top secret")
+transaction := phantom_crypto.BuildTransfer("address", uint64(amount), "Hello World", "top secret", "second top secret")
 
 spew.Dump(transaction)
 ```
@@ -36,9 +36,9 @@ spew.Dump(transaction)
 ### Serialize (AIP11)
 
 ```go
-transaction := ark_crypto.DeserializeTransaction("serialized_transaction")
+transaction := phantom_crypto.DeserializeTransaction("serialized_transaction")
 
-serialized := ark_crypto.SerializeTransaction(transaction)
+serialized := phantom_crypto.SerializeTransaction(transaction)
 
 spew.Dump(serialized)
 ```
@@ -46,7 +46,7 @@ spew.Dump(serialized)
 ### Deserialize (AIP11)
 
 ```go
-transaction := ark_crypto.DeserializeTransaction("serialized_transaction")
+transaction := phantom_crypto.DeserializeTransaction("serialized_transaction")
 
 spew.Dump(transaction)
 ```
@@ -56,7 +56,7 @@ spew.Dump(transaction)
 ### Sign
 
 ```go
-message, _ := ark_crypto.SignMessage("Hello World", "top secret")
+message, _ := phantom_crypto.SignMessage("Hello World", "top secret")
 
 spew.Dump(message)
 ```
@@ -64,7 +64,7 @@ spew.Dump(message)
 ### Verify
 
 ```go
-message, _ := ark_crypto.SignMessage("Hello World", "top secret")
+message, _ := phantom_crypto.SignMessage("Hello World", "top secret")
 
 spew.Dump(message.Verify())
 ```
@@ -75,21 +75,21 @@ spew.Dump(message.Verify())
 
 #### Get an address from a passphrase
 ```go
-address, _ := ark_crypto.AddressFromPassphrase('this is a top secret passphrase')
+address, _ := phantom_crypto.AddressFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(address)
 ```
 
 #### Get an address from a public key
 ```go
-publicKey, _ := ark_crypto.PublicKeyFromPassphrase('this is a top secret passphrase')
+publicKey, _ := phantom_crypto.PublicKeyFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(publicKey.ToAddress())
 ```
 
 #### Get an address from a private key
 ```go
-privateKey, _ := ark_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
+privateKey, _ := phantom_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(privateKey.ToAddress())
 ```
@@ -103,14 +103,14 @@ spew.Dump(ValidateAddress('D61mfSggzbvQgTUe6JhYKH2doHaqJ3Dyib'))
 
 #### Get a private key from a passphrase
 ```go
-privateKey, _ := ark_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
+privateKey, _ := phantom_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(privateKey)
 ```
 
 #### Get a private key instance object from hex
 ```go
-privateKey, _ := ark_crypto.PrivateKeyFromHex('d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d45822a5712')
+privateKey, _ := phantom_crypto.PrivateKeyFromHex('d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d45822a5712')
 
 spew.Dump(privateKey)
 ```
@@ -119,14 +119,14 @@ spew.Dump(privateKey)
 
 #### Get a public key from a passphrase
 ```go
-publicKey, _ := ark_crypto.PublicKeyFromPassphrase('this is a top secret passphrase')
+publicKey, _ := phantom_crypto.PublicKeyFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(publicKey)
 ```
 
 #### Get a public key instance object from hex
 ```go
-publicKey, _ := ark_crypto.PublicKeyFromHex('034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192')
+publicKey, _ := phantom_crypto.PublicKeyFromHex('034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192')
 
 spew.Dump(publicKey)
 ```
@@ -135,7 +135,7 @@ spew.Dump(publicKey)
 
 #### Get a WIF from a passphrase
 ```go
-privateKey, _ := ark_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
+privateKey, _ := phantom_crypto.PrivateKeyFromPassphrase('this is a top secret passphrase')
 
 spew.Dump(privateKey.ToWif())
 ```
