@@ -13,12 +13,12 @@ const config = {
       "link",
       {
         rel: "icon",
-        href: "https://alpha.phantom.org/wp-content/uploads/2018/08/logo.png"
+        href: "https://phantom.org/wp-content/uploads/2018/08/logo.png"
       }
     ]
   ],
   themeConfig: {
-    logo: "https://alpha.phantom.org/wp-content/uploads/2018/08/logo.png",
+    logo: "https://phantom.org/wp-content/uploads/2018/08/logo.png",
     repo: "Phantomchain/docs",
     repoLabel: "Contribute!",
     editLinks: true,
