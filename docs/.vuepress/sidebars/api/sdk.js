@@ -38,11 +38,11 @@ module.exports = [
     ]
   },
   {
-      title: "Examples",
-      collapsable: false,
-      children: [
-          "/api/sdk/examples/java.md"
-      ]
+    title: "Examples",
+    collapsable: false,
+    children: [
+      "/api/sdk/examples/java.md"
+    ]
   },
   {
     title: "Frameworks",

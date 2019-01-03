@@ -46,7 +46,7 @@ Using the Arduino IDE's built in Library Manager, install the following Librarie
 Include the following header in your Arduino Sketch:
 
 ```cpp
-#include <arkCrypto.h>
+#include <phantomCrypto.h>
 ```
 
 ### PlatformIO

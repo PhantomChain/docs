@@ -24,10 +24,9 @@ The passphrase is a written in simple readable text. It often consists of twelve
 
 **From a passphrase to private and public keys**
 
-![Diagram 001](./assets/what-is-an-ark-address/arkDiagram04-001.png)
+![Diagram 001](./assets/what-is-an-phantom-address/arkDiagram04-001.png)
 
 ## PHANTOM address
->>>>>>> Update what-is-an-ark-address.md:docs/basics/what-is-an-ark-address.md
 
 |passphrase |`simple secret`                                                     |
 |-----------|--------------------------------------------------------------------|
@@ -42,11 +41,11 @@ The PHANTOM address is like a bank account where only the owner of the private k
 
 **From a public key to an PHANTOM address**
 
-![Diagram 002](./assets/what-is-an-ark-address/arkDiagram04-002.png)
+![Diagram 002](./assets/what-is-an-phantom-address/arkDiagram04-002.png)
 
 A modifier is a byte used to customize the address. It is useful to differentiate networks :
  + On PHANTOM mainnet modifier = `0x56` so PHANTOM address starts with `P`
- + On PHANTOM devnet modifier = `0x1e` so DARK address starts with `D` (We utilize same format as DXPH in XPH)
+ + On PHANTOM devnet modifier = `0x1e` so DXPH address starts with `D` (We utilize same format as DXPH in XPH)
 
 Here is the table giving the address start char according to hexadecimal modifier value :
 

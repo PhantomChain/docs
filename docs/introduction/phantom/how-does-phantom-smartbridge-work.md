@@ -12,7 +12,7 @@ With Phantom’s SmartBridge Technology every coin becomes even more powerful, e
 
 Phantom’s SmartBridge communicates between the blockchains using a special data section called Vendor Fields and special Encoded Listener nodes that comb through this data for tasks that it can perform.
 
-![ACES](./assets/how-does-ark-smartbridge-work/9b0fa65-aces-ark-to-eth.png)
+![ACES](./assets/how-does-phantom-smartbridge-work/9b0fa65-aces-ark-to-eth.png)
 
 ### What does that mean?
 In order for PHANTOM to become the medium/intermediary between chains, each chain needs a small snippet of code implemented. It is very easy to insert and not harmful to any blockchain, current or otherwise. Once this tiny code is inserted into the core code of any blockchain, that’s it. Now that blockchain is connected to PHANTOM. We make it painless and extremely simple to implement, and will provide very easy to follow instructions with support via slack chat.
@@ -21,7 +21,7 @@ Ok, so what does that REALLY mean?
 
 It’s quite simple. If you want to trigger an event on a blockchain via a different blockchain, you check if that chain is SmartBridge compatible. If it is, then you can issue a SmartBridge transaction to any compatible blockchain via the PHANTOM wallet and the possibilities are endless.
 
-![ACES](./assets/how-does-ark-smartbridge-work/ba51bff-aces-marketplace-contract-form.png)
+![ACES](./assets/how-does-phantom-smartbridge-work/ba51bff-aces-marketplace-contract-form.png)
 
 **Example 1:** If you wanted to trigger an ETH smart contract but hold Phantom, you could just send the instructions through Phantom SmartBridge, right in the wallet to trigger the event. The code embedded in the ETH chain is always listening for an Phantom SmartBridge transaction and will collect this info and trigger the function to issue a contract.
 

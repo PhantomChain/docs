@@ -34,13 +34,13 @@ This option `connections` is where each of the connections are setup for your ap
 
 ## Usage
 
-#### ArkManager
+#### PhantomManager
 
-This is the class of most interest. It is bound to the ioc container as `ark` and can be accessed using the `Facades\Phantom` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Phantom\Phantom`.
+This is the class of most interest. It is bound to the ioc container as `phantom` and can be accessed using the `Facades\Phantom` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Phantom\Phantom`.
 
 #### Facades\Phantom
 
-This facade will dynamically pass static method calls to the `ark` object in the ioc container which by default is the `ArkManager` class.
+This facade will dynamically pass static method calls to the `phantom` object in the ioc container which by default is the `PhantomManager` class.
 
 #### PhantomServiceProvider
 
@@ -104,4 +104,4 @@ App::make('Foo')->bar($params);
 
 ## Documentation
 
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the Ark php-client package](https://github.com/PhantomChain/php-client).
+There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the PHANTOM php-client package](https://github.com/PhantomChain/php-client).

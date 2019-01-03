@@ -70,7 +70,7 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 - `transactions.create`
     - Creates a transaction object for submission to the blockchain. Combine with `transactions.broadcast` to submit transactions to the network.
     - Required parameters:
-        - `amount` - the amount of PHANTOM to transfer, in arktoshis.
+        - `amount` - the amount of PHANTOM to transfer, in phantomtoshis.
         - `recipientId` - the address of the receiving account
         - `passphrase` - the passphrase of the signing wallet
 - `transactions.broadcast`
@@ -121,7 +121,7 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 - `transactions.bip38.create`
     - Creates a transaction using a saved BIP38 wallet. As with `transactions.create`, any transactions created using this method must be broadcasted using `transactions.broadcast` to be finalized.
     - Required parameters:
-        - `amount` - the amount of PHANTOM that should be sent, in arktoshi.
+        - `amount` - the amount of PHANTOM that should be sent, in phantomtoshi.
         - `recipientId` - the address of the recipient account
         - `bip38` - the bip38 password used to create the sender account
         - `userId` - the userID associated with the BIP38 wallet

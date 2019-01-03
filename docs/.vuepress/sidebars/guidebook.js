@@ -63,7 +63,7 @@ module.exports = [
       "/guidebook/contribution-guidelines/writing-documentation",
       "/guidebook/contribution-guidelines/git-branch-guidelines",
       "/guidebook/contribution-guidelines/git-commit-guidelines",
-      "/guidebook/contribution-guidelines/migrating-your-tools-from-ark-node-to-ark-core",
+      "/guidebook/contribution-guidelines/migrating-your-tools-from-phantom-node-to-phantom-core",
       "/guidebook/contribution-guidelines/project-structuring",
       "/guidebook/contribution-guidelines/releases-and-versioning",
       "/guidebook/contribution-guidelines/repository-management"

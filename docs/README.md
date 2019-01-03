@@ -19,7 +19,7 @@ Below you can read short summaries of each chapter and the topics you'll find wi
 This is our introduction to the world of blockchain and Phantom's place within it. 
 
 [*Blockchain*](/introduction/blockchain/) is a good place to begin if you have little prior experience with blockchain. It answers many common questions about what blockchain is, why it's useful, and how Phantom helps make blockchain easier.
-The [*Phantom*](/introduction/ark/) section highlights the philosophy behind the Phantom blockchain, and how that compares against some of the sector's most popular projects (Bitcoin, Ethereum, etc.)
+The [*Phantom*](/introduction/phantom/) section highlights the philosophy behind the Phantom blockchain, and how that compares against some of the sector's most popular projects (Bitcoin, Ethereum, etc.)
 
 ### [The Phantom Guidebook](/guidebook/)
 
@@ -34,9 +34,9 @@ In this section we describe the software components of the Phantom. We focus in 
 The counterpart to the Guidebook, the Cookbook contains practical code snippets and "recipes" (tutorials) to help developers write productive code with the Phantom as quickly as possible. We'll always provide context for the code we post here, so you'll have the convenience of copy-and-paste and the knowledge to strike your own path when necessary.
 
 [*Usage Guides*](/cookbook/usage-guides/) describe how to use the various Phantom packages, including:
-1. [Desktop Wallet](/cookbook/usage-guides/how-to-use-ark-desktop-wallet)
+1. [Desktop Wallet](/cookbook/usage-guides/how-to-use-phantom-desktop-wallet)
 2. [Mobile Wallet](/cookbook/usage-guides/how-to-u)
-3. [Explorer](/cookbook/usage-guides/how-to-use-ark-explorer)
+3. [Explorer](/cookbook/usage-guides/how-to-use-phantom-explorer)
 
 [*Deployer*](/cookbook/deployer/) is the place to go for code snippets and tutorials related to building your own blockchain. We cover setting up your blockchain and deploying it to major cloud hosting service providers.
 

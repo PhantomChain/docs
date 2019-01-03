@@ -31,9 +31,9 @@ const config = {
     }, {
       text: 'P2P API',
       link: '/api/p2p/'
-    }, {
-      text: 'Public API 1.0',
-      link: '/api/public/v1/'
+    // }, {
+    //   text: 'Public API 1.0',
+    //   link: '/api/public/v1/'
     }, {
       text: 'Public API 2.0',
       link: '/api/public/v2/'

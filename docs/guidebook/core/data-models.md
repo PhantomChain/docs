@@ -39,7 +39,7 @@ Transactions are the heart of any blockchain, cryptocurrency or otherwise. They 
 - **id**
 - **blockId** *the ID of the block in which this transaction is included*
 - **type** *the AIP11 type of the transaction*
-- **amount** *the transaction value in arktoshis*
+- **amount** *the transaction value in phantomtoshis*
 - **fee** *the fee paid to include the transaction in its block*
 - **sender** *the address of the transaction sender*
 - **recipient** *the address of the transaction recipient*
