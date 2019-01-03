@@ -70,7 +70,7 @@ You can access any of the following commands using the JSON-RPC interface. To sp
 - `transactions.create`
     - Creates a transaction object for submission to the blockchain. Combine with `transactions.broadcast` to submit transactions to the network.
     - Required parameters:
-        - `amount` - the amount of PHANTOM to transfer, in arktoshis.
+        - `amount` - the amount of PHANTOM to transfer, in phantomtoshis.
         - `recipientId` - the address of the receiving account
         - `passphrase` - the passphrase of the signing wallet
 - `transactions.broadcast`

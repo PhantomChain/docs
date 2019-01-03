@@ -5,10 +5,10 @@ module.exports = [
     title: "Usage Guides",
     collapsable: false,
     children: [
-      "/cookbook/usage-guides/how-to-use-ark-explorer",
-      "/cookbook/usage-guides/how-to-use-ark-desktop-wallet",
-      "/cookbook/usage-guides/how-to-use-ark-mobile-wallet",
-      "/cookbook/usage-guides/how-to-vote-in-the-ark-desktop-wallet"
+      "/cookbook/usage-guides/how-to-use-phantom-explorer",
+      "/cookbook/usage-guides/how-to-use-phantom-desktop-wallet",
+      "/cookbook/usage-guides/how-to-use-phantom-mobile-wallet",
+      "/cookbook/usage-guides/how-to-vote-in-the-phantom-desktop-wallet"
     ]
   },
   {
@@ -16,7 +16,7 @@ module.exports = [
     collapsable: false,
     children: [
       "/cookbook/developer/setup-dev-environment",
-      "/cookbook/developer/send-transaction-ark-sdk",
+      "/cookbook/developer/send-transaction-phantom-sdk",
       "/cookbook/developer/write-a-plugin",
       "/cookbook/developer/tester-cli-transaction",
       "/cookbook/developer/listen-to-blockchain"

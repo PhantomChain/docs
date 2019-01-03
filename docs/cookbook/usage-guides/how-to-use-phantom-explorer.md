@@ -12,11 +12,11 @@ Every Blockchain has a block explorer and PHANTOM is no different; however, we p
 
 Let’s begin our journey into the PHANTOM explorer.
 
-![MOBILE BLOCK EXPLORER Overview](./assets/how-to-use-the-ark-explorer/MobileBlockExplorerOverview.png)
+![MOBILE BLOCK EXPLORER Overview](./assets/how-to-use-the-phantom-explorer/MobileBlockExplorerOverview.png)
 
 When you first arrive at [explorer.phantom.org](https://explorer.phantom.org), you will find some immediately available information.
 
-![LATEST TRANSACTION Overview](./assets/how-to-use-the-ark-explorer/LatestTransactionOverview.png)
+![LATEST TRANSACTION Overview](./assets/how-to-use-the-phantom-explorer/LatestTransactionOverview.png)
 
 ## Latest Transactions:
 
@@ -27,9 +27,9 @@ This is a list of the most recent transactions to have been broadcast over the n
 -    **Recipient:** Here we see the PHANTOM address to which the sender (above) sent this transaction to; i.e. who is receiving the transaction.
 -    **Timestamp:** This indicates the exact time at which the transaction was broadcasted and accepted by the network.
 -    **Fee:** This indicates the fee paid to send the transaction. A list of current fees on the PHANTOM network can be found in [**Fees for Transactions**](https://docs.phantom.org/basics/understanding-transactions-and-block-propagation.html#fees-for-transactions)
--    **SmartBridge:** This field indicates the PHANTOM SmartBridge that was used in the transaction. SmartBridges are part of the innovations driving the PHANTOM: it allows for disparate blockchains to interact with each other. Think of each blockchain as an island with no outside communication. If you work on Ethereum Island and your business partner only works on Bitcoin Island, you can't trade or work together. PHANTOM SmartBridges are like an airstrip, cargo barge, cellphone towers and internet all rolled into one. You can do business with any of the other islands from any island instantaneously and friction free. A more detailed explanation of SmartBridges can be found in the section [**What are bridge chains and how to use them**](https://docs.phantom.org/basics/how-does-ark-smartbridge-work.html)
+-    **SmartBridge:** This field indicates the PHANTOM SmartBridge that was used in the transaction. SmartBridges are part of the innovations driving the PHANTOM: it allows for disparate blockchains to interact with each other. Think of each blockchain as an island with no outside communication. If you work on Ethereum Island and your business partner only works on Bitcoin Island, you can't trade or work together. PHANTOM SmartBridges are like an airstrip, cargo barge, cellphone towers and internet all rolled into one. You can do business with any of the other islands from any island instantaneously and friction free. A more detailed explanation of SmartBridges can be found in the section [**What are bridge chains and how to use them**](https://docs.phantom.org/basics/how-does-phantom-smartbridge-work.html)
 
-![LATEST BLOCK Overview](./assets/how-to-use-the-ark-explorer/LatestBlockOverview.png)
+![LATEST BLOCK Overview](./assets/how-to-use-the-phantom-explorer/LatestBlockOverview.png)
 
 ### Latest Blocks:
 This is a list of the most recent blocks to have been broadcast over the network. Inside each block details page, you will be able to view the following information:
@@ -41,7 +41,7 @@ This is a list of the most recent blocks to have been broadcast over the network
 -    **Amount:** Indicates the sum of PHANTOM for all transactions in the block.
 -    **Fee:** Shows the total fees associated with all the block's transactions.
 
-![NETWORK INFORMATIION Overview](./assets/how-to-use-the-ark-explorer/NetworkInformation.png)
+![NETWORK INFORMATIION Overview](./assets/how-to-use-the-phantom-explorer/NetworkInformation.png)
 
 ### Network Information:
 Across the top of the page, you will also see a list of details about the current state of the network you are viewing:
@@ -51,7 +51,7 @@ Across the top of the page, you will also see a list of details about the curren
 -    **Network:** This indicates whether you are viewing the Mainnet, Testnet or Devnet. Mainnet is where transactions are conducted and settled in real time. In contrast, the test and dev networks are used by developers to test functionality before introducing features or other applications onto the mainnet. For most users, the Mainnet is most relevant.
 -    **Market Cap:** This refers to the market capitalization of XPH, which is the value obtained by multiplying the Supply by the current price of a coin.
 
-![DROPDOWN Overview](./assets/how-to-use-the-ark-explorer/DROPDOWN.png)
+![DROPDOWN Overview](./assets/how-to-use-the-phantom-explorer/DROPDOWN.png)
 
 ## Top Menu Bar
 **PHANTOM Icon:** This takes you back to the PHANTOM explorer home page.
@@ -60,15 +60,15 @@ Across the top of the page, you will also see a list of details about the curren
 -    **Home:** This will take you back to the PHANTOM explorer home page.
 -    **Top Wallets:** This will show you the wallets, by order of high to low, which hold the most XPH. From there, you will be able to see their ranking, wallet address, balance and the percentage of Supply they own. Currently, the PHANTOM development team holds the largest percentage of XPH, which is used to pay for projects and developers in order to bring network improvements and community support.
 
-     ![Top Wallets](./assets/how-to-use-the-ark-explorer/TOPWALLETS.png)
+     ![Top Wallets](./assets/how-to-use-the-phantom-explorer/TOPWALLETS.png)
 -    **Delegate Monitor:** This shows the current list of delegates and all the votes they've earned. PHANTOM is run by its community, whose members vote for delegates. Delegates, among other things, participate in community matters and forge blocks. The top 51 delegates are allowed to forge. Many delegates rely on community support to maintain their position within the network. 
 
-     ![Delegate Monitor Overview](./assets/how-to-use-the-ark-explorer/DELEGATEMONITOROVERVIEW.png)
+     ![Delegate Monitor Overview](./assets/how-to-use-the-phantom-explorer/DELEGATEMONITOROVERVIEW.png)
 
 The delegate monitor shows two tabs: **"Active"** and **"Standby"**.
 "Active" will list the current top 51 active delegates, an overview of blocks recently forged, blocks missed, delegates who are not forging and those delegates waiting to forge the next blocks.
 
-![Delegate Overview](./assets/how-to-use-the-ark-explorer/DELEGATEOVERVIEW.png)
+![Delegate Overview](./assets/how-to-use-the-phantom-explorer/DELEGATEOVERVIEW.png)
 
 If you click on a delegate’s username, you will be taken to the delegate's wallet address page and see the following information
 -    **Balance:** Total amount of PHANTOM in the delegate's wallet.
@@ -81,7 +81,7 @@ If you click on a delegate’s username, you will be taken to the delegate's wal
 -    **Votes:** Who this wallet has cast their delegate vote towards.
 -    **Voters:** How many total voters have pledged to the delegate.
 
-![Header Overview](./assets/how-to-use-the-ark-explorer/HEADERoverview.png)
+![Header Overview](./assets/how-to-use-the-phantom-explorer/HEADERoverview.png)
 
 The last three menu option are as follows
 

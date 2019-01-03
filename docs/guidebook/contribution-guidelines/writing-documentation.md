@@ -1,5 +1,5 @@
 # Writing Documentation for PHANTOM
-![ark-docs-banner](https://github.com/PhantomChain/docs/blob/master/banner.png?raw=true)
+![phantom-docs-banner](https://github.com/PhantomChain/docs/blob/master/banner.png?raw=true)
 
 **On this page you will find all the details necessary to writing compliant documentation for PHANTOM.**
 
@@ -92,14 +92,14 @@ Here you can find an example list of references.
 Please use this template for every document which has any reference at all:
 
 > - **Phantom Core**: [https://github.com/PhantomChain/core](https://github.com/PhantomChain/core)
-> - **PHANTOM Node**: [https://github.com/PhantomChain/ark-node](https://github.com/PhantomChain/ark-node)
+> - **PHANTOM Node**: [https://github.com/PhantomChain/phantom-node](https://github.com/PhantomChain/phantom-node)
 > - **PHANTOM Explorer**: [https://github.com/PhantomChain/explorer](https://github.com/PhantomChain/explorer)
 > - **PHANTOM Mobile Wallet**: [https://github.com/PhantomChain/mobile-wallet](https://github.com/PhantomChain/mobile-wallet)
 > - **PHANTOM Desktop Wallet**: [https://github.com/PhantomChain/desktop-wallet](https://github.com/PhantomChain/desktop-wallet)
 > - **AIPs, PHANTOM Improvement Proposals**: [https://github.com/PhantomChain/aips](https://github.com/PhantomChain/aips)
 > - **PHANTOM (LANG) Client**: [https://github.com/PhantomChain/php-client](https://github.com/PhantomChain/php-client) There are many implementations, all named with the same convention. Replace the programming language for a different implementation
 > - **PHANTOM (LANG) Crypto**: [https://github.com/PhantomChain/php-crypto](https://github.com/PhantomChain/php-crypto) Same as clients, every client implementation has a related crypto implementation
-> - **PHANTOM Deployer**: [https://github.com/PhantomChain/ark-deployer](https://github.com/PhantomChain/deployer)
+> - **PHANTOM Deployer**: [https://github.com/PhantomChain/phantom-deployer](https://github.com/PhantomChain/deployer)
 > - **PHANTOM website**: [https://phantom.org](https://phantom.org)
 > - **PHANTOM documentation**: [https://docs.phantom.org](https://docs.phantom.org)
 > - **PHANTOM forum**: [https://forum.phantom.org](https://forum.phantom.org)
