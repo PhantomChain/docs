@@ -18,12 +18,12 @@ module.exports = [
     title: "Phantom",
     collapsable: false,
     children:  [
-      ["/introduction/ark/", "Intro to Phantom"],
-      "/introduction/ark/understanding-transactions-and-block-propagation",
-      "/introduction/ark/what-is-an-ark-address",
-      "/introduction/ark/interoperability-and-ark",
-      "/introduction/ark/how-does-ark-smartbridge-work",
-      "/introduction/ark/what-is-delegated-proof-of-stake"
+      ["/introduction/phantom/", "Intro to Phantom"],
+      "/introduction/phantom/understanding-transactions-and-block-propagation",
+      "/introduction/phantom/what-is-an-ark-address",
+      "/introduction/phantom/interoperability-and-ark",
+      "/introduction/phantom/how-does-ark-smartbridge-work",
+      "/introduction/phantom/what-is-delegated-proof-of-stake"
     ]
   },
 ];

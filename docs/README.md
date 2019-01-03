@@ -19,7 +19,7 @@ Below you can read short summaries of each chapter and the topics you'll find wi
 This is our introduction to the world of blockchain and Phantom's place within it. 
 
 [*Blockchain*](/introduction/blockchain/) is a good place to begin if you have little prior experience with blockchain. It answers many common questions about what blockchain is, why it's useful, and how Phantom helps make blockchain easier.
-The [*Phantom*](/introduction/ark/) section highlights the philosophy behind the Phantom blockchain, and how that compares against some of the sector's most popular projects (Bitcoin, Ethereum, etc.)
+The [*Phantom*](/introduction/phantom/) section highlights the philosophy behind the Phantom blockchain, and how that compares against some of the sector's most popular projects (Bitcoin, Ethereum, etc.)
 
 ### [The Phantom Guidebook](/guidebook/)
 

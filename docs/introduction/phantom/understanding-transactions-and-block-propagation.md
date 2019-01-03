@@ -37,7 +37,7 @@ Once the transaction is sent from Dustin's wallet it is broadcast to the network
 
 ![Transactions 5](./assets/understanding-transactions-and-block-propagation/Transactions_05.png)
 
-For ease of understanding from now forward in this example, just consider "nodes" and "forging delegates" as verifiers on the XPH network.  If you are interested in learning more about **nodes** consult our section on [Peers and Nodes, what are they and what is their role in the network?](http://www.phantom.org/) and for delegates, [What is DPOS and how it relates to other consensus mechanisms](/introduction/ark/what-is-delegated-proof-of-stake).
+For ease of understanding from now forward in this example, just consider "nodes" and "forging delegates" as verifiers on the XPH network.  If you are interested in learning more about **nodes** consult our section on [Peers and Nodes, what are they and what is their role in the network?](http://www.phantom.org/) and for delegates, [What is DPOS and how it relates to other consensus mechanisms](/introduction/phantom/what-is-delegated-proof-of-stake).
 
 ![Transactions 6](./assets/understanding-transactions-and-block-propagation/Transactions_06.png)
 
@@ -91,7 +91,7 @@ When you set up your PHANTOM wallet you will be prompted to write down a 12 word
 
 Delegates are individuals who are vying for community votes to become forging delegates who confirm blocks of transactions on the PHANTOM blockchain.  Anyone is free to run as a delegate and seek votes from the community however only those who maintain the 51 highest vote counts become active forging delegates.
 
-When registering as a delegate you will choose a delegate name that is forever associated with this account.  Your delegate name cannot match an already registered delegate name and be under 20 characters (only lowercase, numbers and special characters are allowed).  To learn more about Delegated Proof of Stake and how it works refer to our section on [What is DPOS and how it relates to other consensus mechanisms](/introduction/ark/what-is-delegated-proof-of-stake.html)
+When registering as a delegate you will choose a delegate name that is forever associated with this account.  Your delegate name cannot match an already registered delegate name and be under 20 characters (only lowercase, numbers and special characters are allowed).  To learn more about Delegated Proof of Stake and how it works refer to our section on [What is DPOS and how it relates to other consensus mechanisms](/introduction/phantom/what-is-delegated-proof-of-stake.html)
 
 ### SmartBridge Transactions
 
