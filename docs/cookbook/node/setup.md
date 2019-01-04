@@ -137,15 +137,11 @@ PHANTOM Commander is then going to ask you for your `sudo` password. This is
 the password you used to login to the user account with. Enter your password
 and press enter.
 
-![phantom commander_login](./assets/setup/ark_commander_login.png)
-
 #### System Updates and Prerequisites
 The first time you run PHANTOM Commander it is going to update your system and make sure
 you have the latest updates to required dependencies.
 
-![phantom_commander_login](./assets/setup/update_ark_commander.png)
-
-![prerequisites](./assets/setup/prerequisites.png)
+![phantom_commander_login](./assets/setup/update_phantom_commander.png)
 
 #### Reboot System
 Once updates and prerequisites installation has finished reboot your system by
@@ -161,21 +157,22 @@ You will be disconnected from your server once again. Let's go ahead and reconne
 using our user we created.
 
 ```
-ssh phantomk@ipaddress
+ssh phantom@ipaddress
 ```
 
 
 ### Run PHANTOM Commander
 After reconnecting to the server go ahead and run PHANTOM Commander
 ```
-./PHANTOMcommander.sh
+cd core-commander
+bash PHANTOMcommander.sh
 ```
 
 ### Install PHANTOM Node
 Select option `1` to install PHNATOM Node. Again, don't interrupt this process as it
 will take a few minutes to install the required packages.
 
-![phantom node installation](./assets/setup/install_ark_node.png)
+![phantom node installation](./assets/setup/install_phantom_node.png)
 
 ### Setting up a Delegate Node
 After PHANTOM Node installs you will be asked if you want to setup your secret key.
@@ -184,22 +181,6 @@ at this time select `N`. Otherwise select `Y` and enter your delegate node secre
 key now.
 
 ![setup secret](./assets/setup/setup_secret.png)
-
-### Restoring your Database from a Snapshot
-Letting the PHANTOM blockchain download from peers can take a long time. We have
-the ability to download a snapshot of the blockchain and import it right into our
-database. Let's go ahead and do that now.
-
-Select option `4` from the menu and press enter. When asked if you would like to
-download the latest snapshot select `Y` and press enter.
-
-![snapshot](./assets/setup/snapshot.png)
-
-Once the download finishes you will be asked if you would like to restore from
-this snapshot. Select `Y` and press enter. If everything goes as planned you should
-see the following once the restoration is complete. Press enter and return to the main menu.
-
-![snapshot restored](./assets/setup/snapshot_restored.png)
 
 ### Checking to See if Everything is Working
 If everything went as planned we should now be able to choose the `L` option
