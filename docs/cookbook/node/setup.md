@@ -90,10 +90,10 @@ give you a temporary password.
 Loging into our node and leaving root access open is not good security so we're going
 to take care of that now.
 
-On your server type the following into the command line and press enter. Where `username` is the name you want to login with:
+On your server type the following into the command line and press enter. Where `phantom` is the name you want to login with:
 
 ```
-adduser username
+adduser phantom
 ```
 
 You will be prompted to enter in the users `full name` and some other information.
@@ -104,14 +104,14 @@ Feel free to just leave them all blank as they are optional. When prompted type 
 ### Giving our User Sudo Privileges
 
 Next we need to make sure that our user can do all the things it needs to do. Type
-the command below into your command line and press enter. Where `username` is the
+the command below into your command line and press enter. Where `phantom` is the
 name of the new account you created. This will give our user `sudo` privileges.
 
 This will allow you to run programs with the security privileges of another user.
 By default this is a `superuser`.
 
 ```
-usermod -a -G sudo username
+usermod -a -G sudo phantom
 ```
 
 ## Installing your PHANTOM Node
@@ -119,29 +119,17 @@ We're now ready to begin installing PHANTOM. The initial install may take awhile
 and at times appear to not be doing anything. Please have patience and let the process
 finish.
 
-### Switch to the PHANTOM user
-While installing PHANTOM, we should use the PHANTOM user that we created above. To switch to it, run
-
-```
-sudo su - phantom
-```
-
 ### Download PHANTOM Commander
 
 ```
-wget https://phantom.org/PHANTOMcommander.sh
-```
-
-### Make PHANTOM Commander Executable
-Next we need to make the file we just downloaded executable by our user.
-```
-chmod +x PHANTOMcommander.sh
+git clone https://github.com/PhantomChain/core-commander
+cd core-commander
 ```
 
 ### Run PHANTOM Commander
 Now we'll run the file we just downloaded and begin our PHANTOM Node installation.
 ```
-./PHANTOMcommander.sh
+bash PHANTOMcommander.sh
 ```
 
 #### Sudo Password
