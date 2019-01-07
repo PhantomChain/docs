@@ -150,12 +150,12 @@ sudo ufw default deny incoming
 ```
 
 #### Enable Node Port
-Depending which network this node is for will determine what port you open here. For mainnet use `4001`, devnet use `4002`, and testnet use `4000`.
+Depending which network this node is for will determine what port you open here. For mainnet use `4002`, devnet use `4002`, and testnet use `4000`.
 
 We don't want to open any more ports than required to operate securely.
 
 ```
-sudo ufw allow 4001/tcp
+sudo ufw allow 4002/tcp
 ```
 
 #### Install knockd on server
